@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Quarto outputs
+/_site/
+*_files/
+*.html
+*.pdf
+*.png
+*.svg
+
+# Data files (not shared in repo — see data/README.md)
+data/*.csv
+data/*.xlsx
+data/*.nwk
+data/*.treefile
+data/*.tsv
+data/*.shp
+data/*.dbf
+data/*.prj
+data/*.shx
+data/*.zip

@@ -1,0 +1,271 @@
+---
+title: "Figure 4 — Epidemiological Curves"
+subtitle: "K. pneumoniae, K. quasipneumoniae and E. coli (2023–2024)"
+author: "Ebenezer Foster-Nyarko"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    code-fold: true
+    self-contained: true
+    theme: cosmo
+---
+
+<!--
+Paper: Foster-Nyarko E et al. Microbial Genomics (2025). MGEN-S-26-00245.
+
+Three-panel stacked bar chart of monthly isolate counts (Fig 4 as submitted):
+  Panel A: K. pneumoniae clinical isolates
+  Panel B: K. pneumoniae environmental isolates
+  Panel C: Other species (K. quasipneumoniae + E. coli combined)
+
+Per the figure legend: "Colours indicate ST. For non-K. pneumoniae STs, the
+corresponding species are shown in brackets (Kqp, Klebsiella quasipneumoniae
+subsp. similipneumoniae; Ec, Escherichia coli). The single non-K. pneumoniae
+environmental isolate is denoted by a star."
+
+Data required (place in ../data/):
+  - FileS1_to_FileS10.xlsx  : supplementary data; sheet "Supp_File2_Study_isolates"
+                              K. pneumoniae isolates (columns: Year, Month, ST, sample_id)
+  - pathogenwatch_kqp_with_dates.csv : K. quasipneumoniae + E. coli data
+                              (columns: Year, Month, species, ST, status)
+
+R packages: readxl, tidyverse, ggplot2, patchwork, knitr
+-->
+
+```{r setup, include=FALSE}
+library(readxl)
+library(tidyverse)
+library(ggplot2)
+library(patchwork)
+library(knitr)
+
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE,
+                      fig.width = 16, fig.height = 18, dpi = 300)
+```
+
+## File Paths
+
+```{r file-paths}
+# Update these paths to point to your local data files
+fp_kp  <- "../data/FileS1_to_FileS10.xlsx"
+fp_kqp <- "../data/pathogenwatch_kqp_with_dates.csv"
+out_dir <- "."   # output directory for saved figures
+```
+
+## Data Loading
+
+```{r create-species-code}
+species_code_map <- tribble(
+  ~species_name, ~species_code,
+  "Klebsiella pneumoniae", "Kp",
+  "Klebsiella quasipneumoniae subsp. similipneumoniae", "Kqv",
+  "Escherichia coli", "Ec"
+)
+```
+
+```{r load-kp-data}
+df_kp <- read_excel(fp_kp, sheet = "Supp_File2_Study_isolates")
+
+df_kp_filtered <- df_kp %>%
+  filter(Year %in% c(2023, 2024)) %>%
+  rename(Species = species) %>%
+  mutate(
+    Species = "Klebsiella pneumoniae",
+    ST = as.character(ST),
+    sample_type = case_when(
+      str_detect(sample_id, "E$")  ~ "Environmental",
+      str_detect(sample_id, "B1$") ~ "Clinical",
+      TRUE ~ "Unknown"
+    )
+  ) %>%
+  select(Year, Month, Species, ST, sample_type) %>%
+  left_join(species_code_map, by = c("Species" = "species_name"))
+
+cat("K. pneumoniae isolates (2023–2024):", nrow(df_kp_filtered), "\n")
+print(table(df_kp_filtered$sample_type))
+```
+
+```{r load-kqp-data}
+df_kq <- read_csv(fp_kqp, show_col_types = FALSE)
+
+df_kq_filtered <- df_kq %>%
+  filter(
+    Year %in% c(2023, 2024),
+    species %in% c("Klebsiella quasipneumoniae subsp. similipneumoniae", "Escherichia coli")
+  ) %>%
+  select(Year, Month, species, ST, status) %>%
+  rename(Species = species, sample_type = status) %>%
+  mutate(
+    ST = as.character(ST),
+    sample_type = case_when(
+      tolower(sample_type) %in% c("environmental", "env") ~ "Environmental",
+      tolower(sample_type) %in% c("clinical", "clin")     ~ "Clinical",
+      TRUE ~ sample_type
+    )
+  ) %>%
+  drop_na(Year, Month) %>%
+  left_join(species_code_map, by = c("Species" = "species_name"))
+```
+
+```{r combine-data}
+df_combined <- bind_rows(df_kp_filtered, df_kq_filtered) %>%
+  mutate(
+    study_month = (Year - 2023) * 12 + Month,
+    month_label = format(as.Date(paste(Year, Month, "01", sep = "-")), "%b\n%Y")
+  )
+
+month_labels_df <- df_combined %>%
+  select(study_month, month_label) %>%
+  distinct() %>%
+  arrange(study_month)
+```
+
+## Colour Palette
+
+```{r colour-palette}
+colors <- c(
+  "ST39"       = "#00bfff",
+  "ST25"       = "#a52a2a",
+  "ST1552"     = "#008000",
+  "ST1401"     = "#000080",
+  "ST1229"     = "#ff8c00",
+  "ST1514"     = "#ffff00",
+  "ST101"      = "#deb887",
+  "ST22"       = "#00ff00",
+  "ST25-1LV"   = "#a52a2a",
+  "ST3405-1LV" = "#0000ff",
+  "ST37"       = "#ff00ff",
+  "ST5030"     = "#dda0dd",
+  "ST5142"     = "#ff1493",
+  "ST711"      = "#7fffd4",
+  "ST815"      = "#2f4f4f",
+  "ST131"      = "#dc143c",
+  "ST636"      = "#8b4513"
+)
+
+kq_sts_remaining <- setdiff(unique(df_kq_filtered$ST), names(colors))
+if (length(kq_sts_remaining) > 0) {
+  all_colors <- c(colors, setNames(
+    rainbow(length(kq_sts_remaining), s = 0.7, v = 0.8), kq_sts_remaining))
+} else {
+  all_colors <- colors
+}
+
+# ST display labels (with species code for non-Kp)
+plot_data <- df_combined %>%
+  group_by(study_month, month_label, Species, ST, species_code, sample_type) %>%
+  summarise(count = n(), .groups = 'drop') %>%
+  mutate(
+    ST = factor(ST, levels = rev(df_combined %>% count(ST) %>% arrange(desc(n)) %>% pull(ST))),
+    ST_display = if_else(
+      Species %in% c("Klebsiella quasipneumoniae subsp. similipneumoniae", "Escherichia coli"),
+      paste0(ST, " (", species_code, ")"),
+      as.character(ST)
+    )
+  )
+
+month_totals <- plot_data %>%
+  group_by(study_month, Species, sample_type) %>%
+  summarise(total = sum(count), .groups = 'drop')
+
+all_study_months <- sort(unique(df_combined$study_month))
+all_month_labels <- month_labels_df %>% filter(study_month %in% all_study_months)
+
+plot_data_kq_for_colors <- plot_data %>%
+  filter(Species %in% c("Klebsiella quasipneumoniae subsp. similipneumoniae", "Escherichia coli")) %>%
+  select(ST, ST_display) %>% distinct()
+
+all_colors_display <- setNames(
+  all_colors[as.character(plot_data_kq_for_colors$ST)],
+  plot_data_kq_for_colors$ST_display
+)
+```
+
+## Epidemiological Curves
+
+```{r build-plot-function}
+make_epi_panel <- function(data, totals, fill_var, color_map, title,
+                           show_x = FALSE, x_label = NULL) {
+  p <- ggplot(data, aes(x = study_month, y = count, fill = .data[[fill_var]])) +
+    geom_col(colour = "white", linewidth = 0.5, width = 0.75) +
+    geom_text(data = totals,
+              aes(x = study_month, y = total, label = total, fill = NULL),
+              vjust = -0.5, size = 5, fontface = "bold", colour = "black") +
+    scale_fill_manual(values = color_map, name = "ST") +
+    scale_x_continuous(breaks = all_month_labels$study_month,
+                       labels = all_month_labels$month_label,
+                       limits = c(min(all_study_months) - 0.5,
+                                  max(all_study_months) + 0.5)) +
+    scale_y_continuous(expand = expansion(mult = c(0, 0.15))) +
+    labs(x = x_label, y = "Number of isolates", title = title) +
+    theme_classic() +
+    theme(
+      axis.title.x    = if (show_x) element_text(size = 14, face = "bold") else element_blank(),
+      axis.title.y    = element_text(size = 14, face = "bold"),
+      axis.text.x     = if (show_x) element_text(size = 12) else element_blank(),
+      axis.text.y     = element_text(size = 12),
+      axis.ticks.x    = if (show_x) element_line() else element_blank(),
+      plot.title      = element_text(size = 14, face = "bold", hjust = 0.5),
+      legend.title    = element_text(size = 14, face = "bold"),
+      legend.text     = element_text(size = 12),
+      legend.position = "right",
+      panel.grid.major.y = element_line(linetype = "dashed", colour = "gray80", linewidth = 0.3),
+      panel.grid.major.x = element_blank(),
+      panel.grid.minor   = element_blank(),
+      axis.line          = element_line(colour = "black", linewidth = 0.5)
+    )
+  p
+}
+```
+
+```{r epi-curve-plot, fig.width=16, fig.height=14}
+# --- Panel A: K. pneumoniae clinical ---
+pA <- make_epi_panel(
+  plot_data %>% filter(Species == "Klebsiella pneumoniae", sample_type == "Clinical"),
+  month_totals %>% filter(Species == "Klebsiella pneumoniae", sample_type == "Clinical"),
+  "ST", all_colors, "A. Klebsiella pneumoniae (Clinical)")
+
+# --- Panel B: K. pneumoniae environmental ---
+pB <- make_epi_panel(
+  plot_data %>% filter(Species == "Klebsiella pneumoniae", sample_type == "Environmental"),
+  month_totals %>% filter(Species == "Klebsiella pneumoniae", sample_type == "Environmental"),
+  "ST", all_colors, "B. Klebsiella pneumoniae (Environmental)")
+
+# --- Panel C: Other species (Kqp + E. coli combined) ---
+# ST_display includes species code in brackets for non-Kp species
+other_species <- c("Klebsiella quasipneumoniae subsp. similipneumoniae", "Escherichia coli")
+
+pC <- make_epi_panel(
+  plot_data %>% filter(Species %in% other_species),
+  month_totals %>% filter(Species %in% other_species) %>%
+    group_by(study_month) %>% summarise(total = sum(total), .groups = "drop"),
+  "ST_display", all_colors_display, "C. Other species",
+  show_x = TRUE, x_label = "Month")
+
+combined_plot <- pA / pB / pC +
+  plot_layout(guides = "collect") +
+  plot_annotation(
+    title = "Epidemiological Curve (2023–2024)",
+    theme = theme(plot.title = element_text(size = 14, face = "bold", hjust = 0.5))
+  )
+
+print(combined_plot)
+```
+
+## Export
+
+```{r export, eval=FALSE}
+ggsave(file.path(out_dir, "fig04_epi_curve.pdf"),
+       plot = combined_plot, width = 16, height = 18, dpi = 300)
+ggsave(file.path(out_dir, "fig04_epi_curve.svg"),
+       plot = combined_plot, width = 16, height = 18, dpi = 300)
+cat("Saved fig04_epi_curve.pdf and .svg\n")
+```
+
+## Session Info
+
+```{r session-info}
+sessionInfo()
+```

@@ -1,0 +1,409 @@
+---
+title: "Figure 5 — *K. pneumoniae* Phylogenetic Tree with Metadata Annotation"
+author: "Ebenezer Foster-Nyarko"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    code-fold: show
+    theme: cosmo
+    embed-resources: true
+  pdf:
+    toc: true
+    colorlinks: true
+execute:
+  warning: false
+  message: false
+---
+
+<!--
+Paper: Foster-Nyarko E et al. Microbial Genomics (2025). MGEN-S-26-00245.
+
+Maximum-likelihood phylogenetic tree of all K. pneumoniae isolates, annotated with:
+  - Tree branches and tips coloured by ST (top 10 + Other in grey)
+  - Tip label suffixes: * = environmental isolate, ** = IV fluid isolate
+  - Ring 1 (K-locus): capsular polysaccharide type (top 10 + Other in grey)
+  - Ring 2 (Virulence): acquired virulence loci (red = present)
+  - Ring 3 (Genotypic AMR): acquired resistance genes (blue = present)
+  - Ring 4 (AMR mutations): acquired resistance mutations (orange = present)
+
+Data required (place in ../data/):
+  - gm_kpn_kleborate.csv       : Pathogenwatch Kleborate export for all Gambia Kp isolates
+                                  (columns include: Genome_Name, ST, K_locus, virulence
+                                  and AMR gene/mutation columns)
+  - gm_kpn_tree.nwk            : Newick tree from Pathogenwatch (all Gambia Kp collection)
+  - FileS1_to_FileS10.xlsx     : Supplementary data file published with paper;
+                                  sheet "Supp_File2_Study_isolates" must contain columns:
+                                  sample_id, Status (Environmental / Neonate / Non-neonate),
+                                  and optionally source_type (e.g. "IV bag", "water", etc.)
+
+Data source: Pathogenwatch collection 4qpq72t9efqt (Gambia Kpn collection, updated Oct 2024)
+
+R packages: ggtree, ggtreeExtra, tidyverse, ggnewscale, RColorBrewer, readxl, ape
+BiocManager::install("ggtree")
+BiocManager::install("ggtreeExtra")
+install.packages(c("ggnewscale", "RColorBrewer", "readxl"))
+-->
+
+## Setup
+
+```{r setup}
+library(ggtree)
+library(ggtreeExtra)
+library(ape)
+library(tidyverse)
+library(ggnewscale)
+library(RColorBrewer)
+library(readxl)
+```
+
+## File Paths
+
+```{r file-paths}
+# ---- Update these to point to your local copies ----
+fp_kleborate  <- "/Users/LSHEF4/Dropbox/Gambia_kleb_project/paper/draft/first_draft/revised_draft_for_circulation_29Oct25/newly_updated_ms_11Nov25/updated_14Nov25/use_pathogenwatch-klepn-4qpq72t9efqt-gmkpncollection_31oct24-kleborate.csv"
+fp_tree       <- "/Users/LSHEF4/Dropbox/Gambia_kleb_project/paper/draft/first_draft/revised_draft_for_circulation_29Oct25/newly_updated_ms_11Nov25/updated_14Nov25/pathogenwatch-klepn-4qpq72t9efqt-gmkpncollection_31oct24-collection-tree.nwk"
+fp_supp       <- "../data/FileS1_to_FileS10.xlsx"   # for sample-type / source_type
+out_dir       <- "."
+```
+
+## Load Data
+
+### Genomic metadata and phylogenetic tree
+
+```{r load-genomic}
+metadata <- read.csv(fp_kleborate) %>%
+  rename(label = Genome_Name)
+
+tree <- read.tree(fp_tree)
+
+cat("Metadata rows :", nrow(metadata), "\n")
+cat("Tree tips     :", length(tree$tip.label), "\n")
+cat("\nFirst 5 tip labels:\n")
+print(head(tree$tip.label))
+```
+
+### Sample-type metadata (for asterisk tip labels)
+
+```{r load-sample-type}
+# Load isolate metadata from supplementary file
+supp <- read_excel(fp_supp, sheet = "Supp_File2_Study_isolates") %>%
+  mutate(
+    sample_id = as.character(sample_id) %>% str_trim(),
+    # Classify as Environmental or Clinical
+    sample_category = case_when(
+      str_to_lower(Status) == "environmental" ~ "Environmental",
+      Status %in% c("Neonate", "Non-neonate")  ~ "Clinical",
+      TRUE ~ "Other"
+    ),
+    # IV-fluid flag: check source_type column if it exists
+    is_iv_fluid = if ("source_type" %in% names(.)) {
+      str_detect(str_to_lower(source_type), "iv|bag")
+    } else {
+      FALSE
+    }
+  ) %>%
+  select(sample_id, sample_category, is_iv_fluid)
+
+cat("Sample categories in supplementary file:\n")
+print(table(supp$sample_category, useNA = "ifany"))
+cat("\nIV fluid samples:", sum(supp$is_iv_fluid, na.rm = TRUE), "\n")
+```
+
+```{r check-label-matching}
+# Standardise sample IDs so they match tree tip labels
+# Pathogenwatch often uses the sample name as the Genome_Name — inspect and adjust
+# the cleaning step below if your IDs use different formatting.
+supp <- supp %>%
+  mutate(label = sample_id %>%
+           str_trim() %>%
+           str_replace_all("[[:space:]]+", "_"))
+
+# Diagnostic: which tree tips are matched?
+matched   <- intersect(tree$tip.label, supp$label)
+unmatched <- setdiff(tree$tip.label, supp$label)
+
+cat("\nTree tips matched to supplementary metadata:", length(matched), "\n")
+cat("Tree tips NOT matched (no sample-type info):", length(unmatched), "\n")
+if (length(unmatched) > 0 && length(unmatched) <= 20) {
+  cat("Unmatched tips:", paste(unmatched, collapse = ", "), "\n")
+}
+```
+
+## Build Tip-Label Suffix Table
+
+```{r tip-suffixes}
+# Assign asterisk suffix based on sample category:
+#   **  = isolated from intravenous fluids
+#   *   = other environmental isolate
+#   ""  = clinical isolate (no suffix)
+#   ""  = historical / no metadata (no suffix)
+
+tip_labels <- tibble(label = tree$tip.label) %>%
+  left_join(supp %>% select(label, sample_category, is_iv_fluid),
+            by = "label") %>%
+  mutate(
+    suffix = case_when(
+      !is.na(is_iv_fluid) & is_iv_fluid              ~ "**",
+      !is.na(sample_category) & sample_category == "Environmental" ~ "*",
+      TRUE ~ ""
+    ),
+    label_display = paste0(label, suffix)
+  )
+
+cat("\nTip label suffix counts:\n")
+print(table(tip_labels$suffix, useNA = "ifany"))
+cat("\nSample environmental tips (first 10):\n")
+print(tip_labels %>% filter(suffix != "") %>% select(label, suffix) %>% head(10))
+```
+
+```{r join-display-labels}
+# Add display labels back into the main metadata table so ggtree can use them
+metadata <- metadata %>%
+  left_join(tip_labels %>% select(label, label_display, suffix, sample_category),
+            by = "label")
+
+# Sanity check
+cat("\nRows with a suffix:\n")
+print(metadata %>% count(suffix))
+```
+
+## Prepare Annotation Data
+
+```{r process-st-klocus}
+top_10_st     <- metadata %>% count(ST, sort = TRUE) %>% slice_head(n = 10) %>% pull(ST)
+top_10_klocus <- metadata %>% count(K_locus, sort = TRUE) %>% slice_head(n = 10) %>% pull(K_locus)
+
+metadata <- metadata %>%
+  mutate(
+    ST_category      = if_else(ST %in% top_10_st,     as.character(ST),      "Other"),
+    K_locus_category = if_else(K_locus %in% top_10_klocus, as.character(K_locus), "Other")
+  )
+
+cat("Top 10 STs:", paste(sort(top_10_st), collapse = ", "), "\n")
+```
+
+```{r define-columns}
+genotypic_cols <- c(
+  "AGly_acquired", "Col_acquired", "Fcyn_acquired", "Flq_acquired", "Gly_acquired",
+  "MLS_acquired",  "Phe_acquired", "Rif_acquired",  "Sul_acquired", "Tet_acquired",
+  "Tgc_acquired",  "Tmt_acquired", "Bla_acquired",  "Bla_inhR_acquired",
+  "Bla_ESBL_acquired", "Bla_ESBL_inhR_acquired", "Bla_Carb_acquired", "Bla_chr"
+)
+# Keep only columns that are actually present in the export
+genotypic_cols <- genotypic_cols[genotypic_cols %in% names(metadata)]
+
+mutation_cols  <- c("SHV_mutations", "Omp_mutations", "Col_mutations", "Flq_mutations")
+mutation_cols  <- mutation_cols[mutation_cols %in% names(metadata)]
+
+virulence_cols <- c("Yersiniabactin", "Colibactin", "Aerobactin",
+                    "Salmochelin", "RmpADC", "rmpA2")
+virulence_cols <- virulence_cols[virulence_cols %in% names(metadata)]
+
+cat("Genotypic AMR columns found:", length(genotypic_cols), "\n")
+cat("Mutation columns found     :", length(mutation_cols), "\n")
+cat("Virulence columns found    :", length(virulence_cols), "\n")
+```
+
+```{r process-resistance}
+convert_to_binary <- function(x) {
+  case_when(is.na(x) ~ 0, x == "-" ~ 0, x == "" ~ 0, TRUE ~ 1)
+}
+
+metadata <- metadata %>%
+  mutate(
+    across(all_of(genotypic_cols), convert_to_binary),
+    across(all_of(mutation_cols),  convert_to_binary),
+    across(all_of(virulence_cols), convert_to_binary)
+  )
+
+# Ciprofloxacin phenotypic prediction (if present)
+if ("Ciprofloxacin_prediction" %in% names(metadata)) {
+  metadata <- metadata %>%
+    mutate(Ciprofloxacin_mut = case_when(
+      Ciprofloxacin_prediction == "nonwildtype R" ~ 1,
+      Ciprofloxacin_prediction == "wildtype S"    ~ 0,
+      TRUE ~ NA_real_
+    ))
+  mutation_cols <- c(mutation_cols, "Ciprofloxacin_mut")
+}
+```
+
+```{r reshape-annotation-data}
+klocus_data <- metadata %>%
+  select(label, K_locus_category) %>% distinct() %>%
+  mutate(variable = "K-locus", value = K_locus_category) %>%
+  select(label, variable, value)
+
+virulence_data <- metadata %>%
+  select(label, all_of(virulence_cols)) %>%
+  pivot_longer(-label, names_to = "Trait", values_to = "Presence")
+
+genotypic_data <- metadata %>%
+  select(label, all_of(genotypic_cols)) %>%
+  pivot_longer(-label, names_to = "Gene", values_to = "Presence") %>%
+  mutate(Gene = str_remove(Gene, "_acquired$"))
+
+mutation_data <- metadata %>%
+  select(label, all_of(mutation_cols)) %>%
+  pivot_longer(-label, names_to = "Mutation", values_to = "Presence") %>%
+  mutate(Mutation = str_remove(Mutation, "_mutations?$") %>%
+                    str_replace("Ciprofloxacin_mut", "Cipro (phenotypic)"))
+```
+
+## Colour Palettes
+
+```{r create-palettes}
+st_colors <- c(brewer.pal(min(length(top_10_st), 10), "Set3"), "grey70")
+names(st_colors) <- c(sort(top_10_st), "Other")
+
+klocus_colors <- c(brewer.pal(min(length(top_10_klocus), 10), "Paired"), "grey70")
+names(klocus_colors) <- c(sort(top_10_klocus), "Other")
+```
+
+## Build Annotated Tree
+
+```{r create-tree, fig.width=22, fig.height=18}
+# --- Base tree ---
+p <- ggtree(tree, layout = "rectangular") %<+% metadata
+
+# Colour branches and tip points by ST
+p <- p +
+  geom_tree(aes(color = ST_category)) +
+  geom_tippoint(aes(color = ST_category), size = 2) +
+  scale_color_manual(values = st_colors, name = "ST", na.value = "grey50") +
+  xlim(0, NA) +
+  hexpand(0.35)   # extra horizontal space for tip labels + annotation rings
+
+# --- Tip labels with * / ** suffixes ---
+# label_display is blank for internal nodes (isTip = FALSE), so use label_display
+# only where it is not NA; fall back to label otherwise.
+p <- p +
+  geom_tiplab(
+    aes(label = if_else(!is.na(label_display), label_display, label)),
+    size   = 2.5,
+    align  = FALSE,
+    offset = 0.001   # small nudge away from tip point; adjust if needed
+  )
+
+# --- Ring 1: K-locus (innermost) ---
+p <- p +
+  new_scale_fill() +
+  geom_fruit(
+    data    = klocus_data,
+    geom    = geom_tile,
+    mapping = aes(y = label, x = variable, fill = value),
+    offset  = 0.05,
+    pwidth  = 0.08,
+    axis.params = list(axis = "x", text = "K-locus", text.angle = 0,
+                       text.size = 3, hjust = 0.5, nbreak = 1)
+  ) +
+  scale_fill_manual(values = klocus_colors, name = "K-locus", na.value = "grey90")
+
+# --- Ring 2: Virulence traits (red) ---
+p <- p +
+  new_scale_fill() +
+  geom_fruit(
+    data    = virulence_data,
+    geom    = geom_tile,
+    mapping = aes(y = label, x = Trait, fill = as.factor(Presence)),
+    offset  = 0.01,
+    pwidth  = 0.15,
+    axis.params = list(axis = "x", text.angle = 90, text.size = 3,
+                       hjust = 0, vjust = 0.5, nbreak = length(virulence_cols))
+  ) +
+  scale_fill_manual(
+    values = c("0" = "white", "1" = "#E41A1C"),
+    name   = "Virulence",
+    labels = c("Absent", "Present"),
+    na.value = "grey90"
+  )
+
+# --- Ring 3: Genotypic AMR acquired genes (blue) ---
+p <- p +
+  new_scale_fill() +
+  geom_fruit(
+    data    = genotypic_data,
+    geom    = geom_tile,
+    mapping = aes(y = label, x = Gene, fill = as.factor(Presence)),
+    offset  = 0.01,
+    pwidth  = 0.25,
+    axis.params = list(axis = "x", text.angle = 90, text.size = 3,
+                       hjust = 0, vjust = 0.5,
+                       nbreak = length(unique(genotypic_data$Gene)))
+  ) +
+  scale_fill_manual(
+    values = c("0" = "white", "1" = "#377EB8"),
+    name   = "Genotypic AMR",
+    labels = c("Absent", "Present"),
+    na.value = "grey90"
+  )
+
+# --- Ring 4: AMR mutations (orange, outermost) ---
+p <- p +
+  new_scale_fill() +
+  geom_fruit(
+    data    = mutation_data,
+    geom    = geom_tile,
+    mapping = aes(y = label, x = Mutation, fill = as.factor(Presence)),
+    offset  = 0.01,
+    pwidth  = 0.12,
+    axis.params = list(axis = "x", text.angle = 90, text.size = 3,
+                       hjust = 0, vjust = 0.5,
+                       nbreak = length(unique(mutation_data$Mutation)))
+  ) +
+  scale_fill_manual(
+    values = c("0" = "white", "1" = "#FF7F00"),
+    name   = "AMR mutations",
+    labels = c("Absent", "Present"),
+    na.value = "grey90"
+  )
+
+# --- Theme ---
+p <- p +
+  theme(
+    legend.position = "right",
+    legend.title    = element_text(size = 10, face = "bold"),
+    legend.text     = element_text(size = 9),
+    legend.box      = "vertical"
+  )
+
+print(p)
+```
+
+## Diagnostics
+
+```{r diagnostics}
+# ST distribution
+cat("ST Distribution (Top 10 + Other):\n")
+metadata %>% count(ST_category, sort = TRUE) %>% print()
+
+cat("\nK-locus Distribution (Top 10 + Other):\n")
+metadata %>% count(K_locus_category, sort = TRUE) %>% print()
+
+cat("\nTip label suffixes applied:\n")
+metadata %>%
+  count(suffix = if_else(is.na(suffix), "(no match)", suffix)) %>%
+  print()
+```
+
+## Export
+
+```{r save, eval=FALSE}
+ggsave(
+  file.path(out_dir, "fig05_kpn_phylotree_annotated.pdf"),
+  plot = p, width = 22, height = 18
+)
+ggsave(
+  file.path(out_dir, "fig05_kpn_phylotree_annotated.png"),
+  plot = p, width = 22, height = 18, dpi = 300
+)
+cat("Saved fig05_kpn_phylotree_annotated.pdf and .png\n")
+```
+
+## Session Info
+
+```{r session-info}
+sessionInfo()
+```

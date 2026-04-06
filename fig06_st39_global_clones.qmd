@@ -1,0 +1,318 @@
+---
+title: "Figure 6 — Global ST39 Clone Distribution and AMR"
+author: "Ebenezer Foster-Nyarko"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    code-fold: show
+    theme: cosmo
+    embed-resources: true
+  pdf:
+    toc: true
+    number-sections: true
+execute:
+  warning: false
+  message: false
+---
+
+<!--
+Paper: Foster-Nyarko E et al. Microbial Genomics (2025). MGEN-S-26-00245.
+
+Four-panel figure showing the global distribution and AMR of K. pneumoniae ST39 clones:
+  A: Raw clone distribution by continent
+  B: Dereplicated clone distribution by continent
+  C: ESBL gene prevalence by clone and continent (%)
+  D: Carbapenemase gene prevalence by clone and continent (%)
+
+Data required (place in ../data/):
+  - pathogenwatch_st39_typing.csv    : Pathogenwatch typing export (collection 81f6uz2riu07)
+  - pathogenwatch_st39_metadata.csv  : Pathogenwatch metadata export (must have COUNTRY column)
+  - pathogenwatch_st39_kleborate.csv : Pathogenwatch Kleborate export (Bla_ESBL_acquired,
+                                       Bla_Carb_acquired columns)
+
+Data source: https://pathogen.watch (collection ID 81f6uz2riu07, updated Nov 2025)
+
+R packages: tidyverse, patchwork, scales
+-->
+
+## Setup
+
+```{r setup}
+library(tidyverse)
+library(patchwork)
+library(scales)
+
+# Update these paths to point to your local data files
+kp  <- read_csv("../data/pathogenwatch_st39_typing.csv")
+kpm <- read_csv("../data/pathogenwatch_st39_metadata.csv")
+kpa <- read_csv("../data/pathogenwatch_st39_kleborate.csv")
+
+names(kp)  <- str_trim(names(kp))
+names(kpm) <- str_trim(names(kpm))
+names(kpa) <- str_trim(names(kpa))
+
+# Clean AMR columns: empty / "-" → "None"
+clean_amr_col <- function(x) {
+  case_when(
+    is.na(x)                    ~ "None",
+    str_trim(x) == ""           ~ "None",
+    str_trim(x) == "-"          ~ "None",
+    TRUE                        ~ x
+  )
+}
+kpa <- kpa %>%
+  mutate(Bla_ESBL_acquired = clean_amr_col(Bla_ESBL_acquired),
+         Bla_Carb_acquired = clean_amr_col(Bla_Carb_acquired))
+```
+
+## Country to Continent Mapping
+
+```{r continent-mapping}
+norm_country <- function(x) {
+  if (is.na(x)) return(NA_character_)
+  s <- str_trim(str_squish(as.character(x)))
+  replacements <- c(
+    "Cote d'Ivoire" = "Côte d'Ivoire", "Ivory Coast" = "Côte d'Ivoire",
+    "DR Congo" = "Democratic Republic of the Congo",
+    "D. R. Congo" = "Democratic Republic of the Congo",
+    "Republic of the Congo" = "Congo",
+    "The Gambia" = "Gambia", "Eswatini (Swaziland)" = "Eswatini",
+    "Swaziland" = "Eswatini", "Burma" = "Myanmar",
+    "United States of America" = "USA", "United States" = "USA",
+    "UK" = "United Kingdom", "U.K." = "United Kingdom",
+    "England" = "United Kingdom", "Scotland" = "United Kingdom",
+    "Wales" = "United Kingdom", "Northern Ireland" = "United Kingdom",
+    "Russia" = "Russian Federation", "Czech Republic" = "Czechia",
+    "S. Korea" = "South Korea", "Korea, Republic of" = "South Korea",
+    "Korea (South)" = "South Korea", "Viet Nam" = "Vietnam"
+  )
+  ifelse(s %in% names(replacements), replacements[s], s)
+}
+
+AFRICA <- c(
+  "Algeria","Angola","Benin","Botswana","Burkina Faso","Burundi","Cabo Verde",
+  "Cameroon","Central African Republic","Chad","Comoros","Congo","Côte d'Ivoire",
+  "Democratic Republic of the Congo","Djibouti","Egypt","Equatorial Guinea",
+  "Eritrea","Eswatini","Ethiopia","Gabon","Gambia","Ghana","Guinea","Guinea-Bissau",
+  "Kenya","Lesotho","Liberia","Libya","Madagascar","Malawi","Mali","Mauritania",
+  "Mauritius","Morocco","Mozambique","Namibia","Niger","Nigeria","Rwanda",
+  "Sao Tome and Principe","Senegal","Seychelles","Sierra Leone","Somalia",
+  "South Africa","South Sudan","Sudan","Tanzania","Togo","Tunisia","Uganda",
+  "Zambia","Zimbabwe"
+)
+EUROPE <- c(
+  "Albania","Andorra","Armenia","Austria","Azerbaijan","Belarus","Belgium",
+  "Bosnia and Herzegovina","Bulgaria","Croatia","Cyprus","Czechia","Denmark",
+  "Estonia","Finland","France","Georgia","Germany","Greece","Hungary","Iceland",
+  "Ireland","Italy","Kazakhstan","Kosovo","Latvia","Liechtenstein","Lithuania",
+  "Luxembourg","Malta","Moldova","Monaco","Montenegro","Netherlands",
+  "North Macedonia","Norway","Poland","Portugal","Romania","Russian Federation",
+  "San Marino","Serbia","Slovakia","Slovenia","Spain","Sweden","Switzerland",
+  "Turkey","Ukraine","United Kingdom","Vatican City"
+)
+ASIA <- c(
+  "Afghanistan","Bahrain","Bangladesh","Bhutan","Brunei","Cambodia","China",
+  "India","Indonesia","Iran","Iraq","Israel","Japan","Jordan","Kuwait",
+  "Kyrgyzstan","Laos","Lebanon","Malaysia","Maldives","Mongolia","Myanmar",
+  "Nepal","North Korea","Oman","Pakistan","Palestine","Philippines","Qatar",
+  "Saudi Arabia","Singapore","South Korea","Sri Lanka","Syria","Taiwan",
+  "Tajikistan","Thailand","Timor-Leste","Turkmenistan","United Arab Emirates",
+  "Uzbekistan","Vietnam","Yemen"
+)
+OCEANIA <- c(
+  "Australia","Fiji","Kiribati","Marshall Islands","Micronesia","Nauru",
+  "New Zealand","Palau","Papua New Guinea","Samoa","Solomon Islands","Tonga",
+  "Tuvalu","Vanuatu"
+)
+N_AMERICA <- c(
+  "Antigua and Barbuda","Bahamas","Barbados","Belize","Canada","Costa Rica",
+  "Cuba","Dominica","Dominican Republic","El Salvador","Grenada","Guadeloupe",
+  "Guatemala","Haiti","Honduras","Jamaica","Mexico","Nicaragua","Panama",
+  "Saint Kitts and Nevis","Saint Lucia","Saint Vincent and the Grenadines",
+  "Trinidad and Tobago","USA"
+)
+S_AMERICA <- c(
+  "Argentina","Bolivia","Brazil","Chile","Colombia","Ecuador","Guyana",
+  "Paraguay","Peru","Suriname","Uruguay","Venezuela"
+)
+
+country_to_continent <- function(country) {
+  if (is.na(country) || str_trim(country) == "") return("Unknown")
+  case_when(
+    country %in% AFRICA    ~ "Africa",
+    country %in% EUROPE    ~ "Europe",
+    country %in% ASIA      ~ "Asia",
+    country %in% OCEANIA   ~ "Oceania",
+    country %in% N_AMERICA ~ "North America",
+    country %in% S_AMERICA ~ "South America",
+    TRUE ~ "Unknown"
+  )
+}
+
+country_col <- names(kpm)[str_detect(names(kpm), "^COUNTRY")][1]
+cat("Using country column:", country_col, "\n")
+
+kpm <- kpm %>%
+  mutate(
+    Country_Norm = map_chr(.data[[country_col]], norm_country),
+    Continent    = map_chr(Country_Norm, country_to_continent)
+  )
+cat("\nContinent distribution:\n")
+print(table(kpm$Continent, useNA = "ifany"))
+```
+
+## Panel A — Raw Clone Distribution
+
+```{r panel-a, fig.width=8, fig.height=6}
+plot_a <- kp %>%
+  left_join(kpm, by = "NAME") %>%
+  mutate(clone     = paste0("CG", `CLONAL GROUP`, " ", `K Locus`),
+         Continent = factor(Continent, levels = sort(unique(Continent)))) %>%
+  filter(!is.na(`CLONAL GROUP`)) %>%
+  ggplot(aes(y = Continent, fill = clone)) +
+  geom_bar() +
+  scale_fill_brewer(palette = "Paired") +
+  labs(title = "A. Raw Clone Distribution", x = "Number of isolates",
+       y = "Continent", fill = "Clone") +
+  theme_minimal() +
+  theme(plot.title = element_text(face = "bold", size = 11),
+        axis.text  = element_text(size = 9),
+        legend.position = "right")
+
+plot_a
+```
+
+## Panel B — Dereplicated Clone Distribution
+
+```{r panel-b, fig.width=8, fig.height=6}
+plot_b <- kp %>%
+  left_join(kpm, by = "NAME") %>%
+  filter(!is.na(`CLONAL GROUP`)) %>%
+  group_by(LINCODE, Continent, `CLONAL GROUP`, `K Locus`) %>%
+  count() %>%
+  ungroup() %>%
+  mutate(clone     = paste0("CG", `CLONAL GROUP`, " ", `K Locus`),
+         Continent = factor(Continent, levels = sort(unique(Continent)))) %>%
+  ggplot(aes(y = Continent, fill = clone)) +
+  geom_bar() +
+  scale_fill_brewer(palette = "Paired") +
+  labs(title = "B. Dereplicated Clone Distribution",
+       x = "Dereplicated genome count", y = "Continent", fill = "Clone") +
+  theme_minimal() +
+  theme(plot.title = element_text(face = "bold", size = 11),
+        axis.text  = element_text(size = 9),
+        legend.position = "right")
+
+plot_b
+```
+
+## Panel C — ESBL Gene Distribution
+
+```{r panel-c, fig.width=10, fig.height=7}
+all_valid_clones <- c("CG39\nKL2","CG39\nKL23","CG10192\nKL62","CG10195\nKL149",
+                      "CG10192\nKL149","CG39\nKL116","CG39\nKL51","CG10192\nKL43",
+                      "CG39\nKL62","CG39\nKL47")
+
+plot_c <- kp %>%
+  left_join(kpm, by = "NAME") %>%
+  left_join(kpa, join_by(NAME == `Genome Name`)) %>%
+  mutate(clone = paste0("CG", `CLONAL GROUP`, "\n", `K Locus`)) %>%
+  filter(!str_detect(clone, "CGnan")) %>%
+  mutate(clone = factor(clone, levels = all_valid_clones)) %>%
+  select(NAME, clone, Continent, Bla_ESBL_acquired) %>%
+  group_by(clone, Continent) %>%
+  mutate(total_isolates = n()) %>%
+  ungroup() %>%
+  separate_longer_delim(Bla_ESBL_acquired, ";") %>%
+  group_by(Continent, clone, Bla_ESBL_acquired, total_isolates) %>%
+  count() %>%
+  ungroup() %>%
+  mutate(percentage = (n / total_isolates) * 100) %>%
+  ggplot(aes(x = Continent, y = Bla_ESBL_acquired, fill = percentage)) +
+  geom_tile(color = "white", linewidth = 0.5) +
+  geom_text(aes(label = ifelse(percentage > 0, sprintf("%.0f%%", percentage), "")),
+            size = 2.5, color = "white") +
+  facet_wrap(~clone, nrow = 2, drop = FALSE) +
+  scale_fill_gradient(low = "lightgray", high = "navy", na.value = "white",
+                      labels = function(x) paste0(x, "%")) +
+  labs(title = "C. ESBL Distribution by Clone and Continent (%)",
+       x = "Continent", y = "ESBL genes", fill = "Percentage") +
+  theme_minimal() +
+  theme(plot.title  = element_text(face = "bold", size = 11),
+        axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, size = 8),
+        axis.text.y = element_text(size = 8),
+        strip.text  = element_text(size = 9),
+        panel.spacing = unit(1, "lines"))
+
+plot_c
+```
+
+## Panel D — Carbapenemase Distribution
+
+```{r panel-d, fig.width=10, fig.height=7}
+plot_d <- kp %>%
+  left_join(kpm, by = "NAME") %>%
+  left_join(kpa, join_by(NAME == `Genome Name`)) %>%
+  mutate(clone = paste0("CG", `CLONAL GROUP`, "\n", `K Locus`)) %>%
+  filter(!str_detect(clone, "CGnan")) %>%
+  mutate(clone = factor(clone, levels = all_valid_clones)) %>%
+  select(NAME, clone, Continent, Bla_Carb_acquired) %>%
+  group_by(clone, Continent) %>%
+  mutate(total_isolates = n()) %>%
+  ungroup() %>%
+  separate_longer_delim(Bla_Carb_acquired, ";") %>%
+  group_by(Continent, clone, Bla_Carb_acquired, total_isolates) %>%
+  count() %>%
+  ungroup() %>%
+  mutate(percentage = (n / total_isolates) * 100) %>%
+  ggplot(aes(x = Continent, y = Bla_Carb_acquired, fill = percentage)) +
+  geom_tile(color = "white", linewidth = 0.5) +
+  geom_text(aes(label = ifelse(percentage > 0, sprintf("%.0f%%", percentage), "")),
+            size = 2.5, color = "white") +
+  facet_wrap(~clone, nrow = 2, drop = FALSE) +
+  scale_fill_gradient(low = "lightgray", high = "navy", na.value = "white",
+                      labels = function(x) paste0(x, "%")) +
+  labs(title = "D. Carbapenemase Distribution by Clone and Continent (%)",
+       x = "Continent", y = "Carbapenemases", fill = "Percentage") +
+  theme_minimal() +
+  theme(plot.title  = element_text(face = "bold", size = 11),
+        axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, size = 8),
+        axis.text.y = element_text(size = 8),
+        strip.text  = element_text(size = 9),
+        panel.spacing = unit(1, "lines"))
+
+plot_d
+```
+
+## Combined Figure
+
+```{r combined, fig.width=14, fig.height=14}
+combined_plot <- (plot_a | plot_b) / plot_c / plot_d +
+  plot_layout(heights = c(1, 1.8, 1.8)) +
+  plot_annotation(
+    title = "Global Distribution and Antimicrobial Resistance of K. pneumoniae ST39 Clones",
+    subtitle = "Panels A–B: absolute counts; Panels C–D: percentage-based resistance profiles",
+    theme = theme(
+      plot.title    = element_text(size = 14, face = "bold"),
+      plot.subtitle = element_text(size = 11)
+    )
+  )
+
+combined_plot
+```
+
+## Export
+
+```{r save, eval=FALSE}
+ggsave("fig06_st39_global_clones.pdf", combined_plot, width = 14, height = 14, device = "pdf")
+ggsave("fig06_st39_global_clones.svg", combined_plot, width = 14, height = 14, device = "svg")
+cat("Saved fig06_st39_global_clones.pdf and .svg\n")
+```
+
+## Session Info
+
+```{r session-info}
+sessionInfo()
+```

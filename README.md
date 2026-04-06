@@ -1,0 +1,133 @@
+# Gambia *Klebsiella pneumoniae* Outbreak Genomics — Figure Reproduction Code
+
+This repository contains the analysis scripts used to generate the figures in:
+
+> Foster-Nyarko E, *et al.* **Outbreak of extended-spectrum beta-lactamase-producing *Klebsiella pneumoniae* ST39 at a Gambian referral hospital: clinical, environmental, and genomic investigation.** *Microbial Genomics* (2025). MGEN-S-26-00245.
+
+---
+
+## Repository Structure
+
+```
+code/
+├── README.md                          # This file
+├── data/
+│   └── README.md                      # Data sources and access instructions
+├── fig01A_gambia_map.py               # Figure 1A — Map of The Gambia
+├── fig02_resistance_heatmap.py        # Figure 2 — AMR heatmap (clinical + environmental)
+├── fig03_flow_diagram.md              # Figure 3 — Study flow diagram (Illustrator)
+├── fig04_epi_curve.qmd                # Figure 4 — Epidemiological curves
+├── fig05_st39_phylotree_metadata.qmd  # Figure 5 — ST39 phylogenetic tree + metadata
+├── fig06_st39_global_clones.qmd       # Figure 6 — Global ST39 clone distribution + AMR
+├── figS1_chromosomal_blactxm.py       # Figure S1 — Chromosomal blaCTX-M-15 replacement
+├── figS2_transmission_clusters.md     # Figure S2 — Transmission cluster analysis (note)
+└── figS3_st39_plasmid.qmd             # Figure S3 — ST39 multi-panel with plasmid coverage
+```
+
+---
+
+## Figures Summary
+
+| Figure | Description | Script | Language |
+|--------|-------------|--------|----------|
+| Fig 1A | Map of The Gambia showing study sites | `fig01A_gambia_map.py` | Python |
+| Fig 1B | Timeline of outbreak investigation | Assembled in Illustrator | — |
+| Fig 2  | Clustered AMR heatmap (clinical + environmental isolates) | `fig02_resistance_heatmap.py` | Python |
+| Fig 3  | Study flow diagram | Assembled in Illustrator | — |
+| Fig 4  | Epidemiological curves — 3 panels (Kp clinical, Kp environmental, other species) | `fig04_epi_curve.qmd` | R (Quarto) |
+| Fig 5  | *K. pneumoniae* phylogeny annotated with ST, K-locus, virulence, and AMR | `fig05_kpn_phylotree_annotated.qmd` | R (Quarto) |
+| Fig 6  | Global ST39 clone distribution and AMR by continent | `fig06_st39_global_clones.qmd` | R (Quarto) |
+| Fig S1 | Chromosomal mobile element replacement (Tn3 → resistance island) | `figS1_chromosomal_blactxm.py` | Python |
+| Fig S2 | Transmission cluster plots (*Kp* and *Kqp*) | `figS2_transmission_clusters.md` | R (see note) |
+| Fig S3 | ST39 multi-panel: tree + AMR + metadata + plasmid + timeline | `figS3_st39_plasmid.qmd` | R (Quarto) |
+
+> **Note on Fig 5:** The submitted figure was post-processed in Adobe Illustrator.
+> The script reproduces the base R output. Elements added manually (asterisk labels
+> for environmental isolates, legend layout) are documented as comments in the script.
+
+---
+
+## Requirements
+
+### Python (Figs 1A, 2, S1)
+
+```
+python >= 3.9
+pandas
+geopandas
+matplotlib
+shapely
+seaborn
+numpy
+```
+
+Install with:
+```bash
+pip install pandas geopandas matplotlib shapely seaborn numpy
+```
+
+### R / Quarto (Figs 4, 5, 6, S2, S3)
+
+R packages:
+```r
+install.packages(c(
+  "tidyverse", "ggplot2", "readxl", "patchwork",
+  "lubridate", "scales", "knitr"
+))
+
+# Bioconductor packages
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("ggtree")
+
+install.packages("ape")
+```
+
+Quarto: https://quarto.org/docs/get-started/
+
+---
+
+## Data
+
+All data files are described in `data/README.md`. Key inputs:
+
+- **Supplementary File S2** (`FileS1_to_FileS10.xlsx`, sheet `Supp_File2_Study_isolates`) — isolate metadata including ST, collection dates, and sample type. Available with the published paper.
+- **Gambia administrative shapefile** — from GADM (https://gadm.org/download_country.html, country = Gambia, level 1). Free for academic use.
+- **Pathogenwatch global *K. pneumoniae* ST39 collection** — exported from https://pathogen.watch. Collection ID `81f6uz2riu07`.
+- **Phylogenetic tree** — IQ-TREE2 maximum likelihood tree of ST39 isolates (file `st39_cluster.treefile`). Available on request or as supplementary data.
+- **Transmission cluster assignments** — output of genomic cluster analysis (`clusters_data_final.csv`). Available on request.
+- **Plasmid coverage data** — BWA-MEM alignment of ST39 assemblies against pNS39_A reference plasmid (`pNS39_A_alignment_coverage_summary.tsv`). Available on request.
+
+---
+
+## Usage
+
+### Python scripts
+
+Run from the `code/` directory:
+```bash
+python fig01A_gambia_map.py
+python fig02_resistance_heatmap.py
+python figS1_chromosomal_blactxm.py
+```
+
+### Quarto documents
+
+Render from the `code/` directory:
+```bash
+quarto render fig04_epi_curve.qmd
+quarto render fig05_st39_phylotree_metadata.qmd
+quarto render fig06_st39_global_clones.qmd
+quarto render figS3_st39_plasmid.qmd
+```
+
+Or open in RStudio and use the Render button.
+
+**Before running**, update the file paths in each script to point to your local copies of the data files. All paths are defined at the top of each script in a clearly marked `--- Paths ---` or `file-paths` section.
+
+---
+
+## Contact
+
+Ebenezer Foster-Nyarko — MRC Unit The Gambia at LSHTM  
+e.foster-nyarko@lshtm.ac.uk
