@@ -61,9 +61,9 @@ Environmental CSV additionally requires: `source_type` (e.g. "IV bag", "water").
 
 | File | Description | Source |
 |------|-------------|--------|
-| `pathogenwatch_st39_typing.csv` | Global *K. pneumoniae* ST39 typing from Pathogenwatch (collection `81f6uz2riu07`) | Export from [Pathogenwatch](https://pathogen.watch) — Typing tab |
-| `pathogenwatch_st39_metadata.csv` | Metadata for global ST39 collection — must include `COUNTRY` column | Export from Pathogenwatch — Metadata tab |
-| `pathogenwatch_st39_kleborate.csv` | Kleborate AMR output for global ST39 collection — requires `Bla_ESBL_acquired` and `Bla_Carb_acquired`, and `Genome Name` columns | Export from Pathogenwatch — Kleborate tab |
+| `pathogenwatch_st39_typing.csv` | Global *K. pneumoniae* ST39 typing from Pathogenwatch | Export from [Pathogenwatch ST39 global collection](https://pathogen.watch/collection/81f6uz2riu07-updatedst39globalcollection6nov25) — Typing tab |
+| `pathogenwatch_st39_metadata.csv` | Metadata for global ST39 collection — must include `COUNTRY` column | Export from [Pathogenwatch ST39 global collection](https://pathogen.watch/collection/81f6uz2riu07-updatedst39globalcollection6nov25) — Metadata tab |
+| `pathogenwatch_st39_kleborate.csv` | Kleborate AMR output for global ST39 collection — requires `Bla_ESBL_acquired` and `Bla_Carb_acquired`, and `Genome Name` columns | Export from [Pathogenwatch ST39 global collection](https://pathogen.watch/collection/81f6uz2riu07-updatedst39globalcollection6nov25) — Kleborate tab |
 
 ---
 
