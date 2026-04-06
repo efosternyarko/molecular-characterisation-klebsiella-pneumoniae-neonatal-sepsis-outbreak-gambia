@@ -17,11 +17,12 @@ code/
 ├── fig02_resistance_heatmap.py        # Figure 2 — AMR heatmap (clinical + environmental)
 ├── fig03_flow_diagram.md              # Figure 3 — Study flow diagram (Illustrator)
 ├── fig04_epi_curve.qmd                # Figure 4 — Epidemiological curves
-├── fig05_st39_phylotree_metadata.qmd  # Figure 5 — ST39 phylogenetic tree + metadata
+├── fig05_kpn_phylotree_annotated.qmd  # Figure 5 — All-Kp phylogenetic tree + metadata
 ├── fig06_st39_global_clones.qmd       # Figure 6 — Global ST39 clone distribution + AMR
-├── figS1_chromosomal_blactxm.py       # Figure S1 — Chromosomal blaCTX-M-15 replacement
+├── figS1_ward_contamination.md        # Figure S1 — Ward contamination sources (Illustrator)
 ├── figS2_transmission_clusters.md     # Figure S2 — Transmission cluster analysis (note)
-└── figS3_st39_plasmid.qmd             # Figure S3 — ST39 multi-panel with plasmid coverage
+├── figS3_st39_plasmid.qmd             # Figure S3 — ST39 multi-panel with plasmid coverage
+└── figAppendix_clinker_amr_locus.md   # Appendix — Chromosomal AMR locus comparison (clinker)
 ```
 
 ---
@@ -37,19 +38,20 @@ code/
 | Fig 4  | Epidemiological curves — 3 panels (Kp clinical, Kp environmental, other species) | `fig04_epi_curve.qmd` | R (Quarto) |
 | Fig 5  | *K. pneumoniae* phylogeny annotated with ST, K-locus, virulence, and AMR | `fig05_kpn_phylotree_annotated.qmd` | R (Quarto) |
 | Fig 6  | Global ST39 clone distribution and AMR by continent | `fig06_st39_global_clones.qmd` | R (Quarto) |
-| Fig S1 | Chromosomal mobile element replacement (Tn3 → resistance island) | `figS1_chromosomal_blactxm.py` | Python |
+| Fig S1 | Sources of bacterial contamination in labour and neonatal wards | `figS1_ward_contamination.md` | Assembled in Illustrator |
 | Fig S2 | Transmission cluster plots (*Kp* and *Kqp*) | `figS2_transmission_clusters.md` | R (see note) |
 | Fig S3 | ST39 multi-panel: tree + AMR + metadata + plasmid + timeline | `figS3_st39_plasmid.qmd` | R (Quarto) |
+| Appendix | Comparative genomic organisation of chromosomal AMR locus (38277B1 vs 38833B1) | `figAppendix_clinker_amr_locus.md` | clinker |
 
 > **Note on Fig 5:** The submitted figure was post-processed in Adobe Illustrator.
-> The script reproduces the base R output. Elements added manually (asterisk labels
-> for environmental isolates, legend layout) are documented as comments in the script.
+> The script reproduces the base R output. Asterisk labels for environmental isolates
+> are coded in the script; final legend layout was adjusted manually.
 
 ---
 
 ## Requirements
 
-### Python (Figs 1A, 2, S1)
+### Python (Figs 1A, 2)
 
 ```
 python >= 3.9
@@ -66,24 +68,29 @@ Install with:
 pip install pandas geopandas matplotlib shapely seaborn numpy
 ```
 
-### R / Quarto (Figs 4, 5, 6, S2, S3)
+### R / Quarto (Figs 4, 5, 6, S3)
 
 R packages:
 ```r
 install.packages(c(
   "tidyverse", "ggplot2", "readxl", "patchwork",
-  "lubridate", "scales", "knitr"
+  "lubridate", "scales", "knitr", "ggnewscale",
+  "RColorBrewer", "ape"
 ))
 
 # Bioconductor packages
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
-BiocManager::install("ggtree")
-
-install.packages("ape")
+BiocManager::install(c("ggtree", "ggtreeExtra"))
 ```
 
 Quarto: https://quarto.org/docs/get-started/
+
+### clinker (Appendix figure)
+
+```bash
+pip install clinker
+```
 
 ---
 
@@ -97,6 +104,7 @@ All data files are described in `data/README.md`. Key inputs:
 - **Phylogenetic tree** — IQ-TREE2 maximum likelihood tree of ST39 isolates (file `st39_cluster.treefile`). Available on request or as supplementary data.
 - **Transmission cluster assignments** — output of genomic cluster analysis (`clusters_data_final.csv`). Available on request.
 - **Plasmid coverage data** — BWA-MEM alignment of ST39 assemblies against pNS39_A reference plasmid (`pNS39_A_alignment_coverage_summary.tsv`). Available on request.
+- **Chromosomal AMR locus GenBank files** — extracted from complete hybrid assemblies of 38277B1 and 38833B1. Available on request.
 
 ---
 
@@ -108,7 +116,6 @@ Run from the `code/` directory:
 ```bash
 python fig01A_gambia_map.py
 python fig02_resistance_heatmap.py
-python figS1_chromosomal_blactxm.py
 ```
 
 ### Quarto documents
@@ -116,12 +123,22 @@ python figS1_chromosomal_blactxm.py
 Render from the `code/` directory:
 ```bash
 quarto render fig04_epi_curve.qmd
-quarto render fig05_st39_phylotree_metadata.qmd
+quarto render fig05_kpn_phylotree_annotated.qmd
 quarto render fig06_st39_global_clones.qmd
 quarto render figS3_st39_plasmid.qmd
 ```
 
 Or open in RStudio and use the Render button.
+
+### clinker (Appendix)
+
+```bash
+clinker 38277B1_locus.gbk 38833B1_locus.gbk \
+    --output clinker_tn3_replacement.html \
+    --identity 0.3
+```
+
+See `figAppendix_clinker_amr_locus.md` for full details.
 
 **Before running**, update the file paths in each script to point to your local copies of the data files. All paths are defined at the top of each script in a clearly marked `--- Paths ---` or `file-paths` section.
 

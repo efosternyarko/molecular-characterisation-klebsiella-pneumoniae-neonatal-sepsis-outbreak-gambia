@@ -67,6 +67,17 @@ Environmental CSV additionally requires: `source_type` (e.g. "IV bag", "water").
 
 ---
 
+### Appendix Figure — `figAppendix_clinker_amr_locus.md`
+
+| File | Description | Source |
+|------|-------------|--------|
+| `38277B1_locus.gbk` | GenBank file of the chromosomal AMR locus region from isolate 38277B1 (Tn3-containing ancestor) | Extracted from complete hybrid assembly; available from authors |
+| `38833B1_locus.gbk` | GenBank file of the chromosomal AMR locus region from isolate 38833B1 (11.2 kb resistance island) | Extracted from complete hybrid assembly; available from authors |
+
+See `figAppendix_clinker_amr_locus.md` for the clinker command used to generate the comparison.
+
+---
+
 ## Notes
 
 - Place all files directly in this `data/` directory (alongside this README).
