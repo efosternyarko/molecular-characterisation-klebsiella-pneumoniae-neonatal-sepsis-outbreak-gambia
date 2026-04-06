@@ -2,7 +2,7 @@
 """
 Figure 1A — Map of The Gambia highlighting study sites (Bansang, Basse, Banjul)
 
-Paper: Foster-Nyarko E et al. Microbial Genomics (2025). MGEN-S-26-00245.
+Paper: Foster-Nyarko E et al. medRxiv (2026). https://doi.org/10.64898/2026.03.03.26347025.
 
 Requirements:
     pip install pandas geopandas matplotlib shapely

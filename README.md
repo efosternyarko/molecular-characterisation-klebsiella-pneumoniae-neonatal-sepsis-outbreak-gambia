@@ -1,8 +1,8 @@
-# Gambia *Klebsiella pneumoniae* Outbreak Genomics — Figure Reproduction Code
+# Molecular characterisation of a *Klebsiella pneumoniae* neonatal sepsis outbreak in a rural Gambian hospital
 
 This repository contains the analysis scripts used to generate the figures in:
 
-> Foster-Nyarko E, *et al.* **Outbreak of extended-spectrum beta-lactamase-producing *Klebsiella pneumoniae* ST39 at a Gambian referral hospital: clinical, environmental, and genomic investigation.** *Microbial Genomics* (2025). MGEN-S-26-00245.
+> Foster-Nyarko E, *et al.* **Molecular characterisation of a *Klebsiella pneumoniae* neonatal sepsis outbreak in a rural Gambian hospital: a retrospective genomic epidemiology investigation.** *medRxiv* (2026). https://doi.org/10.64898/2026.03.03.26347025
 
 ---
 

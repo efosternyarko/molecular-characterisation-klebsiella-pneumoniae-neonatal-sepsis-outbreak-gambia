@@ -2,7 +2,7 @@
 """
 Figure S1 — Chromosomal blaCTX-M-15 mobile element replacement
 
-Paper: Foster-Nyarko E et al. Microbial Genomics (2025). MGEN-S-26-00245.
+Paper: Foster-Nyarko E et al. medRxiv (2026). https://doi.org/10.64898/2026.03.03.26347025.
 
 Schematic diagram comparing the chromosomal region flanking the resistance locus
 in a reference ST39 strain (38833B1, Tn3 composite transposon with catA1) vs

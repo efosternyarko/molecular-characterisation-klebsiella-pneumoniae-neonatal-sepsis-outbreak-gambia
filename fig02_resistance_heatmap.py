@@ -2,7 +2,7 @@
 """
 Figure 2 — Clustered antimicrobial resistance heatmap (clinical and environmental isolates)
 
-Paper: Foster-Nyarko E et al. Microbial Genomics (2025). MGEN-S-26-00245.
+Paper: Foster-Nyarko E et al. medRxiv (2026). https://doi.org/10.64898/2026.03.03.26347025.
 
 Produces a hierarchically clustered heatmap of AMR phenotype data for all
 K. pneumoniae isolates, with row colour bars distinguishing clinical vs

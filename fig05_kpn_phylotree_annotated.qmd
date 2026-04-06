@@ -18,7 +18,7 @@ execute:
 ---
 
 <!--
-Paper: Foster-Nyarko E et al. Microbial Genomics (2025). MGEN-S-26-00245.
+Paper: Foster-Nyarko E et al. medRxiv (2026). https://doi.org/10.64898/2026.03.03.26347025.
 
 Maximum-likelihood phylogenetic tree of all K. pneumoniae isolates, annotated with:
   - Tree branches and tips coloured by ST (top 10 + Other in grey)
