@@ -61,10 +61,9 @@ library(readxl)
 ## File Paths
 
 ```{r file-paths}
-# ---- Update these to point to your local copies ----
-fp_kleborate  <- "/Users/LSHEF4/Dropbox/Gambia_kleb_project/paper/draft/first_draft/revised_draft_for_circulation_29Oct25/newly_updated_ms_11Nov25/updated_14Nov25/use_pathogenwatch-klepn-4qpq72t9efqt-gmkpncollection_31oct24-kleborate.csv"
-fp_tree       <- "/Users/LSHEF4/Dropbox/Gambia_kleb_project/paper/draft/first_draft/revised_draft_for_circulation_29Oct25/newly_updated_ms_11Nov25/updated_14Nov25/pathogenwatch-klepn-4qpq72t9efqt-gmkpncollection_31oct24-collection-tree.nwk"
-fp_supp       <- "../data/FileS1_to_FileS10.xlsx"   # for sample-type / source_type
+fp_kleborate  <- "../data/gm_kpn_kleborate.csv"
+fp_tree       <- "../data/gm_kpn_tree.nwk"
+fp_supp       <- "../data/FileS1_to_FileS10.xlsx"   # sheet "FileS3" — study isolates
 out_dir       <- "."
 ```
 
