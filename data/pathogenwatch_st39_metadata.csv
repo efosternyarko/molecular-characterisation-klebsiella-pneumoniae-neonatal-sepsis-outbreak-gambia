@@ -1,0 +1,783 @@
+NAME,DATE,COUNTRY,CITY/REGION,COLLECTION DATE,ISOLATION SOURCE,HOST,HOST STATUS,HOST SEX,COLLECTED BY,RUN ACCESSION,EXPERIMENT ACCESSION,SAMPLE ACCESSION,SECONDARY SAMPLE ACCESSION,STUDY ACCESSION,ALTERNATIVE SAMPLE NAME 1,ALTERNATIVE SAMPLE NAME 2,ENVIRONMENTAL SAMPLE,LITERATURELINK,AGE GROUP,COLLECTION DATE.1,COUNTRY.1,HOST.1,SAMPLE ACCESSION.1,ENVIRONMENTAL SAMPLE.1,EXPERIMENT ACCESSION.1,ISOLATION SOURCE.1,STUDY ACCESSION.1,HOST SEX.1,HOST STATUS.1,RUN ACCESSION.1,AGE GROUP.1,SECONDARY SAMPLE ACCESSION.1,ALTERNATIVE SAMPLE NAME 1.1,ACCESSION,SAMPLE ALIAS,MRSN ISOLATE,REGION,SAMPLE TYPE,AMR PHENOTYPE,AMIKACIN,GENTAMYCIN,TOBRAMYCIN,AMPICILLIN/SULBACTAM,AZTREONAM,CEFTAZIDIME,CEFTRIAXONE,CEFEPIME,CEFTAZIDIME-AVIBACTAM,CEFTOLOZANE-TAZOBACTAM,ERTEPENEM,IMIPENEM,MEROPENEM,CIPROFLOXACIN,LEVOFLOXACIN,PIPERACILLIN-TAZOBACTAM,TRIMETHOPRIM-SULFAMETHOXAZOLE,TETRACYCLINE,TIGECYCLINE,ASSEMBLY ACCESSION,COLLECTED BY.1,LITERATURE LINK,LATITUDE,LONGITUDE
+SAMEA6375507,2015,Colombia,Antioquia,,,Human,,,,ERR4795661,ERX4665431,SAMEA6375507,ERS4141600,PRJEB29742,G18000712,GMR-RA 333,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34850835,7.1986064,-75.341218
+SAMEA5976610,2016,Colombia,Antioquia,,Abdominal fluid,Human,,,,ERR4795540,ERX4665310,SAMEA5976610,ERS3779445,PRJEB29742,G18000878,GMR-RA 88.16,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34850835,7.1986064,-75.341218
+SAMEA6375558,2016,Colombia,Antioquia,,Urine,Human,,,,ERR4795730,ERX4665500,SAMEA6375558,ERS4141651,PRJEB29742,G18000935,GMR-RA 392.16,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34850835,7.1986064,-75.341218
+SAMEA6155746,15th June 2017,Nigeria,Ile-Ife; Osun,,Blood,Human,,,,ERR4783189,ERX4652954,SAMEA6155746,ERS3955764,PRJEB29739,G18584003,OAU-OFO-110,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34850837,7.504567,4.571
+SAMEA5976605,2016,Colombia,Antioquia,,Urine,Human,,,,ERR4795567,ERX4665337,SAMEA5976605,ERS3779440,PRJEB29742,G18000861,GMR-RA 45.16,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34850835,7.1986064,-75.341218
+SAMEA5936797,27th June 2016,Philippines,Cagayan de Oro City; X/Misamis Oriental,,Blood,Human,,,,ERR4781811,ERX4651576,SAMEA5936797,ERS3725270,PRJEB29738,G18763444,16ars-nmc157,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.485634,124.649457
+SAMEA5976609,2016,Colombia,Antioquia,,Abdominal fluid,Human,,,,ERR4795539,ERX4665309,SAMEA5976609,ERS3779444,PRJEB29742,G18000876,GMR-RA 86.16,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34850835,7.1986064,-75.341218
+SAMEA5976604,2016,Colombia,Antioquia,,Drainage,Human,,,,ERR4795535,ERX4665305,SAMEA5976604,ERS3779439,PRJEB29742,G18000863,GMR-RA 47.16,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34850835,7.1986064,-75.341218
+SAMEA5758662,4th September 2017,Philippines,Manila; NCR/Metro Manila,,Blood,Human,,,,ERR4635183,ERX4559675,SAMEA5758662,ERS3562113,PRJEB29738,G18755735,17ars-pgh0068,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14.5777215,120.985615
+SAMEA5976603,2015,Colombia,Antioquia,,Secretion,Human,,,,ERR4795534,ERX4665304,SAMEA5976603,ERS3779438,PRJEB29742,G18000849,GMR-RA 1143,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34850835,7.1986064,-75.341218
+SAMEA3649669,2nd December 2013,Greece,,01/01/2013,Blood,Human,Infection,,,ERR1334442,ERX1406034,SAMEA3649669,ERS956818,PRJEB10018,EuSCAPE_GR050,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.6273787,23.047643
+SAMEA3531873,2015,Thailand,,01/01/2015,Canal,Environment,,,,ERR1218761,ERX1290974,SAMEA3531873,ERS839022,PRJEB11403,W1_5_ERG6-sc-2403218,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,101
+SAMEA5949556,20th September 2016,Germany,,20/09/2016,Clinical sample,Human,healthy,,,ERR3515858,ERX3535577,SAMEA5949556,ERS3738042,PRJEB34353,1083-16,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,10
+SAMN13166972,2016,USA,,01/01/2016,Urine,Human,,,EIP,SRR10377165,SRX7078376,SAMN13166972,SRS5594178,PRJNA288601,DHQP1701675,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,-100
+SAMEA4668437,16th May 2014,Vietnam,,16/05/2014,Blood,Human,,,,ERR2586392,ERX2603120,SAMEA4668437,ERS2489052,PRJEB26814,331,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14.01667,107.9
+SAMEA5951252,1st August 2018,Brazil,,01/08/2018,,Human,,,Otávio Hallal Ferreira Raro,ERR3518834,ERX3538181,SAMEA5951252,ERS3739736,PRJEB34380,2,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-11,-53
+SAMEA6368074,,Netherlands,,,,,,,,ERR3712467,ERX3715914,SAMEA6368074,ERS4134177,PRJEB35685,RIVM_C010461,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,52.31667,5.55
+SAMEA5949554,1st September 2016,Germany,,01/09/2016,Clinical sample,Human,healthy,,,ERR3515856,ERX3535575,SAMEA5949554,ERS3738040,PRJEB34353,1080-16,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,10
+SAMEA3538501,25th November 2013,Israel,,01/01/2013,Urine,Human,,,,ERR1217128,ERX1289341,SAMEA3538501,ERS845650,PRJEB10018,EuSCAPE_IL045,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,32.066158,34.777819
+SAMN07503081,31st August 2014,Australia,Victoria,31/08/2014,Rectal swab,Human,,,Microbiological Diagnostic Unit Public Health Laboratory,SRR5931338,SRX3091636,SAMN07503081,SRS2429000,PRJNA397262,AUSMDU00003557,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-37.81,144.96
+SAMEA3649792,18th December 2013,Denmark,,01/01/2013,Lower respiratory tract secrection,Human,Colonization,,,ERR1334507,ERX1406099,SAMEA3649792,ERS956941,PRJEB10018,EuSCAPE_DK004,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,57.03783,9.905416
+SAMEA5753427,2016,Senegal,,,Faecal,Human,,,,ERR3416407,ERX3439935,SAMEA5753427,ERS3556885,PRJEB29143,SB6091,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14.36667,-14.28333
+SAMN14478495,,USA,"Maywood, IL",,,Human,,,,SRR11441027,SRX8019059,SAMN14478495,SRS6392396,PRJNA316969,Kp_UMB7783,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,41.86,-87.84
+SAMN10390457,2011,Tanzania,Dar es Salaam,01/01/2011,Faeces,Human,,,Muhimbili National Hospital,SRR8174962,SRX4995468,SAMN10390457,SRS4030589,PRJNA503964,K020,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-6.8228,39.2697
+SAMN12732054,26th January 2018,Canada,Alberta,26/01/2018,Urine,Human,,female,University of Manitoba,SRR11728564,SRX8287806,SAMN12732054,SRS6609623,PRJNA564992,N19-01428,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,55,-115
+SAMEA5949560,28th August 2017,Germany,,28/08/2017,Clinical sample,Human,healthy,,,ERR3515862,ERX3535581,SAMEA5949560,ERS3738046,PRJEB34353,696-17,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,10
+SAMN08513422,2014,USA,Ohio,01/01/2014,Urine,Human,,,,SRR6710487,SRX3683928,SAMN08513422,SRS2943947,PRJNA433394,ARLG-2698_biosample,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.5,-82.5
+SAMEA5753339,2016,Madagascar,,,Faecal,Human,,,,ERR3416146,ERX3439674,SAMEA5753339,ERS3556797,PRJEB29143,SB5618,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-20,47
+SAMEA5949555,29th September 2016,Germany,,29/09/2016,Clinical sample,Human,healthy,,,ERR3515857,ERX3535576,SAMEA5949555,ERS3738041,PRJEB34353,1081-16,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,10
+SAMEA5753434,2016,Madagascar,,,Faecal,Human,,,,ERR3416114,ERX3439642,SAMEA5753434,ERS3556892,PRJEB29143,SB5585,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-20,47
+SAMEA5753470,2016,Madagascar,,,Faecal,Human,,,,ERR3416126,ERX3439654,SAMEA5753470,ERS3556928,PRJEB29143,SB5597,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-20,47
+SAMN08513421,2014,USA,Ohio,01/01/2014,Urine,Human,,,,SRR6710639,SRX3684080,SAMN08513421,SRS2944100,PRJNA433394,ARLG-2712_biosample,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.5,-82.5
+SAMN14419408,6th October 2005,Spain,,06/10/2005,Urine,Human,,,R Canton,SRR11362720,SRX7964145,SAMN14419408,SRS6350110,PRJNA613777,KP1,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,-3
+SAMN11366422,14th April 2012,Malaysia,Johor,14/04/2012,Body fluid,Human,,,Amreeta Dhanoa,SRR8872457,SRX5659453,SAMN11366422,SRS4603816,PRJNA531517,MGF003,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.48722,103.78111
+SAMN10390539,2011,Tanzania,Dar es Salaam,01/01/2011,Faeces,Human,,,Muhimbili National Hospital,SRR8174968,SRX4995462,SAMN10390539,SRS4030583,PRJNA503964,K106,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-6.8228,39.2697
+SAMN06112136,2012,Australia,Alice Springs,01/01/2012,Blood,Human,,,Lloyd Einsiedel,SRR5082331,SRX2400364,SAMN06112136,SRS1840483,PRJNA351911,AS17_C4PNMANXX_AGGCAGAA-GTAAGGAG_L006,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-23.698,133.8807
+SAMEA3515077,4th November 2013,Italy,,01/01/2013,Wound secretion,Human,Infection,,,ERR1217231,ERX1289444,SAMEA3515077,ERS822226,PRJEB10018,EuSCAPE_IT045,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,41.8726796,12.4495811
+SAMN10390555,2011,Tanzania,Dar es Salaam,01/01/2011,Faeces,Human,,,Muhimbili National Hospital,SRR8174932,SRX4995498,SAMN10390555,SRS4030619,PRJNA503964,K122,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-6.8228,39.2697
+SAMN14478492,,USA,"Maywood, IL",,,Human,,,,SRR11441030,SRX8019056,SAMN14478492,SRS6392393,PRJNA316969,Kp_UMB7779,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,41.86,-87.84
+SAMN05960892,18th May 2011,Nigeria,,18/05/2011,Blood,Human,,,Stephen Obaro,SRR5514208,SRX2787685,SAMN05960892,SRS2169329,PRJNA351846,GCID_KLEB_00028,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9,8
+SAMN12145177,2016,France,,01/01/2016,Urine,Human,,,ACTIV,SRR9615935,SRX6379071,SAMN12145177,SRS5039725,PRJNA551371,NAN9,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,47,2
+SAMN12731955,3rd February 2009,Canada,Nova Scotia,03/02/2009,Blood,Human,,male,University of Manitoba,SRR10482470,SRX7172167,SAMN12731955,SRS5678844,PRJNA564992,N16-03120,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,45,-63
+SAMN02927868,2011,USA,Texas,01/01/2011,,Human,,,,SRR1561358,SRX689712,SAMN02927868,SRS692243,PRJNA252957,US-TX-2011,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,32.7758,-96.7967
+SAMEA5949557,4th October 2016,Germany,,04/10/2016,Clinical sample,Human,healthy,,,ERR3515859,ERX3535578,SAMEA5949557,ERS3738043,PRJEB34353,1086-16,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,10
+SAMEA3727652,25th November 2013,Belgium,,01/01/2013,Blood,Human,Infection,,,ERR1514886,ERX1585906,SAMEA3727652,ERS1034801,PRJEB10018,EuSCAPE_BE063,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,50.888121,4.307432
+SAMN04357465,30th March 2012,United Kingdom,Oxford,30/03/2012,Blood,Human,,,"Microbiology laboratory, John Radcliffe Hospital, Oxford",SRR3051118,SRX1499680,SAMN04357465,SRS1221130,PRJNA306133,ac8a28_52,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51.75,-1.26
+SAMN10390458,2011,Tanzania,Dar es Salaam,01/01/2011,Faeces,Human,,,Muhimbili National Hospital,SRR8174967,SRX4995463,SAMN10390458,SRS4030584,PRJNA503964,K021,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-6.8228,39.2697
+SAMN04357437,13th September 2011,United Kingdom,Oxford,13/09/2011,Blood,Human,,,"Microbiology laboratory, John Radcliffe Hospital, Oxford",SRR3051086,SRX1499648,SAMN04357437,SRS1221164,PRJNA306133,ac8a28_10,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51.75,-1.26
+SAMEA6654211,27th November 2017,Ghana,,27/11/2017,Blood,Human,healthy,,,ERR4008011,ERX4009413,SAMEA6654211,ERS4413693,PRJEB37523,M136,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8,-1
+SAMEA5949558,6th January 2017,Germany,,06/01/2017,Clinical sample,Human,healthy,,,ERR3515860,ERX3535579,SAMEA5949558,ERS3738044,PRJEB34353,210-17,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,10
+SAMN12343015,2016,Australia,,01/01/2016,,Human,,,,SRR9734532,SRX6491843,SAMN12343015,SRS5140443,PRJNA529744,AUSMDU00004617,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-25,135
+SAMN12342997,2016,Australia,,01/01/2016,,Human,,,,SRR9734784,SRX6491591,SAMN12342997,SRS5140191,PRJNA529744,AUSMDU00026952,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-25,135
+SAMN10390543,2011,Tanzania,Dar es Salaam,01/01/2011,Faeces,Human,,,Muhimbili National Hospital,SRR8174909,SRX4995521,SAMN10390543,SRS4030642,PRJNA503964,K110,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-6.8228,39.2697
+SAMN14345045,30th March 2017,United Kingdom,Oxford,30/03/2017,Clinical sample,Human,,,Modernising Medical Microbiology,SRR11281522,SRX7887768,SAMN14345045,SRS6297311,PRJNA604975,MMMOSAM:b05e194d-1972-4aef-901c-f3f3e835883c,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51.75194,-1.25778
+SAMN06438404,13th May 2014,USA,Houston,13/05/2014,Urine,Human,,,Houston Methodist Hospital,SRR5386758,SRX2681781,SAMN06438404,SRS2079089,PRJNA376414,KPN1425,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,29.710689,-95.400586
+SAMEA2273745,2008,United Kingdom,,01/01/2008,Blood,Human,diseased,,,ERR486792,ERX452624,SAMEA2273745,ERS381140,PRJEB5065,MDR1190-sc-1792370,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,54,-2
+SAMN12342860,2014,Australia,,01/01/2014,,Human,,,,SRR9734653,SRX6491722,SAMN12342860,SRS5140322,PRJNA529744,AUSMDU00003557,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-25,135
+SAMN10390530,2011,Tanzania,Dar es Salaam,01/01/2011,Faeces,Human,,,Muhimbili National Hospital,SRR8174973,SRX4995457,SAMN10390530,SRS4030578,PRJNA503964,K097,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-6.8228,39.2697
+SAMN04357466,29th March 2012,United Kingdom,Oxford,29/03/2012,Blood,Human,,,"Microbiology laboratory, John Radcliffe Hospital, Oxford",SRR3051119,SRX1499681,SAMN04357466,SRS1221129,PRJNA306133,ac8a28_53,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51.75,-1.26
+SAMN15010509,,Netherlands,,,,Human,,,RIVM,SRR11841858,SRX8392253,SAMN15010509,SRS6705360,PRJNA634885,RIVM_C010461,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,52.31667,5.55
+SAMN03853236,23rd February 2012,USA,"Flagstaff, AZ",23/02/2012,Retail chicken,Food,,,Price Lab,SRR2098761,SRX1093666,SAMN03853236,SRS989150,PRJNA289272,Kpn_0022,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35.1995,-111.6514
+SAMEA3649818,18th January 2014,Denmark,,01/01/2014,Urine,Human,,,,ERR1334649,ERX1406241,SAMEA3649818,ERS956967,PRJEB10018,EuSCAPE_DK018,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,56.190123,10.17718
+SAMEA6368055,,Netherlands,,,,,,,,ERR3712448,ERX3715895,SAMEA6368055,ERS4134158,PRJEB35685,RIVM_C010337,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,52.31667,5.55
+SAMN10390558,2011,Tanzania,Dar es Salaam,01/01/2011,Faeces,Human,,,Muhimbili National Hospital,SRR8174937,SRX4995493,SAMN10390558,SRS4030614,PRJNA503964,K125,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-6.8228,39.2697
+SAMN15010562,,Netherlands,,,,Human,,,RIVM,SRR11841941,SRX8392170,SAMN15010562,SRS6705277,PRJNA634885,RIVM_C018036,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,52.31667,5.55
+SAMEA3538423,15th March 2014,Norway,,01/01/2014,Urine,Human,Infection,,,ERR1217053,ERX1289266,SAMEA3538423,ERS845572,PRJEB10018,EuSCAPE_NO016,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,58.953516,5.73281
+SAMEA3649898,2nd March 2014,Portugal,,01/01/2014,Urine,Human,Infection,,,ERR1334724,ERX1406316,SAMEA3649898,ERS957047,PRJEB10018,EuSCAPE_PT084,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.7490568,-9.1393702
+SAMEA5949559,31st July 2017,Germany,,31/07/2017,Clinical sample,Human,diseased,,,ERR3515861,ERX3535580,SAMEA5949559,ERS3738045,PRJEB34353,692-17,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,10
+SAMN15010497,,Netherlands,,,,Human,,,RIVM,SRR11841871,SRX8392240,SAMN15010497,SRS6705347,PRJNA634885,RIVM_C010337,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,52.31667,5.55
+SAMN14345068,30th May 2017,United Kingdom,Oxford,30/05/2017,Clinical sample,Human,,,Modernising Medical Microbiology,SRR11281545,SRX7887745,SAMN14345068,SRS6297274,PRJNA604975,MMMOSAM:2559ee75-cb43-416d-be31-a08c64db3a17,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51.75194,-1.25778
+ERR5464374,,United Kingdom,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR5464627,,United Kingdom,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR5464739,,United Kingdom,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR5464204,,United Kingdom,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR5464804,,United Kingdom,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR5465010,,United Kingdom,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SRR11281522,,United Kingdom,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR5464832,,United Kingdom,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR5464287,,United Kingdom,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SRR11281545,,United Kingdom,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR5464488,,United Kingdom,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+880,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+126,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR6294258,,Norway,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR971977,,Malawi,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR319581,,Kenya,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR319585,,Kenya,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR3449348,,Italy,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GCF_900086435.1_12082_5_16_genomic,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR486792,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GCF_902508825.1_ZKP127_genomic,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GCF_900776375.1_27097_7_162-2_genomic,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GCF_900775705.1_27035_8_2-2_genomic,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GCF_900775665.1_27035_8_10-2_genomic,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GCF_900776245.1_27097_7_146-2_genomic,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GCF_900775685.1_27035_8_1-2_genomic,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GCF_900775985.1_27097_7_122-2_genomic,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+GCF_900776295.1_27097_7_154-2_genomic,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SRR2098761_final,,USA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR3416126_NextSeq_500_paired_end_sequencing,,France,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR3416114_NextSeq_500_paired_end_sequencing,,France,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR3416146_NextSeq_500_paired_end_sequencing,,France,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR3416407_NextSeq_500_paired_end_sequencing,,France,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SRR14449350,,USA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920505,,Nigeria,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920594,,Rwanda,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920629,,South Africa,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920393,,Ethiopia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920532,,Nigeria,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920628,,South Africa,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920374,,Bangladesh,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920519,,Nigeria,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920514,,Nigeria,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920440,,Ethiopia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920511,,Nigeria,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR2693361,2016,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,13.45823005,-16.57548662
+ERR2693335,2016,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,13.45823005,-16.57548662
+ERR2693336,2016,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,13.45823005,-16.57548662
+ERR2693362,2016,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,13.45823005,-16.57548662
+ERR2693316,2016,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,13.45823005,-16.57548662
+ERR2693360,2016,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,13.45823005,-16.57548662
+ERR2693325,2016,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,13.45823005,-16.57548662
+SAMD00108880,1st July 2016,Thailand,Surin,01/07/2016,,Human,,,,DRR122560,DRX115413,SAMD00108880,DRS174894,PRJDB5929,SAMD00108880,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14.8841804,103.4906232
+SAMEA4587865,,Germany,,,,,,,,ERR2523115,ERX2541945,SAMEA4587865,ERS2408588,PRJEB26075,MBK-1440,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA104091955,2016,The Gambia,,,,,,,,,,,,,,,,,,2016,The Gambia,Human,SAMEA104091955,FALSE,ERX2707759,Blood,PRJEB20799,Female,diseased,ERR2693316,Neonatal,ERS1755848,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35544262,13.47581025,-16.69036901
+SAMEA104091999,2016,The Gambia,,,,,,,,,,,,,,,,,,2016,The Gambia,Human,SAMEA104091999,FALSE,ERX2707803,Blood,PRJEB20799,Male,diseased,ERR2693360,Neonatal,ERS1755892,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35544262,13.47581025,-16.69036901
+SAMEA4587864,,Germany,,,,,,,,ERR2523114,ERX2541944,SAMEA4587864,ERS2408587,PRJEB26075,MBK-1434,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA104092000,2016,The Gambia,,,,,,,,,,,,,,,,,,2016,The Gambia,Human,SAMEA104092000,FALSE,ERX2707804,Blood,PRJEB20799,Male,diseased,ERR2693361,Neonatal,ERS1755893,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35544262,13.47581025,-16.69036901
+SAMEA104091974,2016,The Gambia,,,,,,,,,,,,,,,,,,2016,The Gambia,Human,SAMEA104091974,FALSE,ERX2707778,Blood,PRJEB20799,Male,diseased,ERR2693335,Neonatal,ERS1755867,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35544262,13.47581025,-16.69036901
+SAMEA104605887,,,,,,,,,,ERR2321473,ERX2372765,SAMEA104605887,ERS2217169,PRJEB25080,15M101900-2,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA104091964,2016,The Gambia,,,,,,,,,,,,,,,,,,2016,The Gambia,Human,SAMEA104091964,FALSE,ERX2707768,Blood,PRJEB20799,Male,diseased,ERR2693325,Neonatal,ERS1755857,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35544262,13.47581025,-16.69036901
+SAMEA104092001,2016,The Gambia,,,,,,,,,,,,,,,,,,2016,The Gambia,Human,SAMEA104092001,FALSE,ERX2707805,Blood,PRJEB20799,,diseased,ERR2693362,Neonatal,ERS1755894,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35544262,13.47581025,-16.69036901
+SAMEA104091975,2016,The Gambia,,,,,,,,,,,,,,,,,,2016,The Gambia,Human,SAMEA104091975,FALSE,ERX2707779,Blood,PRJEB20799,Male,diseased,ERR2693336,Neonatal,ERS1755868,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35544262,13.47581025,-16.69036901
+SAMEA7190464,,Germany,,,,Human,,,,ERR4463363,ERX4403734,SAMEA7190464,ERS4950697,PRJEB39867,RBK-18-0081-1,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,10
+SAMEA7190329,,Germany,,,,Human,,,,ERR4463229,ERX4403600,SAMEA7190329,ERS4950562,PRJEB39867,RBF-18-0131-1,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,10
+SAMEA7190597,,Germany,,,,Human,,,,ERR4463568,ERX4403939,SAMEA7190597,ERS4950830,PRJEB39867,RBK-18-0454-2,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,10
+SAMEA7707554,3rd May 2006,Spain,,03/05/2006,Throat swab,Human,diseased,,,ERR4981894,ERX4795534,SAMEA7707554,ERS5464057,PRJEB41835,Kp14,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,-3
+SAMEA7472219,May-16,Ethiopia,,,,,,,,,,,,,,,,,,2015-17,Ethiopia,Human,SAMEA7472219,FALSE,ERX4785302,Blood,PRJEB33565,,diseased,ERR4920393,Neonatal,ERS5229914,ESI-BB0725-I1,,,,,,,,,,,,,,,,,,,,,,,,,,,,33782558,9,38
+SAMEA7472416,May-16,Nigeria,,,,,,,,,,,,,,,,,,2015-17,Nigeria,Human,SAMEA7472416,FALSE,ERX4785414,Blood,PRJEB33565,,diseased,ERR4920505,Neonatal,ERS5230111,NK-BB6114-I,,,,,,,,,,,,,,,,,,,,,,,,,,,,33782558,12,8
+SAMEA7707543,1st December 2005,Spain,,01/12/2005,Urine,Human,diseased,,,ERR4981883,ERX4795523,SAMEA7707543,ERS5464046,PRJEB41835,Kp3,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,-3
+SAMEA7472947,May-16,South Africa,,,,,,,,,,,,,,,,,,2015-17,South Africa,Human,SAMEA7472947,FALSE,ERX4785537,Blood,PRJEB33565,,diseased,ERR4920628,Neonatal,ERS5230641,ZAT-BB514b-I1,,,,,,,,,,,,,,,,,,,,,,,,,,,,33782558,-33,18
+SAMEA7707546,12th December 2005,Spain,,12/12/2005,blood,Human,diseased,,,ERR4981886,ERX4795526,SAMEA7707546,ERS5464049,PRJEB41835,Kp6,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34060914,40,-3
+SAMEA7472055,May-16,Bangladesh,,,,,,,,,,,,,,,,,,2015-17,Bangladesh,Human,SAMEA7472055,FALSE,ERX4785283,Blood,PRJEB33565,,diseased,ERR4920374,Neonatal,ERS5229750,BC-BB1210-I,,,,,,,,,,,,,,,,,,,,,,,,,,,,33782558,22,91
+SAMEA7701925,,Spain,,,,Human,,,,ERR4982101,ERX4795741,SAMEA7701925,ERS5458436,PRJEB37504,NLSAR_CV_KP_16,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,39.47,-0.38
+SAMEA7472490,May-16,Nigeria,,,,,,,,,,,,,,,,,,2015-17,Nigeria,Human,SAMEA7472490,FALSE,ERX4785441,Blood,PRJEB33565,,diseased,ERR4920532,Neonatal,ERS5230185,NN-BB402a-I,,,,,,,,,,,,,,,,,,,,,,,,,,,,33782558,9,7
+SAMEA7707545,28th November 2005,Spain,,28/11/2005,blood,Human,diseased,,,ERR4981885,ERX4795525,SAMEA7707545,ERS5464048,PRJEB41835,Kp5,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34060914,40,-3
+SAMEA7707551,16th March 2006,Spain,,16/03/2006,Sputum,Human,diseased,,,ERR4981891,ERX4795531,SAMEA7707551,ERS5464054,PRJEB41835,Kp11,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,-3
+SAMEA7472854,May-16,Rwanda,,,,,,,,,,,,,,,,,,2015-17,Rwanda,Human,SAMEA7472854,FALSE,ERX4785503,Blood,PRJEB33565,,diseased,ERR4920594,Neonatal,ERS5230548,RK-BB1813-I,,,,,,,,,,,,,,,,,,,,,,,,,,,,33782558,2.1,29
+SAMEA7707549,10th February 2006,Spain,,10/02/2006,blood,Human,diseased,,,ERR4981889,ERX4795529,SAMEA7707549,ERS5464052,PRJEB41835,Kp9,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34060914,40,-3
+SAMEA7707542,21st November 2005,Spain,,21/11/2005,Throat swab,Human,diseased,,,ERR4981882,ERX4795522,SAMEA7707542,ERS5464045,PRJEB41835,Kp2,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,-3
+SAMEA7707544,28th November 2005,Spain,,28/11/2005,Rectal swab,Human,diseased,,,ERR4981884,ERX4795524,SAMEA7707544,ERS5464047,PRJEB41835,Kp4,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,-3
+SAMEA7472285,May-16,Ethiopia,,,,,,,,,,,,,,,,,,2015-17,Ethiopia,Human,SAMEA7472285,FALSE,ERX4785349,Blood,PRJEB33565,,diseased,ERR4920440,Neonatal,ERS5229980,ESS-BB0249-I1,,,,,,,,,,,,,,,,,,,,,,,,,,,,33782558,9,38
+SAMEA7472462,May-16,Nigeria,,,,,,,,,,,,,,,,,,2015-17,Nigeria,Human,SAMEA7472462,FALSE,ERX4785428,Blood,PRJEB33565,,diseased,ERR4920519,Neonatal,ERS5230157,NN-BB1647-I,,,,,,,,,,,,,,,,,,,,,,,,,,,,33782558,9,7
+SAMEA7707548,6th January 2006,Spain,,06/01/2006,Urine,Human,diseased,,,ERR4981888,ERX4795528,SAMEA7707548,ERS5464051,PRJEB41835,Kp8,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,-3
+SAMEA7707553,31st March 2006,Spain,,31/03/2006,blood,Human,diseased,,,ERR4981893,ERX4795533,SAMEA7707553,ERS5464056,PRJEB41835,Kp13,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34060914,40,-3
+SAMEA7707556,24th May 2007,Spain,,24/05/2007,Urine,Human,diseased,,,ERR4981896,ERX4795536,SAMEA7707556,ERS5464059,PRJEB41835,Kp16,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,-3
+SAMEA7472442,May-16,Nigeria,,,,,,,,,,,,,,,,,,2015-17,Nigeria,Human,SAMEA7472442,FALSE,ERX4785423,Blood,PRJEB33565,,diseased,ERR4920514,Neonatal,ERS5230137,NN-BB1560-I,,,,,,,,,,,,,,,,,,,,,,,,,,,,33782558,9,7
+SAMEA7707555,27th October 2006,Spain,,27/10/2006,bile,Human,diseased,,,ERR4981895,ERX4795535,SAMEA7707555,ERS5464058,PRJEB41835,Kp15,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34060914,40,-3
+SAMEA7472437,May-16,Nigeria,,,,,,,,,,,,,,,,,,2015-17,Nigeria,Human,SAMEA7472437,FALSE,ERX4785420,Blood,PRJEB33565,,diseased,ERR4920511,Neonatal,ERS5230132,NN-BB1542r1-I1,,,,,,,,,,,,,,,,,,,,,,,,,,,,33782558,9,7
+SAMEA7707547,9th December 2016,Spain,,09/12/2016,Rectal swab,Human,diseased,,,ERR4981887,ERX4795527,SAMEA7707547,ERS5464050,PRJEB41835,Kp7,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,-3
+SAMEA7707552,3rd April 2006,Spain,,03/04/2006,Catheter,Human,diseased,,,ERR4981892,ERX4795532,SAMEA7707552,ERS5464055,PRJEB41835,Kp12,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,-3
+SAMEA7472949,May-16,South Africa,,,,,,,,,,,,,,,,,,2015-17,South Africa,Human,SAMEA7472949,FALSE,ERX4785538,Blood,PRJEB33565,,diseased,ERR4920629,Neonatal,ERS5230643,ZAT-BB643-I3,,,,,,,,,,,,,,,,,,,,,,,,,,,,33782558,-33,18
+SAMEA7707550,27th February 2006,Spain,,27/02/2006,Urine,Human,diseased,,,ERR4981890,ERX4795530,SAMEA7707550,ERS5464053,PRJEB41835,Kp10,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,-3
+SAMEA7707557,3rd July 2007,Spain,,03/07/2007,Rectal swab,Human,diseased,,,ERR4981897,ERX4795537,SAMEA7707557,ERS5464060,PRJEB41835,Kp17,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,-3
+SAMEA7773854,1st January 2015,Norway,,01/01/2015,Faeces,Human,restricted access,,,ERR5056558,ERX4862627,SAMEA7773854,ERS5521096,PRJEB42350,T7-306,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,61,8
+SAMEA7773824,1st January 2015,Norway,,01/01/2015,Faeces,Human,restricted access,,,ERR5056528,ERX4862597,SAMEA7773824,ERS5521066,PRJEB42350,T7-275,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,61,8
+SAMEA8515152,1st May 2016,Nigeria,,01/05/2016,rectal swab,human,healthy,,,ERR5685447,ERX5400910,SAMEA8515152,ERS6199951,PRJEB39293,NW-BR186,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9,8
+SAMEA8399448,1st January 2018,Norway,,01/01/2018,Cecum,,,,,ERR5530496,ERX5310930,SAMEA8399448,ERS6084926,PRJEB43870,2018-01-4682,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,61,8
+SAMEA8664730,1st January 2016,Germany,,01/01/2016,Urine,Human,restricted access,,,ERR5863491,ERX5509286,SAMEA8664730,ERS6349263,PRJEB35248,COL-5,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,10
+SAMEA8948680,1st January 2013,Norway,,01/01/2013,Urine,Human,diseased,,,ERR6294258,ERX5926729,SAMEA8948680,ERS6631451,PRJEB27256,KP_NORM_URN_2013_95819,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,61,8
+SAMEA8997936,1st January 2018,South Africa,,01/01/2018,clinical material,Human,,,,ERR6384991,ERX6014106,SAMEA8997936,ERS6680624,PRJEB46655,Kpn01837,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA8997937,1st January 2018,South Africa,,01/01/2018,clinical material,Human,,,,ERR6384992,ERX6014107,SAMEA8997937,ERS6680625,PRJEB46655,Kpn01838,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA8997926,1st January 2017,South Africa,,01/01/2017,clinical material,Human,,,,ERR6384981,ERX6014096,SAMEA8997926,ERS6680614,PRJEB46655,Kpn01820,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA8997924,1st January 2017,South Africa,,01/01/2017,clinical material,Human,,,,ERR6384979,ERX6014094,SAMEA8997924,ERS6680612,PRJEB46655,Kpn01792,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMN18145472,20th January 2014,China,Wenzhou,20/01/2014,physical,,,,,SRR13870314,SRX10250832,SAMN18145472,SRS8391645,PRJNA706839,537,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,28.01,120.65
+SAMN17885212,9th January 2019,Russia,Moscow,09/01/2019,csf,Human,,,,SRR13695927,SRX10085178,SAMN17885212,SRS8243166,PRJNA269675,2020 Sample 314,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,32365818,55.75583,37.61778
+SAMN18878040,31st October 2019,Russia,Moscow,31/10/2019,intestine,Human,,,,SRR14338897,SRX10692813,SAMN18878040,SRS8784859,PRJNA269675,2021 Samples 339,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,55.75583,37.61778
+SAMEA8997923,1st January 2017,South Africa,,01/01/2017,clinical material,Human,,,,ERR6384978,ERX6014093,SAMEA8997923,ERS6680611,PRJEB46655,Kpn01791,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMN19016612,1st January 2018,USA,,01/01/2018,urine,Human,,,MDRO network,SRR14449350,SRX10800422,SAMN19016612,SRS8887089,PRJNA658369,ARLG-7716,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,-100
+SAMN19658524,3rd January 2015,Canada,Alberta,03/01/2015,respiratory,Human,,male,University of Manitoba,SRR14810466,SRX11143406,SAMN19658524,SRS9205456,PRJNA736690,114640,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,55,-115
+SAMN20033607,1st January 2019,Australia,,01/01/2019,swab,Human,,,,SRR15098061,SRX11407791,SAMN20033607,SRS9451486,PRJNA529744,AUSMDU00037054,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-25,135
+SAMN20338549,30th November 2020,Russia,Saint-Petersburg,30/11/2020,sputum,Human,,,St.-Petersburg City Mariinsky hospital,SRR15206201,SRX11512705,SAMN20338549,SRS9550892,PRJNA748260,5074-Kpn,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,59.9354,30.3495
+SAMN14978785,,Sweden,Skaraborg,01/09/2011,blood,Human,,,Unilabs/Skaraborg Hospital,SRR11816196,SRX8367126,SAMN14978785,SRS6682802,PRJNA606666,KLP1043,,FALSE,,Adult,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,33995300,65.41610156,19.4788713
+SAMN15355684,1st October 2017,Viet Nam,Hanoi,01/10/2017,blood,Human,,,Mattias Larsson,SRR13246655,SRX9678412,SAMN15355684,SRS7876443,PRJNA641536,158B,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,21.03,105.8
+SAMN16824554,1st January 2015,Singapore,,01/01/2015,Acute Care Hospital,Human,,,TTSH,SRR13077265,SRX9524338,SAMN16824554,SRS7731468,PRJNA674942,2015CRE_50,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.3521,103.8198
+SAMN16824555,1st January 2015,Singapore,,01/01/2015,Acute Care Hospital,Human,,,TTSH,SRR13077264,SRX9524339,SAMN16824555,SRS7731469,PRJNA674942,2015CRE_51,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.3521,103.8198
+SAMN16361982,8th December 2019,Qatar,Doha,08/12/2019,Rectal swab,Human,,,Sidra Medicine,SRR12898937,SRX9364020,SAMN16361982,SRS7586441,PRJNA667192,CP82,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,25.28,51.53
+SAMN15813797,12th January 2017,Qatar,Doha,12/01/2017,urine,Human,,,Hamad Medical Corporation,SRR12570041,SRX9058005,SAMN15813797,SRS7307292,PRJNA656934,FQ85,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,25.28,51.53
+SAMN16824553,1st January 2015,Singapore,,01/01/2015,Acute Care Hospital,Human,,,TTSH,SRR13077267,SRX9524336,SAMN16824553,SRS7731466,PRJNA674942,2015CRE_49,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.3521,103.8198
+SAMN10086740,1st January 2015,Pakistan,,01/01/2015,cerebrospinal fluid (CSF),Human,,,"Aga Khan University, Karachi",SRR12823667,SRX9291305,SAMN10086740,SRS7518061,PRJNA308116,CFSAN059635,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,29,69
+SAMN15813798,13th January 2017,Qatar,Doha,13/01/2017,blood,Human,,,Hamad Medical Corporation,SRR12570040,SRX9058006,SAMN15813798,SRS7307293,PRJNA656934,FQ86,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,25.28,51.53
+SAMN15813830,10th July 2017,Qatar,Doha,10/07/2017,urine,Human,,,Hamad Medical Corporation,SRR12569949,SRX9058097,SAMN15813830,SRS7307384,PRJNA656934,FQ133,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,25.28,51.53
+SAMN16684230,,Pakistan,,,cerebrospinal fluid,Human,,,AKUH,SRR13007250,SRX9458455,SAMN16684230,SRS7670907,PRJNA674952,,,FALSE,,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34906210,29,69
+ERR6058123,,Malawi,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR6058031,,Malawi,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR6058096,,Malawi,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR6057887,,Malawi,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR6058122,,Malawi,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMD00399233,1st January 2014,Japan,Hiroshima,01/01/2014,,Human,,,,DRR320019,DRX309366,SAMD00399233,DRS210622,PRJDB12075,SAMD00399233,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34.39639,132.45944
+SAMEA5978378,1st January 2015,Netherlands,,01/01/2015,,human,,,,ERR3562284,ERX3560790,SAMEA5978378,ERS3781211,PRJEB34532,AWGS160025_S8,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,52.31667,5.55
+SAMEA8065725,1st January 2018,Spain,,01/01/2018,Hospital Universitario La Paz (Madrid),Human,diseased,,,ERR5319428,ERX5108831,SAMEA8065725,ERS5752896,PRJEB42440,AI2867,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,-3
+SAMEA8158447,1st January 2018,Spain,,01/01/2018,Hospital Universitario La Princesa (Madrid),Human,diseased,,,ERR5422691,ERX5207382,SAMEA8158447,ERS5845215,PRJEB42440,AI2908,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,-3
+SAMN19708883,1st January 2018,Italy,Lucca,01/01/2018,blood,Human,,,"Diagnostic Microbiology and Virology Unit, Lucca",SRR14820319,SRX11150243,SAMN19708883,SRS9211968,PRJNA643814,1LU,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,43.843433,10.533636
+SAMN22968163,23rd September 2019,United Kingdom,Birmingham,23/09/2019,Faeces or rectal swab,Human,,,University of Birmingham,SRR16847979,SRX13041063,SAMN22968163,SRS10978397,PRJNA778615,VI239,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,52.488667,-1.9312329
+SAMN22968142,15th September 2019,United Kingdom,Birmingham,15/09/2019,Faeces or rectal swab,Human,,,University of Birmingham,SRR16848002,SRX13041040,SAMN22968142,SRS10978375,PRJNA778615,VI226,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,52.488667,-1.9312329
+SAMN25722290,23rd April 2019,Kenya,Nairobi,23/04/2019,,Human,,,,SRR17930986,SRX14089575,SAMN25722290,SRS11915132,PRJNA804332,C_128,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722289,19th April 2019,Kenya,Nairobi,19/04/2019,,Human,,,,SRR17930987,SRX14089574,SAMN25722289,SRS11915130,PRJNA804332,C_095,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722288,17th April 2019,Kenya,Nairobi,17/04/2019,,Human,,,,SRR17930988,SRX14089573,SAMN25722288,SRS11915131,PRJNA804332,C_057,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722287,16th April 2019,Kenya,Nairobi,16/04/2019,,Human,,,,SRR17930990,SRX14089571,SAMN25722287,SRS11915128,PRJNA804332,C_097,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722286,16th April 2019,Kenya,Nairobi,16/04/2019,,Human,,,,SRR17930991,SRX14089570,SAMN25722286,SRS11915127,PRJNA804332,C_112,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722285,8th April 2019,Kenya,Nairobi,08/04/2019,,Human,,,,SRR17930992,SRX14089569,SAMN25722285,SRS11915126,PRJNA804332,C_119,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722284,27th March 2019,Kenya,Nairobi,27/03/2019,,Human,,,,SRR17930993,SRX14089568,SAMN25722284,SRS11915125,PRJNA804332,C_055,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722283,26th April 2019,Kenya,Nairobi,26/04/2019,,Human,,,,SRR17930994,SRX14089567,SAMN25722283,SRS11915124,PRJNA804332,C_082,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722282,26th April 2019,Kenya,Nairobi,26/04/2019,,Human,,,,SRR17930995,SRX14089566,SAMN25722282,SRS11915123,PRJNA804332,C_084,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722281,17th April 2019,Kenya,Nairobi,17/04/2019,,Human,,,,SRR17930996,SRX14089565,SAMN25722281,SRS11915122,PRJNA804332,C_058,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722280,17th April 2019,Kenya,Nairobi,17/04/2019,,Human,,,,SRR17930997,SRX14089564,SAMN25722280,SRS11915121,PRJNA804332,C_165,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722279,17th April 2019,Kenya,Nairobi,17/04/2019,,Human,,,,SRR17930998,SRX14089563,SAMN25722279,SRS11915120,PRJNA804332,C_056,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722278,15th April 2019,Kenya,Nairobi,15/04/2019,,Human,,,,SRR17930999,SRX14089562,SAMN25722278,SRS11915119,PRJNA804332,C_127,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722277,9th April 2019,Kenya,Nairobi,09/04/2019,,Human,,,,SRR17931001,SRX14089560,SAMN25722277,SRS11915117,PRJNA804332,C_071,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722276,8th April 2019,Kenya,Nairobi,08/04/2019,,Human,,,,SRR17931002,SRX14089559,SAMN25722276,SRS11915116,PRJNA804332,C_070,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722275,5th April 2019,Kenya,Nairobi,05/04/2019,,Human,,,,SRR17931003,SRX14089558,SAMN25722275,SRS11915115,PRJNA804332,C_081,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722274,28th March 2019,Kenya,Nairobi,28/03/2019,,Human,,,,SRR17931004,SRX14089557,SAMN25722274,SRS11915114,PRJNA804332,C_092,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722273,21st March 2019,Kenya,Nairobi,21/03/2019,,Human,,,,SRR17931005,SRX14089556,SAMN25722273,SRS11915113,PRJNA804332,C_075,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722272,20th March 2019,Kenya,Nairobi,20/03/2019,,Human,,,,SRR17931006,SRX14089555,SAMN25722272,SRS11915112,PRJNA804332,C_091,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722271,26th February 2019,Kenya,Nairobi,26/02/2019,,Human,,,,SRR17931007,SRX14089554,SAMN25722271,SRS11915111,PRJNA804332,C_067,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722270,25th February 2019,Kenya,Nairobi,25/02/2019,,Human,,,,SRR17931008,SRX14089553,SAMN25722270,SRS11915110,PRJNA804332,C_179,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722269,19th February 2019,Kenya,Nairobi,19/02/2019,,Human,,,,SRR17931009,SRX14089552,SAMN25722269,SRS11915109,PRJNA804332,C_064,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722268,31st January 2019,Kenya,Nairobi,31/01/2019,,Human,,,,SRR17931010,SRX14089551,SAMN25722268,SRS11915108,PRJNA804332,C_106,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722267,24th January 2019,Kenya,Nairobi,24/01/2019,,Human,,,,SRR17931012,SRX14089549,SAMN25722267,SRS11915106,PRJNA804332,C_098,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722294,26th April 2019,Kenya,Nairobi,26/04/2019,,Human,,,,SRR17931094,SRX14089467,SAMN25722294,SRS11915024,PRJNA804332,C_121,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722293,2nd April 2019,Kenya,Nairobi,02/04/2019,,Human,,,,SRR17931095,SRX14089466,SAMN25722293,SRS11915023,PRJNA804332,C_136,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722292,26th April 2019,Kenya,Nairobi,26/04/2019,,Human,,,,SRR17931096,SRX14089465,SAMN25722292,SRS11915022,PRJNA804332,C_138,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN25722291,26th April 2019,Kenya,Nairobi,26/04/2019,,Human,,,,SRR17931097,SRX14089464,SAMN25722291,SRS11915021,PRJNA804332,C_072,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.28333,36.81667
+SAMN17766462,1st January 2019,Norway,,01/01/2019,marine environment,,,,Fredrik Hakonsholm,SRR18543873,SRX14673636,SAMN17766462,SRS12438157,PRJNA591480,KGMAR-2019-400-1,,FALSE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,61,8
+ERR6938101,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4783189,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR7226367,,Nigeria,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR7226691,,Nigeria,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4635183,,Phillipines,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR7225012,,Phillipines,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4781811,,Phillipines,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR7225653,,Phillipines,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR7225907,,Phillipines,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR7225727,,Phillipines,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4795539,,Colombia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4795540,,Colombia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4795730,,Colombia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4795661,,Colombia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4795534,,Colombia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4795535,,Colombia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4795567,,Colombia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+T7-306,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+T7-275,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920393,,Ethiopia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920505,,Nigeria,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920514,,Nigeria,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920519,,Nigeria,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920532,,Nigeria,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920511,,Nigeria,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920440,,Ethiopia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920374,,Bangladesh,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920628,,South Africa,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920629,,South Africa,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920594,,Rwanda,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920594,,Rwanda,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920505,,Nigeria,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920629,,South Africa,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920511,,Nigeria,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920374,,Bangladesh,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920440,,Ethiopia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920628,,South Africa,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920514,,Nigeria,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920393,,Ethiopia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920519,,Nigeria,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ERR4920532,,Nigeria,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KP_NORM_URN_2013_95819_hybrid,,Norway,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA110371471,2011,Portugal,,2011,Lisbon,,diseased,,,ERR10030906,ERX9571570,SAMEA110371471,ERS12469668,PRJEB38289,3666,,,,,,,,,,,,,,,,,,,ERR10030906,,,,,,,,,,,,,,,,,,,,,,,,,,,,39.6621648,-8.1353519
+SAMEA10147342,,Malawi,,,,,,,,ERR10358471,ERX9890587,SAMEA10147342,ERS7803843,PRJEB37378,17e6f85a-1a24-11ec-b1c8-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10358471,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA112282369,,India,,,CSF,,,,RPGMC,ERR10738933,ERX10188259,SAMEA112282369,ERS14393220,PRJEB50614,G20253188,,,,,,,,,,,,,,,,,,,ERR10738933,,,,,,,,,,,,,,,,,,,,,,,,,,,,22.3511148,78.6677428
+SAMEA111435915,2019,Norway,,2019,Rectal sample,,,,,ERR10321723,ERX9854090,SAMEA111435915,ERS13529590,PRJEB56146,KresCPE0235,,,,,,,,,,,,,,,,,,,ERR10321723,,,,,,,,,,,,,,,,,,,,,,,,,,,,61.1529386,8.7876653
+SAMEA111380245,,Brussels,,,,,,,,ERR10629474,ERX10099890,SAMEA111380245,ERS13477225,PRJEB56212,CTMA_1681,,,,,,,,,,,,,,,,,,,ERR10629474,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA10147293,,Malawi,,,,,,,,ERR10358283,ERX9890399,SAMEA10147293,ERS7803795,PRJEB37378,18ac4bbe-1a24-11ec-b1c8-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10358283,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA112282366,,India,,,BLOOD,,,,RPGMC,ERR10738930,ERX10188256,SAMEA112282366,ERS14393217,PRJEB50614,G20253185,,,,,,,,,,,,,,,,,,,ERR10738930,,,,,,,,,,,,,,,,,,,,,,,,,,,,22.3511148,78.6677428
+SAMEA112282370,,India,,,BLOOD,,,,RPGMC,ERR10738934,ERX10188260,SAMEA112282370,ERS14393221,PRJEB50614,G20253189,,,,,,,,,,,,,,,,,,,ERR10738934,,,,,,,,,,,,,,,,,,,,,,,,,,,,22.3511148,78.6677428
+SAMEA112198937,24th March 2022,Germany,,24/03/2022,not assigned,,,,,ERR10663231,ERX10131484,SAMEA112198937,ERS14309886,PRJEB58018,NRZ-77602,,,,,,,,,,,,,,,,,,,ERR10663231,,,,,,,,,,,,,,,,,,,,,,,,,,,,51.1638175,10.4478313
+SAMEA112282045,,India,,,PUS SWAB,,,,Biocare research lab,ERR10738609,ERX10187935,SAMEA112282045,ERS14392896,PRJEB50614,G20251569,,,,,,,,,,,,,,,,,,,ERR10738609,,,,,,,,,,,,,,,,,,,,,,,,,,,,22.3511148,78.6677428
+SAMEA112229044,2018,Greece,,2018,clinical material,,,,,ERR10669807,ERX10138753,SAMEA112229044,ERS14339944,PRJEB58216,17405,,,,,,,,,,,,,,,,,,,ERR10669807,,,,,,,,,,,,,,,,,,,,,,,,,,,,37.98381,23.727539
+SAMEA111505743,26th November 2020,Paraguay,,26/11/2020,lavage,,diseased,,Hospital Regional de Ciudad del Este,ERR10431909,ERX9959427,SAMEA111505743,ERS13618105,PRJEB56918,DTU_2021_1002745_1_SI_PRY_CIU_RH_058,,,,,,,,,,,,,,,,,,,ERR10431909,,,,,,,,,,,,,,,,,,,,,,,,,,,,-25.513475,-54.61544
+SAMEA112229032,2018,Greece,,2018,clinical material,,,,,ERR10669795,ERX10138741,SAMEA112229032,ERS14339932,PRJEB58216,16742,,,,,,,,,,,,,,,,,,,ERR10669795,,,,,,,,,,,,,,,,,,,,,,,,,,,,37.98381,23.727539
+SAMEA111504314,6th August 2020,Ecuador,,06/08/2020,blood,,diseased,,Riobamba Teaching Hospital,ERR10437163,ERX9963164,SAMEA111504314,ERS13616676,PRJEB56918,DTU_2021_1002309_1_SI_ECU_QUI_HDR_002,,,,,,,,,,,,,,,,,,,ERR10437163,,,,,,,,,,,,,,,,,,,,,,,,,,,,-1.3397668,-79.3666965
+SAMEA110371436,2009,Portugal,,2009,Lisbon,,diseased,,,ERR10030871,ERX9571535,SAMEA110371436,ERS12469633,PRJEB38289,Kp2705,,,,,,,,,,,,,,,,,,,ERR10030871,,,,,,,,,,,,,,,,,,,,,,,,,,,,39.6621648,-8.1353519
+SAMEA12940519,7th March 2019,Spain,,07/03/2019,Human,,diseased,,,ERR8604292,ERX8236872,SAMEA12940519,ERS10539316,PRJEB50822,B0005,,,,,,,,,,,,,,,,,,,ERR8604292,,,,,,,,,,,,,,,,,,,,,,,,,,,,39.3260685,-4.8379791
+SAMEA12940515,17th February 2019,Spain,,17/02/2019,Human,,diseased,,,ERR8604288,ERX8236868,SAMEA12940515,ERS10539312,PRJEB50822,B0001,,,,,,,,,,,,,,,,,,,ERR8604288,,,,,,,,,,,,,,,,,,,,,,,,,,,,39.3260685,-4.8379791
+SAMEA12561091,28th May 2014,Venezuela,,28/05/2014,,,,,,ERR8135200,ERX7700162,SAMEA12561091,ERS10167624,PRJEB50384,BB1542,,,,,,,,,,,,,,,,,,,ERR8135200,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.433907,-64.181258
+SAMEA12940575,13th February 2019,Spain,,13/02/2019,Human,,diseased,,,ERR8604348,ERX8236928,SAMEA12940575,ERS10539372,PRJEB50822,D0302,,,,,,,,,,,,,,,,,,,ERR8604348,,,,,,,,,,,,,,,,,,,,,,,,,,,,39.3260685,-4.8379791
+SAMEA10303455,,Malawi,,,,,,,,ERR10686390,ERX10153098,SAMEA10303455,ERS7958160,PRJEB37378,e1017afc-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10686390,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA111380243,,Brussels,,,,,,,,ERR10628789,ERX10099700,SAMEA111380243,ERS13477223,PRJEB56212,CTMA_1679,,,,,,,,,,,,,,,,,,,ERR10628789,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA111380244,,Brussels,,,,,,,,ERR10629473,ERX10099889,SAMEA111380244,ERS13477224,PRJEB56212,CTMA_1680,,,,,,,,,,,,,,,,,,,ERR10629473,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA112282048,,India,,,FLUID,,,,Biocare research lab,ERR10738612,ERX10187938,SAMEA112282048,ERS14392899,PRJEB50614,G20251574,,,,,,,,,,,,,,,,,,,ERR10738612,,,,,,,,,,,,,,,,,,,,,,,,,,,,22.3511148,78.6677428
+SAMEA112282190,,India,,,CSF,,,,"All India Institute of Medical Sciences, Rishikesh",ERR10738754,ERX10188080,SAMEA112282190,ERS14393041,PRJEB50614,G20252366,,,,,,,,,,,,,,,,,,,ERR10738754,,,,,,,,,,,,,,,,,,,,,,,,,,,,22.3511148,78.6677428
+SAMEA112282342,,India,,,BLOOD,,,,RPGMC,ERR10738906,ERX10188232,SAMEA112282342,ERS14393193,PRJEB50614,G20253104,,,,,,,,,,,,,,,,,,,ERR10738906,,,,,,,,,,,,,,,,,,,,,,,,,,,,22.3511148,78.6677428
+SAMEA112282368,,India,,,BLOOD,,,,RPGMC,ERR10738932,ERX10188258,SAMEA112282368,ERS14393219,PRJEB50614,G20253187,,,,,,,,,,,,,,,,,,,ERR10738932,,,,,,,,,,,,,,,,,,,,,,,,,,,,22.3511148,78.6677428
+SAMEA111504086,3rd March 2020,Cyprus,,03/03/2020,urine,,diseased,,"Nicosia General Hospital, Microbiology Department",ERR10441626,ERX9967154,SAMEA111504086,ERS13616448,PRJEB56918,DTU_2020_1001707_1_SI_CYP_NIC_037,,,,,,,,,,,,,,,,,,,ERR10441626,,,,,,,,,,,,,,,,,,,,,,,,,,,,35.18386,33.35864
+SAMEA111503829,9th March 2020,Canada,,09/03/2020,urine,,diseased,,ProvLab/Alberta Precision Laboratories,ERR10441298,ERX9966826,SAMEA111503829,ERS13616191,PRJEB56918,DTU_2021_1000954_2_SI_CAN_EDM_001,,,,,,,,,,,,,,,,,,,ERR10441298,,,,,,,,,,,,,,,,,,,,,,,,,,,,53.52231,-113.51412
+SAMEA10303454,,Malawi,,,,,,,,ERR10686392,ERX10153100,SAMEA10303454,ERS7958161,PRJEB37378,e1036b32-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10686392,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA9800456,,India,,,,,,,,ERR10471620,ERX9991965,SAMEA9800456,ERS7479108,PRJEB29740,ffe077f4-04fc-11ec-9a79-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10471620,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMN23768725,2020,Ethiopia,Hawassa,2020,Human blood sample,Human,,,Melese Hailu Legese,SRR17179385,SRX13362455,SAMN23768725,SRS11267329,PRJNA787062,15,,,,,,,,,,,,,,,,,,,SRR17179385,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.0504,38.4955
+SAMN23768898,2020,Ethiopia,Addis Ababa,2020,Human blood sample,Human,,,Melese Hailu Legese,SRR17179165,SRX13362675,SAMN23768898,SRS11267549,PRJNA787062,333,,,,,,,,,,,,,,,,,,,SRR17179165,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.9806,38.7578
+SAMN23768909,2020,Ethiopia,Addis Ababa,2020,Human blood sample,Human,,,Melese Hailu Legese,SRR17179318,SRX13362522,SAMN23768909,SRS11267396,PRJNA787062,354,,,,,,,,,,,,,,,,,,,SRR17179318,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.9806,38.7578
+SAMN23768618,2020,Ethiopia,Hawassa,2020,Human blood sample,Human,,,Melese Hailu Legese,SRR17179398,SRX13362442,SAMN23768618,SRS11267316,PRJNA787062,1,,,,,,,,,,,,,,,,,,,SRR17179398,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.0504,38.4955
+SAMEA112282367,,India,,,BLOOD,,,,RPGMC,ERR10738931,ERX10188257,SAMEA112282367,ERS14393218,PRJEB50614,G20253186,,,,,,,,,,,,,,,,,,,ERR10738931,,,,,,,,,,,,,,,,,,,,,,,,,,,,22.3511148,78.6677428
+SAMEA10303450,,Malawi,,,,,,,,ERR10686375,ERX10153083,SAMEA10303450,ERS7958156,PRJEB37378,e0f986f8-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10686375,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12561090,28th May 2014,Venezuela,,28/05/2014,,,,,,ERR8135199,ERX7700161,SAMEA12561090,ERS10167623,PRJEB50384,BB1541,,,,,,,,,,,,,,,,,,,ERR8135199,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.433907,-64.181258
+SAMEA10303318,,Malawi,,,,,,,,ERR10765770,ERX10216664,SAMEA10303318,ERS7958024,PRJEB37378,dfb447d8-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765770,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMN17981875,2020,Singapore,,2020,URINARY,Human,,,Singapore General Hospital,SRR13873294,SRX10253684,SAMN17981875,SRS8394250,PRJNA577535,EC3484,,,,,,,,,,,,,,,,,,,SRR13873294,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.32,103.76
+SAMEA9800452,,India,,,,,,,,ERR10471986,ERX9992331,SAMEA9800452,ERS7479104,PRJEB29740,ffd742f6-04fc-11ec-9a79-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10471986,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA9800612,,India,,,,,,,,ERR10471830,ERX9992175,SAMEA9800612,ERS7479264,PRJEB29740,0153ba60-04fd-11ec-9a79-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10471830,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12940522,12th April 2019,Spain,,12/04/2019,Human,,diseased,,,ERR8604295,ERX8236875,SAMEA12940522,ERS10539319,PRJEB50822,B0008,,,,,,,,,,,,,,,,,,,ERR8604295,,,,,,,,,,,,,,,,,,,,,,,,,,,,39.3260685,-4.8379791
+SAMEA10302815,,Malawi,,,,,,,,ERR10765239,ERX10216133,SAMEA10302815,ERS7957522,PRJEB37378,dbcce5b2-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765239,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA9800448,,India,,,,,,,,ERR10471982,ERX9992327,SAMEA9800448,ERS7479100,PRJEB29740,ffd06788-04fc-11ec-9a79-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10471982,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA112785778,,Denmark,,,,,,,,ERR11021123,ERX10457524,SAMEA112785778,ERS14786563,PRJEB60743,AMA004513,,,,,,,,,,,,,,,,,,,ERR11021123,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12561089,28th May 2014,Venezuela,,28/05/2014,,,,,,ERR8135198,ERX7700160,SAMEA12561089,ERS10167622,PRJEB50384,BB1539,,,,,,,,,,,,,,,,,,,ERR8135198,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.43361,-64.177266
+SAMEA10634097,,Malawi,,,,,,,,ERR10766379,ERX10217273,SAMEA10634097,ERS8285948,PRJEB37378,02a579ba-3bdc-11ec-9a3d-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10766379,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12109394,,Malawi,,,,,,,,ERR10893961,ERX10337084,SAMEA12109394,ERS9756229,PRJEB37378,0334dbd2-6d69-11ec-a55e-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10893961,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12109363,,Malawi,,,,,,,,ERR10894077,ERX10337200,SAMEA12109363,ERS9756198,PRJEB37378,0405a56e-6d69-11ec-a55e-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10894077,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA9800454,,India,,,,,,,,ERR10471990,ERX9992335,SAMEA9800454,ERS7479106,PRJEB29740,ffdbd7e4-04fc-11ec-9a79-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10471990,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA111380222,,Brussels,,,,,,,,ERR10230816,ERX9765842,SAMEA111380222,ERS13477202,PRJEB56212,CTMA_1655,,,,,,,,,,,,,,,,,,,ERR10230816,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMN23768769,2020,Ethiopia,Addis Ababa,2020,Human blood sample,Human,,,Melese Hailu Legese,SRR17179200,SRX13362640,SAMN23768769,SRS11267514,PRJNA787062,121,,,,,,,,,,,,,,,,,,,SRR17179200,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.9806,38.7578
+SAMN23768770,2020,Ethiopia,Addis Ababa,2020,Human blood sample,Human,,,Melese Hailu Legese,SRR17179198,SRX13362642,SAMN23768770,SRS11267516,PRJNA787062,123,,,,,,,,,,,,,,,,,,,SRR17179198,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.9806,38.7578
+SAMN23768905,2020,Ethiopia,Addis Ababa,2020,Human blood sample,Human,,,Melese Hailu Legese,SRR17179323,SRX13362517,SAMN23768905,SRS11267391,PRJNA787062,346,,,,,,,,,,,,,,,,,,,SRR17179323,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.9806,38.7578
+SAMN31807523,25th August 2022,Netherlands,,25/08/2022,,Human,,,RIVM,SRR22352307,SRX18323303,SAMN31807523,SRS15813331,PRJNA903550,RIVM_C048101,,,,,,,,,,,,,,,,,,,SRR22352307,,,,,,,,,,,,,,,,,,,,,,,,,,,,52.2434979,5.6343227
+SAMN23768724,2020,Ethiopia,Hawassa,2020,Human blood sample,Human,,,Melese Hailu Legese,SRR17179396,SRX13362444,SAMN23768724,SRS11267318,PRJNA787062,13,,,,,,,,,,,,,,,,,,,SRR17179396,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.0504,38.4955
+SAMN23768626,2020,Ethiopia,Hawassa,2020,Human blood sample,Human,,,Melese Hailu Legese,SRR17179110,SRX13362730,SAMN23768626,SRS11267603,PRJNA787062,10,,,,,,,,,,,,,,,,,,,SRR17179110,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.0504,38.4955
+SAMN31262949,2017,Australia,Victoria,2017,missing,Human,,,MDU PHL,SRR21884250,SRX17871196,SAMN31262949,SRS15389433,PRJNA857533,AUSMDU00010827,,,,,,,,,,,,,,,,,,,SRR21884250,,,,,,,,,,,,,,,,,,,,,,,,,,,,-36.5986096,144.6780052
+SAMN23768907,2020,Ethiopia,Addis Ababa,2020,Human blood sample,Human,,,Melese Hailu Legese,SRR17179321,SRX13362519,SAMN23768907,SRS11267393,PRJNA787062,348,,,,,,,,,,,,,,,,,,,SRR17179321,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.9806,38.7578
+SAMN27568258,18th December 2017,USA,Utah,18/12/2017,blood,Human,,,IDEL,SRR18774235,SRX14873588,SAMN27568258,SRS12627605,PRJNA827103,341_BSI_16,,,,,,,,,,,,,,,,,,,SRR18774235,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.7789,-111.8795
+SAMN23768619,2020,Ethiopia,Hawassa,2020,Human blood sample,Human,,,Melese Hailu Legese,SRR17179397,SRX13362443,SAMN23768619,SRS11267317,PRJNA787062,2,,,,,,,,,,,,,,,,,,,SRR17179397,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.0504,38.4955
+SAMN27568259,19th November 2017,USA,Utah,19/11/2017,feces,Human,,,IDEL,SRR18774234,SRX14873589,SAMN27568259,SRS12627606,PRJNA827103,341F,,,,,,,,,,,,,,,,,,,SRR18774234,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.7789,-111.8795
+SAMEA114110988,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748563,ERX11147895,SAMEA114110988,ERS16091713,PRJEB63361,CRESA-KP074,,,,,,,,,,,,,,,,,,,ERR11748563,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245665,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818323,ERX11216643,SAMEA114245665,ERS16232565,PRJEB64895,9723,,,,,,,,,,,,,,,,,,,ERR11818323,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114111030,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748605,ERX11147937,SAMEA114111030,ERS16091755,PRJEB63361,CRESA-KP123,,,,,,,,,,,,,,,,,,,ERR11748605,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111203,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748778,ERX11148110,SAMEA114111203,ERS16091928,PRJEB63361,CRESA-KP459,,,,,,,,,,,,,,,,,,,ERR11748778,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA10303295,,Malawi,,,,,,,,ERR10765683,ERX10216577,SAMEA10303295,ERS7958001,PRJEB37378,df83b104-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765683,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA114111101,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748676,ERX11148008,SAMEA114111101,ERS16091826,PRJEB63361,CRESA-KP267,,,,,,,,,,,,,,,,,,,ERR11748676,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245682,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818340,ERX11216660,SAMEA114245682,ERS16232582,PRJEB64895,9916,,,,,,,,,,,,,,,,,,,ERR11818340,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114111264,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748839,ERX11148171,SAMEA114111264,ERS16091989,PRJEB63361,CRESA-KP688,,,,,,,,,,,,,,,,,,,ERR11748839,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110976,2018,South Africa,,2018,clinical material,,Clinical,,,ERR11748551,ERX11147883,SAMEA114110976,ERS16091701,PRJEB63361,CRESA-KP053,,,,,,,,,,,,,,,,,,,ERR11748551,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110979,2018,South Africa,,2018,clinical material,,Clinical,,,ERR11748554,ERX11147886,SAMEA114110979,ERS16091704,PRJEB63361,CRESA-KP058,,,,,,,,,,,,,,,,,,,ERR11748554,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111260,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748835,ERX11148167,SAMEA114111260,ERS16091985,PRJEB63361,CRESA-KP681,,,,,,,,,,,,,,,,,,,ERR11748835,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111132,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748707,ERX11148039,SAMEA114111132,ERS16091857,PRJEB63361,CRESA-KP322,,,,,,,,,,,,,,,,,,,ERR11748707,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111194,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748769,ERX11148101,SAMEA114111194,ERS16091919,PRJEB63361,CRESA-KP440,,,,,,,,,,,,,,,,,,,ERR11748769,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245597,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818255,ERX11216575,SAMEA114245597,ERS16232497,PRJEB64895,9776,,,,,,,,,,,,,,,,,,,ERR11818255,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114111171,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748746,ERX11148078,SAMEA114111171,ERS16091896,PRJEB63361,CRESA-KP400,,,,,,,,,,,,,,,,,,,ERR11748746,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111088,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748663,ERX11147995,SAMEA114111088,ERS16091813,PRJEB63361,CRESA-KP242,,,,,,,,,,,,,,,,,,,ERR11748663,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111253,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748828,ERX11148160,SAMEA114111253,ERS16091978,PRJEB63361,CRESA-KP648,,,,,,,,,,,,,,,,,,,ERR11748828,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA10417054,,Malawi,,,,,,,,ERR10766003,ERX10216897,SAMEA10417054,ERS8065930,PRJEB37378,526b5a14-30e7-11ec-ab4c-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10766003,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA114111290,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748865,ERX11148197,SAMEA114111290,ERS16092015,PRJEB63361,CRESA-KP830,,,,,,,,,,,,,,,,,,,ERR11748865,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111117,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748692,ERX11148024,SAMEA114111117,ERS16091842,PRJEB63361,CRESA-KP289,,,,,,,,,,,,,,,,,,,ERR11748692,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110995,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748570,ERX11147902,SAMEA114110995,ERS16091720,PRJEB63361,CRESA-KP083,,,,,,,,,,,,,,,,,,,ERR11748570,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111168,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748743,ERX11148075,SAMEA114111168,ERS16091893,PRJEB63361,CRESA-KP390,,,,,,,,,,,,,,,,,,,ERR11748743,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245703,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818361,ERX11216681,SAMEA114245703,ERS16232603,PRJEB64895,9761,,,,,,,,,,,,,,,,,,,ERR11818361,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114111138,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748713,ERX11148045,SAMEA114111138,ERS16091863,PRJEB63361,CRESA-KP336,,,,,,,,,,,,,,,,,,,ERR11748713,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111205,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748780,ERX11148112,SAMEA114111205,ERS16091930,PRJEB63361,CRESA-KP469,,,,,,,,,,,,,,,,,,,ERR11748780,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111038,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748613,ERX11147945,SAMEA114111038,ERS16091763,PRJEB63361,CRESA-KP131,,,,,,,,,,,,,,,,,,,ERR11748613,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245690,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818348,ERX11216668,SAMEA114245690,ERS16232590,PRJEB64895,9691,,,,,,,,,,,,,,,,,,,ERR11818348,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114240971,2020,Germany,,2020,WWTP downstream site 3,,,,,ERR11807183,ERX11205543,SAMEA114240971,ERS16227394,PRJEB59403,464-20,,,,,,,,,,,,,,,,,,,ERR11807183,,,,,,,,,,,,,,,,,,,,,,,,,,,,51.1638175,10.4478313
+SAMEA114111177,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748752,ERX11148084,SAMEA114111177,ERS16091902,PRJEB63361,CRESA-KP407,,,,,,,,,,,,,,,,,,,ERR11748752,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245730,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818388,ERX11216708,SAMEA114245730,ERS16232630,PRJEB64895,9863,,,,,,,,,,,,,,,,,,,ERR11818388,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMN29188293,6th January 2017,Bangladesh,,06/01/2017,missing,Human,,,Child Health Research Foundation (CHRF),SRR19744019,SRX15789591,SAMN29188293,SRS13482398,PRJNA845975,CHRF_KPN_0309,,,,,,,,,,,,,,,,,,,SRR19744019,,,,,,,,,,,,,,,,,,,,,,,,,,,,23.685,90.356
+SAMEA114111031,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748606,ERX11147938,SAMEA114111031,ERS16091756,PRJEB63361,CRESA-KP124,,,,,,,,,,,,,,,,,,,ERR11748606,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111105,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748680,ERX11148012,SAMEA114111105,ERS16091830,PRJEB63361,CRESA-KP272,,,,,,,,,,,,,,,,,,,ERR11748680,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111033,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748608,ERX11147940,SAMEA114111033,ERS16091758,PRJEB63361,CRESA-KP126,,,,,,,,,,,,,,,,,,,ERR11748608,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110993,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748568,ERX11147900,SAMEA114110993,ERS16091718,PRJEB63361,CRESA-KP081,,,,,,,,,,,,,,,,,,,ERR11748568,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110971,2018,South Africa,,2018,clinical material,,Clinical,,,ERR11748546,ERX11147878,SAMEA114110971,ERS16091696,PRJEB63361,CRESA-KP047,,,,,,,,,,,,,,,,,,,ERR11748546,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245629,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818287,ERX11216607,SAMEA114245629,ERS16232529,PRJEB64895,9881,,,,,,,,,,,,,,,,,,,ERR11818287,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMD00397290,2nd August 2012,Japan,,02/08/2012,,Human,,,,DRR316583,DRX305964,SAMD00397290,DRS246683,PRJDB12116,SAMD00397290,,,,,,,,,,,,,,,,,,,DRR316583,,,,,,,,,,,,,,,,,,,,,,,,,,,,36.5748441,139.2394179
+SAMEA114110915,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748490,ERX11147822,SAMEA114110915,ERS16091640,PRJEB63361,CRESA-14381,,,,,,,,,,,,,,,,,,,ERR11748490,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111158,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748733,ERX11148065,SAMEA114111158,ERS16091883,PRJEB63361,CRESA-KP367,,,,,,,,,,,,,,,,,,,ERR11748733,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934750,2018,Greece,,2018,clinical material,,,,,ERR11592320,ERX10994922,SAMEA113934750,ERS15928911,PRJEB63349,GR16106_BL_KP,,,,,,,,,,,,,,,,,,,ERR11592320,,,,,,,,,,,,,,,,,,,,,,,,,,,,37.98,23.72
+SAMEA114111099,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748674,ERX11148006,SAMEA114111099,ERS16091824,PRJEB63361,CRESA-KP262,,,,,,,,,,,,,,,,,,,ERR11748674,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA111267181,,,,,,,,,,ERR12127008,ERX11502926,SAMEA111267181,ERS13364781,PRJEB53835,6b38b8ce-2a07-11ed-8d3f-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR12127008,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA114111144,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748719,ERX11148051,SAMEA114111144,ERS16091869,PRJEB63361,CRESA-KP342,,,,,,,,,,,,,,,,,,,ERR11748719,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111057,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748632,ERX11147964,SAMEA114111057,ERS16091782,PRJEB63361,CRESA-KP168,,,,,,,,,,,,,,,,,,,ERR11748632,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245645,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818303,ERX11216623,SAMEA114245645,ERS16232545,PRJEB64895,9767,,,,,,,,,,,,,,,,,,,ERR11818303,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114110990,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748565,ERX11147897,SAMEA114110990,ERS16091715,PRJEB63361,CRESA-KP078,,,,,,,,,,,,,,,,,,,ERR11748565,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111130,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748705,ERX11148037,SAMEA114111130,ERS16091855,PRJEB63361,CRESA-KP319,,,,,,,,,,,,,,,,,,,ERR11748705,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245646,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818304,ERX11216624,SAMEA114245646,ERS16232546,PRJEB64895,9903,,,,,,,,,,,,,,,,,,,ERR11818304,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114111035,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748610,ERX11147942,SAMEA114111035,ERS16091760,PRJEB63361,CRESA-KP128,,,,,,,,,,,,,,,,,,,ERR11748610,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111071,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748646,ERX11147978,SAMEA114111071,ERS16091796,PRJEB63361,CRESA-KP205,,,,,,,,,,,,,,,,,,,ERR11748646,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110997,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748572,ERX11147904,SAMEA114110997,ERS16091722,PRJEB63361,CRESA-KP085,,,,,,,,,,,,,,,,,,,ERR11748572,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111196,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748771,ERX11148103,SAMEA114111196,ERS16091921,PRJEB63361,CRESA-KP442,,,,,,,,,,,,,,,,,,,ERR11748771,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111219,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748794,ERX11148126,SAMEA114111219,ERS16091944,PRJEB63361,CRESA-KP501,,,,,,,,,,,,,,,,,,,ERR11748794,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245700,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818358,ERX11216678,SAMEA114245700,ERS16232600,PRJEB64895,9757,,,,,,,,,,,,,,,,,,,ERR11818358,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114111034,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748609,ERX11147941,SAMEA114111034,ERS16091759,PRJEB63361,CRESA-KP127,,,,,,,,,,,,,,,,,,,ERR11748609,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110992,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748567,ERX11147899,SAMEA114110992,ERS16091717,PRJEB63361,CRESA-KP080,,,,,,,,,,,,,,,,,,,ERR11748567,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245711,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818369,ERX11216689,SAMEA114245711,ERS16232611,PRJEB64895,9897,,,,,,,,,,,,,,,,,,,ERR11818369,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA113934802,2018,Greece,,2018,clinical material,,,,,ERR11592372,ERX10994974,SAMEA113934802,ERS15928963,PRJEB63349,GR55079_UR_KP,,,,,,,,,,,,,,,,,,,ERR11592372,,,,,,,,,,,,,,,,,,,,,,,,,,,,37.98,23.72
+SAMEA114110926,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748501,ERX11147833,SAMEA114110926,ERS16091651,PRJEB63361,CRESA-15216,,,,,,,,,,,,,,,,,,,ERR11748501,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111068,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748643,ERX11147975,SAMEA114111068,ERS16091793,PRJEB63361,CRESA-KP197,,,,,,,,,,,,,,,,,,,ERR11748643,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934714,2017,Greece,,2017,clinical material,,,,,ERR11592284,ERX10994886,SAMEA113934714,ERS15928875,PRJEB63349,GR14010_BL_KP,,,,,,,,,,,,,,,,,,,ERR11592284,,,,,,,,,,,,,,,,,,,,,,,,,,,,39.63,22.41
+SAMEA114245612,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818270,ERX11216590,SAMEA114245612,ERS16232512,PRJEB64895,9874,,,,,,,,,,,,,,,,,,,ERR11818270,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114111252,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748827,ERX11148159,SAMEA114111252,ERS16091977,PRJEB63361,CRESA-KP643,,,,,,,,,,,,,,,,,,,ERR11748827,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934707,2018,Greece,,2018,clinical material,,,,,ERR11592277,ERX10994879,SAMEA113934707,ERS15928868,PRJEB63349,GR13259_BL_KP,,,,,,,,,,,,,,,,,,,ERR11592277,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMD00397259,2nd December 2014,Japan,,02/12/2014,,Human,,,,DRR316552,DRX305933,SAMD00397259,DRS246652,PRJDB12116,SAMD00397259,,,,,,,,,,,,,,,,,,,DRR316552,,,,,,,,,,,,,,,,,,,,,,,,,,,,36.5748441,139.2394179
+SAMEA114111076,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748651,ERX11147983,SAMEA114111076,ERS16091801,PRJEB63361,CRESA-KP216,,,,,,,,,,,,,,,,,,,ERR11748651,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245659,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818317,ERX11216637,SAMEA114245659,ERS16232559,PRJEB64895,9750,,,,,,,,,,,,,,,,,,,ERR11818317,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114111218,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748793,ERX11148125,SAMEA114111218,ERS16091943,PRJEB63361,CRESA-KP500,,,,,,,,,,,,,,,,,,,ERR11748793,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA10634091,,Malawi,,,,,,,,ERR10893732,ERX10336855,SAMEA10634091,ERS8285941,PRJEB37378,02968068-3bdc-11ec-9a3d-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10893732,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA114111214,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748789,ERX11148121,SAMEA114111214,ERS16091939,PRJEB63361,CRESA-KP487,,,,,,,,,,,,,,,,,,,ERR11748789,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934700,2018,Greece,,2018,clinical material,,,,,ERR11592270,ERX10994872,SAMEA113934700,ERS15928861,PRJEB63349,GR13237_BL_KP,,,,,,,,,,,,,,,,,,,ERR11592270,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114111208,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748783,ERX11148115,SAMEA114111208,ERS16091933,PRJEB63361,CRESA-KP474,,,,,,,,,,,,,,,,,,,ERR11748783,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111239,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748814,ERX11148146,SAMEA114111239,ERS16091964,PRJEB63361,CRESA-KP554,,,,,,,,,,,,,,,,,,,ERR11748814,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111263,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748838,ERX11148170,SAMEA114111263,ERS16091988,PRJEB63361,CRESA-KP687,,,,,,,,,,,,,,,,,,,ERR11748838,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111189,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748764,ERX11148096,SAMEA114111189,ERS16091914,PRJEB63361,CRESA-KP431,,,,,,,,,,,,,,,,,,,ERR11748764,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111174,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748749,ERX11148081,SAMEA114111174,ERS16091899,PRJEB63361,CRESA-KP404,,,,,,,,,,,,,,,,,,,ERR11748749,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111184,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748759,ERX11148091,SAMEA114111184,ERS16091909,PRJEB63361,CRESA-KP424,,,,,,,,,,,,,,,,,,,ERR11748759,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934692,2018,Greece,,2018,clinical material,,,,,ERR11592262,ERX10994864,SAMEA113934692,ERS15928853,PRJEB63349,GR13224,,,,,,,,,,,,,,,,,,,ERR11592262,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114111049,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748624,ERX11147956,SAMEA114111049,ERS16091774,PRJEB63361,CRESA-KP147,,,,,,,,,,,,,,,,,,,ERR11748624,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA10303305,,Malawi,,,,,,,,ERR10765722,ERX10216616,SAMEA10303305,ERS7958011,PRJEB37378,df978080-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765722,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA10303306,,Malawi,,,,,,,,ERR10765726,ERX10216620,SAMEA10303306,ERS7958012,PRJEB37378,df99686e-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765726,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA10302806,,Malawi,,,,,,,,ERR10765207,ERX10216101,SAMEA10302806,ERS7957513,PRJEB37378,dbbaab36-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765207,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA10303304,,Malawi,,,,,,,,ERR10765719,ERX10216613,SAMEA10303304,ERS7958010,PRJEB37378,df959e00-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765719,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMN34998786,,USA,"Maywood, IL",,,Human,,,,SRR25145458,SRX20896950,SAMN34998786,SRS18168442,PRJNA970254,UMB7779B,,,,,,,,,,,,,,,,,,,SRR25145458,,,,,,,,,,,,,,,,,,,,,,,,,,,,41.85911095,-87.83527146
+SAMEA10303298,,Malawi,,,,,,,,ERR10765697,ERX10216591,SAMEA10303298,ERS7958004,PRJEB37378,df89672a-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765697,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA10634101,,Malawi,,,,,,,,ERR10766385,ERX10217279,SAMEA10634101,ERS8285952,PRJEB37378,02ab6564-3bdc-11ec-9a3d-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10766385,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA10303307,,Malawi,,,,,,,,ERR10765730,ERX10216624,SAMEA10303307,ERS7958013,PRJEB37378,df9b52fa-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765730,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA10634229,,Malawi,,,,,,,,ERR10766282,ERX10217176,SAMEA10634229,ERS8286080,PRJEB37378,042b1362-3bdc-11ec-9a3d-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10766282,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA10303296,,Malawi,,,,,,,,ERR10765689,ERX10216583,SAMEA10303296,ERS7958002,PRJEB37378,df859ab4-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765689,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA10634129,,Malawi,,,,,,,,ERR10766181,ERX10217075,SAMEA10634129,ERS8285980,PRJEB37378,02ed2df0-3bdc-11ec-9a3d-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10766181,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA10302645,,Malawi,,,,,,,,ERR10765300,ERX10216194,SAMEA10302645,ERS7957352,PRJEB37378,d8fa055e-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765300,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA10303396,,Malawi,,,,,,,,ERR10765737,ERX10216631,SAMEA10303396,ERS7958102,PRJEB37378,e08a597c-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765737,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA10417037,,Malawi,,,,,,,,ERR10765947,ERX10216841,SAMEA10417037,ERS8065913,PRJEB37378,5232ac32-30e7-11ec-ab4c-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10765947,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMD00397289,23rd June 2012,Japan,,23/06/2012,,Human,,,,DRR316582,DRX305963,SAMD00397289,DRS246682,PRJDB12116,SAMD00397289,,,,,,,,,,,,,,,,,,,DRR316582,,,,,,,,,,,,,,,,,,,,,,,,,,,,36.5748441,139.2394179
+SAMEA10303339,,Malawi,,,,,,,,ERR10765845,ERX10216739,SAMEA10303339,ERS7958044,PRJEB37378,dfe2d878-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765845,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA10303312,,Malawi,,,,,,,,ERR10765749,ERX10216643,SAMEA10303312,ERS7958018,PRJEB37378,dfa4d348-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765749,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA114111191,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748766,ERX11148098,SAMEA114111191,ERS16091916,PRJEB63361,CRESA-KP433,,,,,,,,,,,,,,,,,,,ERR11748766,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110984,2018,South Africa,,2018,clinical material,,Screen,,,ERR11748559,ERX11147891,SAMEA114110984,ERS16091709,PRJEB63361,CRESA-KP068,,,,,,,,,,,,,,,,,,,ERR11748559,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111250,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748825,ERX11148157,SAMEA114111250,ERS16091975,PRJEB63361,CRESA-KP611,,,,,,,,,,,,,,,,,,,ERR11748825,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111009,2016,South Africa,,2016,clinical material,,Clinical,,,ERR11748584,ERX11147916,SAMEA114111009,ERS16091734,PRJEB63361,CRESA-KP10178,,,,,,,,,,,,,,,,,,,ERR11748584,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111073,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748648,ERX11147980,SAMEA114111073,ERS16091798,PRJEB63361,CRESA-KP211,,,,,,,,,,,,,,,,,,,ERR11748648,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111045,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748620,ERX11147952,SAMEA114111045,ERS16091770,PRJEB63361,CRESA-KP141,,,,,,,,,,,,,,,,,,,ERR11748620,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111246,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748821,ERX11148153,SAMEA114111246,ERS16091971,PRJEB63361,CRESA-KP597,,,,,,,,,,,,,,,,,,,ERR11748821,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111114,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748689,ERX11148021,SAMEA114111114,ERS16091839,PRJEB63361,CRESA-KP283,,,,,,,,,,,,,,,,,,,ERR11748689,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA111267179,,,,,,,,,,ERR12127006,ERX11502924,SAMEA111267179,ERS13364776,PRJEB53835,6b2fc700-2a07-11ed-8d3f-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR12127006,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA114111108,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748683,ERX11148015,SAMEA114111108,ERS16091833,PRJEB63361,CRESA-KP274B,,,,,,,,,,,,,,,,,,,ERR11748683,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111180,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748755,ERX11148087,SAMEA114111180,ERS16091905,PRJEB63361,CRESA-KP412,,,,,,,,,,,,,,,,,,,ERR11748755,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934643,2018,Greece,,2018,clinical material,,,,,ERR11592213,ERX10994815,SAMEA113934643,ERS15928804,PRJEB63349,GR11018_SP_KP,,,,,,,,,,,,,,,,,,,ERR11592213,,,,,,,,,,,,,,,,,,,,,,,,,,,,37.98,23.72
+SAMEA114111026,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748601,ERX11147933,SAMEA114111026,ERS16091751,PRJEB63361,CRESA-KP119,,,,,,,,,,,,,,,,,,,ERR11748601,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245639,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818297,ERX11216617,SAMEA114245639,ERS16232539,PRJEB64895,9671,,,,,,,,,,,,,,,,,,,ERR11818297,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114110982,2018,South Africa,,2018,clinical material,,Screen,,,ERR11748557,ERX11147889,SAMEA114110982,ERS16091707,PRJEB63361,CRESA-KP065,,,,,,,,,,,,,,,,,,,ERR11748557,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111037,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748612,ERX11147944,SAMEA114111037,ERS16091762,PRJEB63361,CRESA-KP130,,,,,,,,,,,,,,,,,,,ERR11748612,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110994,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748569,ERX11147901,SAMEA114110994,ERS16091719,PRJEB63361,CRESA-KP082,,,,,,,,,,,,,,,,,,,ERR11748569,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111185,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748760,ERX11148092,SAMEA114111185,ERS16091910,PRJEB63361,CRESA-KP426,,,,,,,,,,,,,,,,,,,ERR11748760,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111128,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748703,ERX11148035,SAMEA114111128,ERS16091853,PRJEB63361,CRESA-KP315,,,,,,,,,,,,,,,,,,,ERR11748703,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110973,2018,South Africa,,2018,clinical material,,Screen,,,ERR11748548,ERX11147880,SAMEA114110973,ERS16091698,PRJEB63361,CRESA-KP050,,,,,,,,,,,,,,,,,,,ERR11748548,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111159,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748734,ERX11148066,SAMEA114111159,ERS16091884,PRJEB63361,CRESA-KP368,,,,,,,,,,,,,,,,,,,ERR11748734,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111193,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748768,ERX11148100,SAMEA114111193,ERS16091918,PRJEB63361,CRESA-KP439,,,,,,,,,,,,,,,,,,,ERR11748768,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934649,2018,Greece,,2018,clinical material,,,,,ERR11592219,ERX10994821,SAMEA113934649,ERS15928810,PRJEB63349,GR11029_UR_KP,,,,,,,,,,,,,,,,,,,ERR11592219,,,,,,,,,,,,,,,,,,,,,,,,,,,,37.98,23.72
+SAMEA114111221,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748796,ERX11148128,SAMEA114111221,ERS16091946,PRJEB63361,CRESA-KP506,,,,,,,,,,,,,,,,,,,ERR11748796,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110972,2018,South Africa,,2018,clinical material,,Screen,,,ERR11748547,ERX11147879,SAMEA114110972,ERS16091697,PRJEB63361,CRESA-KP048,,,,,,,,,,,,,,,,,,,ERR11748547,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934676,2017,Greece,,2017,clinical material,,,,,ERR11592246,ERX10994848,SAMEA113934676,ERS15928837,PRJEB63349,GR13152_BL_KP,,,,,,,,,,,,,,,,,,,ERR11592246,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114111139,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748714,ERX11148046,SAMEA114111139,ERS16091864,PRJEB63361,CRESA-KP337,,,,,,,,,,,,,,,,,,,ERR11748714,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111183,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748758,ERX11148090,SAMEA114111183,ERS16091908,PRJEB63361,CRESA-KP416,,,,,,,,,,,,,,,,,,,ERR11748758,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111186,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748761,ERX11148093,SAMEA114111186,ERS16091911,PRJEB63361,CRESA-KP427,,,,,,,,,,,,,,,,,,,ERR11748761,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245617,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818275,ERX11216595,SAMEA114245617,ERS16232517,PRJEB64895,9879,,,,,,,,,,,,,,,,,,,ERR11818275,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114111195,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748770,ERX11148102,SAMEA114111195,ERS16091920,PRJEB63361,CRESA-KP441,,,,,,,,,,,,,,,,,,,ERR11748770,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111223,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748798,ERX11148130,SAMEA114111223,ERS16091948,PRJEB63361,CRESA-KP512,,,,,,,,,,,,,,,,,,,ERR11748798,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111032,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748607,ERX11147939,SAMEA114111032,ERS16091757,PRJEB63361,CRESA-KP125,,,,,,,,,,,,,,,,,,,ERR11748607,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245670,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818328,ERX11216648,SAMEA114245670,ERS16232570,PRJEB64895,9820,,,,,,,,,,,,,,,,,,,ERR11818328,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114111056,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748631,ERX11147963,SAMEA114111056,ERS16091781,PRJEB63361,CRESA-KP157,,,,,,,,,,,,,,,,,,,ERR11748631,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934686,2018,Greece,,2018,clinical material,,,,,ERR11592256,ERX10994858,SAMEA113934686,ERS15928847,PRJEB63349,GR13213_BL_KP,,,,,,,,,,,,,,,,,,,ERR11592256,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114111064,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748639,ERX11147971,SAMEA114111064,ERS16091789,PRJEB63361,CRESA-KP187,,,,,,,,,,,,,,,,,,,ERR11748639,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111040,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748615,ERX11147947,SAMEA114111040,ERS16091765,PRJEB63361,CRESA-KP133,,,,,,,,,,,,,,,,,,,ERR11748615,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934648,2018,Greece,,2018,clinical material,,,,,ERR11592218,ERX10994820,SAMEA113934648,ERS15928809,PRJEB63349,GR11028_IA_KP,,,,,,,,,,,,,,,,,,,ERR11592218,,,,,,,,,,,,,,,,,,,,,,,,,,,,37.98,23.72
+SAMEA114111140,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748715,ERX11148047,SAMEA114111140,ERS16091865,PRJEB63361,CRESA-KP338,,,,,,,,,,,,,,,,,,,ERR11748715,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934693,2018,Greece,,2018,clinical material,,,,,ERR11592263,ERX10994865,SAMEA113934693,ERS15928854,PRJEB63349,GR13225_UR_KP,,,,,,,,,,,,,,,,,,,ERR11592263,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114111258,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748833,ERX11148165,SAMEA114111258,ERS16091983,PRJEB63361,CRESA-KP675,,,,,,,,,,,,,,,,,,,ERR11748833,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111091,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748666,ERX11147998,SAMEA114111091,ERS16091816,PRJEB63361,CRESA-KP245,,,,,,,,,,,,,,,,,,,ERR11748666,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934703,2018,Greece,,2018,clinical material,,,,,ERR11592273,ERX10994875,SAMEA113934703,ERS15928864,PRJEB63349,GR13241_UR_KP,,,,,,,,,,,,,,,,,,,ERR11592273,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114110996,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748571,ERX11147903,SAMEA114110996,ERS16091721,PRJEB63361,CRESA-KP084,,,,,,,,,,,,,,,,,,,ERR11748571,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245698,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818356,ERX11216676,SAMEA114245698,ERS16232598,PRJEB64895,9701,,,,,,,,,,,,,,,,,,,ERR11818356,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114111233,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748808,ERX11148140,SAMEA114111233,ERS16091958,PRJEB63361,CRESA-KP532,,,,,,,,,,,,,,,,,,,ERR11748808,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934674,2017,Greece,,2017,clinical material,,,,,ERR11592244,ERX10994846,SAMEA113934674,ERS15928835,PRJEB63349,GR13140_BL_KP,,,,,,,,,,,,,,,,,,,ERR11592244,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114111226,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748801,ERX11148133,SAMEA114111226,ERS16091951,PRJEB63361,CRESA-KP521,,,,,,,,,,,,,,,,,,,ERR11748801,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110914,2018,South Africa,,2018,clinical material,,Clinical,,,ERR11748489,ERX11147821,SAMEA114110914,ERS16091639,PRJEB63361,CRESA-14276,,,,,,,,,,,,,,,,,,,ERR11748489,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111182,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748757,ERX11148089,SAMEA114111182,ERS16091907,PRJEB63361,CRESA-KP415,,,,,,,,,,,,,,,,,,,ERR11748757,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111291,2020,South Africa,,2020,clinical material,,Clinical,,,ERR11748866,ERX11148198,SAMEA114111291,ERS16092016,PRJEB63361,CRESA-KP833,,,,,,,,,,,,,,,,,,,ERR11748866,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111058,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748633,ERX11147965,SAMEA114111058,ERS16091783,PRJEB63361,CRESA-KP169,,,,,,,,,,,,,,,,,,,ERR11748633,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111063,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748638,ERX11147970,SAMEA114111063,ERS16091788,PRJEB63361,CRESA-KP186,,,,,,,,,,,,,,,,,,,ERR11748638,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110981,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748556,ERX11147888,SAMEA114110981,ERS16091706,PRJEB63361,CRESA-KP064,,,,,,,,,,,,,,,,,,,ERR11748556,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111065,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748640,ERX11147972,SAMEA114111065,ERS16091790,PRJEB63361,CRESA-KP188,,,,,,,,,,,,,,,,,,,ERR11748640,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMN29478280,5th June 2014,Bangladesh,,05/06/2014,missing,Human,,,Child Health Research Foundation,SRR19952166,SRX15994684,SAMN29478280,SRS13680945,PRJNA845975,CHRF_KPN_0477,,,,,,,,,,,,,,,,,,,SRR19952166,,,,,,,,,,,,,,,,,,,,,,,,,,,,23.68,90.35
+SAMEA114111145,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748720,ERX11148052,SAMEA114111145,ERS16091870,PRJEB63361,CRESA-KP343,,,,,,,,,,,,,,,,,,,ERR11748720,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111220,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748795,ERX11148127,SAMEA114111220,ERS16091945,PRJEB63361,CRESA-KP505,,,,,,,,,,,,,,,,,,,ERR11748795,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111238,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748813,ERX11148145,SAMEA114111238,ERS16091963,PRJEB63361,CRESA-KP552,,,,,,,,,,,,,,,,,,,ERR11748813,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111142,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748717,ERX11148049,SAMEA114111142,ERS16091867,PRJEB63361,CRESA-KP340,,,,,,,,,,,,,,,,,,,ERR11748717,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111160,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748735,ERX11148067,SAMEA114111160,ERS16091885,PRJEB63361,CRESA-KP371,,,,,,,,,,,,,,,,,,,ERR11748735,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934672,2017,Greece,,2017,clinical material,,,,,ERR11592242,ERX10994844,SAMEA113934672,ERS15928833,PRJEB63349,GR13138_UR_KP,,,,,,,,,,,,,,,,,,,ERR11592242,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114111007,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748582,ERX11147914,SAMEA114111007,ERS16091732,PRJEB63361,CRESA-KP099,,,,,,,,,,,,,,,,,,,ERR11748582,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110974,2018,South Africa,,2018,clinical material,,Screen,,,ERR11748549,ERX11147881,SAMEA114110974,ERS16091699,PRJEB63361,CRESA-KP051,,,,,,,,,,,,,,,,,,,ERR11748549,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111301,2020,South Africa,,2020,clinical material,,Clinical,,,ERR11748876,ERX11148208,SAMEA114111301,ERS16092026,PRJEB63361,CRESA-KP860,,,,,,,,,,,,,,,,,,,ERR11748876,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245680,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818338,ERX11216658,SAMEA114245680,ERS16232580,PRJEB64895,9837,,,,,,,,,,,,,,,,,,,ERR11818338,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114111209,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748784,ERX11148116,SAMEA114111209,ERS16091934,PRJEB63361,CRESA-KP476,,,,,,,,,,,,,,,,,,,ERR11748784,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934654,2017,Greece,,2017,clinical material,,,,,ERR11592224,ERX10994826,SAMEA113934654,ERS15928815,PRJEB63349,GR13010_BL_KP,,,,,,,,,,,,,,,,,,,ERR11592224,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114110923,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748498,ERX11147830,SAMEA114110923,ERS16091648,PRJEB63361,CRESA-14840,,,,,,,,,,,,,,,,,,,ERR11748498,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110978,2018,South Africa,,2018,clinical material,,Screen,,,ERR11748553,ERX11147885,SAMEA114110978,ERS16091703,PRJEB63361,CRESA-KP056,,,,,,,,,,,,,,,,,,,ERR11748553,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111294,2020,South Africa,,2020,clinical material,,Clinical,,,ERR11748869,ERX11148201,SAMEA114111294,ERS16092019,PRJEB63361,CRESA-KP844,,,,,,,,,,,,,,,,,,,ERR11748869,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111161,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748736,ERX11148068,SAMEA114111161,ERS16091886,PRJEB63361,CRESA-KP372,,,,,,,,,,,,,,,,,,,ERR11748736,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111272,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748847,ERX11148179,SAMEA114111272,ERS16091997,PRJEB63361,CRESA-KP749,,,,,,,,,,,,,,,,,,,ERR11748847,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934664,2017,Greece,,2017,clinical material,,,,,ERR11592234,ERX10994836,SAMEA113934664,ERS15928825,PRJEB63349,GR13107_SS_KP,,,,,,,,,,,,,,,,,,,ERR11592234,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114111181,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748756,ERX11148088,SAMEA114111181,ERS16091906,PRJEB63361,CRESA-KP413,,,,,,,,,,,,,,,,,,,ERR11748756,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMN36470479,10th February 2023,Russia,Moscow,10/02/2023,urea,Human,,,Ryzhova K.A.,SRR25301677,SRX21045278,SAMN36470479,SRS18316152,PRJNA561493,GIMC1017:Kpn29100223,,,,,,,,,,,,,,,,,,,SRR25301677,,,,,,,,,,,,,,,,,,,,,,,,,,,,55.74,37.62
+SAMEA10303190,,Malawi,,,,,,,,ERR10765717,ERX10216611,SAMEA10303190,ERS7957896,PRJEB37378,ddafe244-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765717,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12999622,,Netherlands,,,,,,,,ERR8684624,ERX8349979,SAMEA12999622,ERS10598513,PRJEB50545,KLP-JSC-MOD-104436,,,,,,,,,,,,,,,,,,,ERR8684624,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12109446,,Malawi,,,,,,,,ERR10893966,ERX10337089,SAMEA12109446,ERS9756281,PRJEB37378,052206b8-6d69-11ec-a55e-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10893966,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12109308,,Malawi,,,,,,,,ERR10893886,ERX10337009,SAMEA12109308,ERS9756143,PRJEB37378,0298bb6c-6d69-11ec-a55e-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10893886,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA113605564,2017,Norway,,2017,blood,,diseased,,,ERR11578321,ERX10981981,SAMEA113605564,ERS15599941,PRJEB48268,NK_H15_011,,,,,,,,,,,,,,,,,,,ERR11578321,,,,,,,,,,,,,,,,,,,,,,,,,,,,61.1529386,8.7876653
+SAMEA12109450,,Malawi,,,,,,,,ERR10893982,ERX10337105,SAMEA12109450,ERS9756285,PRJEB37378,05385d0a-6d69-11ec-a55e-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10893982,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA10303293,,Malawi,,,,,,,,ERR10765679,ERX10216573,SAMEA10303293,ERS7958000,PRJEB37378,df7fb5fe-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765679,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA10303051,,Malawi,,,,,,,,ERR10765577,ERX10216471,SAMEA10303051,ERS7957758,PRJEB37378,dd5b8ad2-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765577,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12109367,,Malawi,,,,,,,,ERR10894084,ERX10337207,SAMEA12109367,ERS9756202,PRJEB37378,041231bc-6d69-11ec-a55e-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10894084,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12109376,,Malawi,,,,,,,,ERR10893828,ERX10336951,SAMEA12109376,ERS9756211,PRJEB37378,0438a540-6d69-11ec-a55e-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10893828,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA10303414,,Malawi,,,,,,,,ERR10765803,ERX10216697,SAMEA10303414,ERS7958120,PRJEB37378,e0adccc2-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765803,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12999619,,Netherlands,,,,,,,,ERR8684609,ERX8349964,SAMEA12999619,ERS10598510,PRJEB50545,KLP-JSC-MOD-104433,,,,,,,,,,,,,,,,,,,ERR8684609,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12109203,,Malawi,,,,,,,,ERR10893866,ERX10336989,SAMEA12109203,ERS9756037,PRJEB37378,00b812a2-6d69-11ec-a55e-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10893866,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMN25041879,2019,Guadeloupe,,2019,human,Human,,,Institut Pasteur in Guadeloupe (French West Indies),SRR17644263,SRX13812595,SAMN25041879,SRS11693203,PRJNA778230,GwaKP613,,,,,,,,,,,,,,,,,,,SRR17644263,,,,,,,,,,,,,,,,,,,,,,,,,,,,16.236803,-61.525421
+SAMEA114111039,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748614,ERX11147946,SAMEA114111039,ERS16091764,PRJEB63361,CRESA-KP132,,,,,,,,,,,,,,,,,,,ERR11748614,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934671,2017,Greece,,2017,clinical material,,,,,ERR11592241,ERX10994843,SAMEA113934671,ERS15928832,PRJEB63349,GR13137_BL_KP,,,,,,,,,,,,,,,,,,,ERR11592241,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114110987,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748562,ERX11147894,SAMEA114110987,ERS16091712,PRJEB63361,CRESA-KP072,,,,,,,,,,,,,,,,,,,ERR11748562,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110924,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748499,ERX11147831,SAMEA114110924,ERS16091649,PRJEB63361,CRESA-14949,,,,,,,,,,,,,,,,,,,ERR11748499,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110980,2018,South Africa,,2018,clinical material,,Screen,,,ERR11748555,ERX11147887,SAMEA114110980,ERS16091705,PRJEB63361,CRESA-KP060,,,,,,,,,,,,,,,,,,,ERR11748555,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934706,2018,Greece,,2018,clinical material,,,,,ERR11592276,ERX10994878,SAMEA113934706,ERS15928867,PRJEB63349,GR13256_BL_KP,,,,,,,,,,,,,,,,,,,ERR11592276,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA113934681,2018,Greece,,2018,clinical material,,,,,ERR11592251,ERX10994853,SAMEA113934681,ERS15928842,PRJEB63349,GR13180_BL_KP,,,,,,,,,,,,,,,,,,,ERR11592251,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA113934696,2018,Greece,,2018,clinical material,,,,,ERR11592266,ERX10994868,SAMEA113934696,ERS15928857,PRJEB63349,GR13231_UR_KP,,,,,,,,,,,,,,,,,,,ERR11592266,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114111014,2016,South Africa,,2016,clinical material,,Clinical,,,ERR11748589,ERX11147921,SAMEA114111014,ERS16091739,PRJEB63361,CRESA-KP10500,,,,,,,,,,,,,,,,,,,ERR11748589,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111041,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748616,ERX11147948,SAMEA114111041,ERS16091766,PRJEB63361,CRESA-KP134,,,,,,,,,,,,,,,,,,,ERR11748616,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111278,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748853,ERX11148185,SAMEA114111278,ERS16092003,PRJEB63361,CRESA-KP779,,,,,,,,,,,,,,,,,,,ERR11748853,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111094,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748669,ERX11148001,SAMEA114111094,ERS16091819,PRJEB63361,CRESA-KP249,,,,,,,,,,,,,,,,,,,ERR11748669,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111036,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748611,ERX11147943,SAMEA114111036,ERS16091761,PRJEB63361,CRESA-KP129,,,,,,,,,,,,,,,,,,,ERR11748611,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111096,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748671,ERX11148003,SAMEA114111096,ERS16091821,PRJEB63361,CRESA-KP259,,,,,,,,,,,,,,,,,,,ERR11748671,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA10303301,,Malawi,,,,,,,,ERR10765708,ERX10216602,SAMEA10303301,ERS7958007,PRJEB37378,df8fe1f4-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765708,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA114111025,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748600,ERX11147932,SAMEA114111025,ERS16091750,PRJEB63361,CRESA-KP116,,,,,,,,,,,,,,,,,,,ERR11748600,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934659,2017,Greece,,2017,clinical material,,,,,ERR11592229,ERX10994831,SAMEA113934659,ERS15928820,PRJEB63349,GR13075_BL_KP,,,,,,,,,,,,,,,,,,,ERR11592229,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA10303416,,Malawi,,,,,,,,ERR10765812,ERX10216706,SAMEA10303416,ERS7958122,PRJEB37378,e0b1cda4-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765812,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA114110977,2018,South Africa,,2018,clinical material,,Clinical,,,ERR11748552,ERX11147884,SAMEA114110977,ERS16091702,PRJEB63361,CRESA-KP054,,,,,,,,,,,,,,,,,,,ERR11748552,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111001,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748576,ERX11147908,SAMEA114111001,ERS16091726,PRJEB63361,CRESA-KP093,,,,,,,,,,,,,,,,,,,ERR11748576,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111092,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748667,ERX11147999,SAMEA114111092,ERS16091817,PRJEB63361,CRESA-KP246,,,,,,,,,,,,,,,,,,,ERR11748667,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110991,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748566,ERX11147898,SAMEA114110991,ERS16091716,PRJEB63361,CRESA-KP079,,,,,,,,,,,,,,,,,,,ERR11748566,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245623,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818281,ERX11216601,SAMEA114245623,ERS16232523,PRJEB64895,9784,,,,,,,,,,,,,,,,,,,ERR11818281,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114111235,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748810,ERX11148142,SAMEA114111235,ERS16091960,PRJEB63361,CRESA-KP544,,,,,,,,,,,,,,,,,,,ERR11748810,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111027,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748602,ERX11147934,SAMEA114111027,ERS16091752,PRJEB63361,CRESA-KP120,,,,,,,,,,,,,,,,,,,ERR11748602,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111120,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748695,ERX11148027,SAMEA114111120,ERS16091845,PRJEB63361,CRESA-KP295,,,,,,,,,,,,,,,,,,,ERR11748695,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111059,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748634,ERX11147966,SAMEA114111059,ERS16091784,PRJEB63361,CRESA-KP177,,,,,,,,,,,,,,,,,,,ERR11748634,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934651,2017,Greece,,2017,clinical material,,,,,ERR11592221,ERX10994823,SAMEA113934651,ERS15928812,PRJEB63349,GR13001_BL_KP,,,,,,,,,,,,,,,,,,,ERR11592221,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114111257,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748832,ERX11148164,SAMEA114111257,ERS16091982,PRJEB63361,CRESA-KP671,,,,,,,,,,,,,,,,,,,ERR11748832,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111152,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748727,ERX11148059,SAMEA114111152,ERS16091877,PRJEB63361,CRESA-KP356,,,,,,,,,,,,,,,,,,,ERR11748727,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111259,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748834,ERX11148166,SAMEA114111259,ERS16091984,PRJEB63361,CRESA-KP676,,,,,,,,,,,,,,,,,,,ERR11748834,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245643,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818301,ERX11216621,SAMEA114245643,ERS16232543,PRJEB64895,9765,,,,,,,,,,,,,,,,,,,ERR11818301,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114111166,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748741,ERX11148073,SAMEA114111166,ERS16091891,PRJEB63361,CRESA-KP386,,,,,,,,,,,,,,,,,,,ERR11748741,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111054,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748629,ERX11147961,SAMEA114111054,ERS16091779,PRJEB63361,CRESA-KP154,,,,,,,,,,,,,,,,,,,ERR11748629,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934708,2018,Greece,,2018,clinical material,,,,,ERR11592278,ERX10994880,SAMEA113934708,ERS15928869,PRJEB63349,GR13260,,,,,,,,,,,,,,,,,,,ERR11592278,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114111141,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748716,ERX11148048,SAMEA114111141,ERS16091866,PRJEB63361,CRESA-KP339,,,,,,,,,,,,,,,,,,,ERR11748716,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934709,2018,Greece,,2018,clinical material,,,,,ERR11592279,ERX10994881,SAMEA113934709,ERS15928870,PRJEB63349,GR13261,,,,,,,,,,,,,,,,,,,ERR11592279,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114245609,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818267,ERX11216587,SAMEA114245609,ERS16232509,PRJEB64895,9871,,,,,,,,,,,,,,,,,,,ERR11818267,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114111055,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748630,ERX11147962,SAMEA114111055,ERS16091780,PRJEB63361,CRESA-KP156,,,,,,,,,,,,,,,,,,,ERR11748630,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934688,2018,Greece,,2018,clinical material,,,,,ERR11592258,ERX10994860,SAMEA113934688,ERS15928849,PRJEB63349,GR13215_BL_KP,,,,,,,,,,,,,,,,,,,ERR11592258,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114111000,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748575,ERX11147907,SAMEA114111000,ERS16091725,PRJEB63361,CRESA-KP091,,,,,,,,,,,,,,,,,,,ERR11748575,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245702,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818360,ERX11216680,SAMEA114245702,ERS16232602,PRJEB64895,9760,,,,,,,,,,,,,,,,,,,ERR11818360,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA114111262,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748837,ERX11148169,SAMEA114111262,ERS16091987,PRJEB63361,CRESA-KP683,,,,,,,,,,,,,,,,,,,ERR11748837,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA10417040,,Malawi,,,,,,,,ERR10765954,ERX10216848,SAMEA10417040,ERS8065916,PRJEB37378,52391518-30e7-11ec-ab4c-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10765954,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA114111202,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748777,ERX11148109,SAMEA114111202,ERS16091927,PRJEB63361,CRESA-KP456,,,,,,,,,,,,,,,,,,,ERR11748777,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110985,2018,South Africa,,2018,clinical material,,Screen,,,ERR11748560,ERX11147892,SAMEA114110985,ERS16091710,PRJEB63361,CRESA-KP069,,,,,,,,,,,,,,,,,,,ERR11748560,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934683,2018,Greece,,2018,clinical material,,,,,ERR11592253,ERX10994855,SAMEA113934683,ERS15928844,PRJEB63349,GR13185_BL_KP,,,,,,,,,,,,,,,,,,,ERR11592253,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114111029,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748604,ERX11147936,SAMEA114111029,ERS16091754,PRJEB63361,CRESA-KP122,,,,,,,,,,,,,,,,,,,ERR11748604,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111201,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748776,ERX11148108,SAMEA114111201,ERS16091926,PRJEB63361,CRESA-KP454,,,,,,,,,,,,,,,,,,,ERR11748776,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111028,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748603,ERX11147935,SAMEA114111028,ERS16091753,PRJEB63361,CRESA-KP121,,,,,,,,,,,,,,,,,,,ERR11748603,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111084,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748659,ERX11147991,SAMEA114111084,ERS16091809,PRJEB63361,CRESA-KP235,,,,,,,,,,,,,,,,,,,ERR11748659,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111087,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748662,ERX11147994,SAMEA114111087,ERS16091812,PRJEB63361,CRESA-KP241,,,,,,,,,,,,,,,,,,,ERR11748662,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111274,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748849,ERX11148181,SAMEA114111274,ERS16091999,PRJEB63361,CRESA-KP760,,,,,,,,,,,,,,,,,,,ERR11748849,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934661,2017,Greece,,2017,clinical material,,,,,ERR11592231,ERX10994833,SAMEA113934661,ERS15928822,PRJEB63349,GR13094_UR_KP,,,,,,,,,,,,,,,,,,,ERR11592231,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114111216,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748791,ERX11148123,SAMEA114111216,ERS16091941,PRJEB63361,CRESA-KP492,,,,,,,,,,,,,,,,,,,ERR11748791,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114245653,2022,Greece,,2022,,,,,National Public Health Organization (NPHO) in Greece,ERR11818311,ERX11216631,SAMEA114245653,ERS16232553,PRJEB64895,9744,,,,,,,,,,,,,,,,,,,ERR11818311,,,,,,,,,,,,,,,,,,,,,,,,,,,,38.9953683,21.9877132
+SAMEA10303297,,Malawi,,,,,,,,ERR10765692,ERX10216586,SAMEA10303297,ERS7958003,PRJEB37378,df87823e-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765692,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA114111008,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748583,ERX11147915,SAMEA114111008,ERS16091733,PRJEB63361,CRESA-KP101,,,,,,,,,,,,,,,,,,,ERR11748583,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111281,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748856,ERX11148188,SAMEA114111281,ERS16092006,PRJEB63361,CRESA-KP795,,,,,,,,,,,,,,,,,,,ERR11748856,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111248,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748823,ERX11148155,SAMEA114111248,ERS16091973,PRJEB63361,CRESA-KP601,,,,,,,,,,,,,,,,,,,ERR11748823,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110968,2018,South Africa,,2018,clinical material,,Clinical,,,ERR11748543,ERX11147875,SAMEA114110968,ERS16091693,PRJEB63361,CRESA-KP041,,,,,,,,,,,,,,,,,,,ERR11748543,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111255,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748830,ERX11148162,SAMEA114111255,ERS16091980,PRJEB63361,CRESA-KP659,,,,,,,,,,,,,,,,,,,ERR11748830,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111134,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748709,ERX11148041,SAMEA114111134,ERS16091859,PRJEB63361,CRESA-KP326,,,,,,,,,,,,,,,,,,,ERR11748709,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110986,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748561,ERX11147893,SAMEA114110986,ERS16091711,PRJEB63361,CRESA-KP071,,,,,,,,,,,,,,,,,,,ERR11748561,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934652,2017,Greece,,2017,clinical material,,,,,ERR11592222,ERX10994824,SAMEA113934652,ERS15928813,PRJEB63349,GR13005_UR_KP,,,,,,,,,,,,,,,,,,,ERR11592222,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA114111148,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748723,ERX11148055,SAMEA114111148,ERS16091873,PRJEB63361,CRESA-KP348,,,,,,,,,,,,,,,,,,,ERR11748723,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111048,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748623,ERX11147955,SAMEA114111048,ERS16091773,PRJEB63361,CRESA-KP146,,,,,,,,,,,,,,,,,,,ERR11748623,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114110920,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748495,ERX11147827,SAMEA114110920,ERS16091645,PRJEB63361,CRESA-14809,,,,,,,,,,,,,,,,,,,ERR11748495,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111044,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748619,ERX11147951,SAMEA114111044,ERS16091769,PRJEB63361,CRESA-KP139,,,,,,,,,,,,,,,,,,,ERR11748619,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111067,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748642,ERX11147974,SAMEA114111067,ERS16091792,PRJEB63361,CRESA-KP193,,,,,,,,,,,,,,,,,,,ERR11748642,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111104,2019,South Africa,,2019,clinical material,,Clinical,,,ERR11748679,ERX11148011,SAMEA114111104,ERS16091829,PRJEB63361,CRESA-KP271,,,,,,,,,,,,,,,,,,,ERR11748679,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111231,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748806,ERX11148138,SAMEA114111231,ERS16091956,PRJEB63361,CRESA-KP529,,,,,,,,,,,,,,,,,,,ERR11748806,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA114111276,2019,South Africa,,2019,clinical material,,Screen,,,ERR11748851,ERX11148183,SAMEA114111276,ERS16092001,PRJEB63361,CRESA-KP774,,,,,,,,,,,,,,,,,,,ERR11748851,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMEA113934675,2017,Greece,,2017,clinical material,,,,,ERR11592245,ERX10994847,SAMEA113934675,ERS15928836,PRJEB63349,GR13143_BL_KP,,,,,,,,,,,,,,,,,,,ERR11592245,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.64,22.94
+SAMEA10303171,,Malawi,,,,,,,,ERR10765647,ERX10216541,SAMEA10303171,ERS7957876,PRJEB37378,dd86f05a-2812-11ec-ba34-fa163eea3084,,,,,,,,,,,,,,,,,,,ERR10765647,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA114110910,2018,South Africa,,2018,clinical material,,Clinical,,,ERR11748485,ERX11147817,SAMEA114110910,ERS16091635,PRJEB63361,CRESA-13508,,,,,,,,,,,,,,,,,,,ERR11748485,,,,,,,,,,,,,,,,,,,,,,,,,,,,-33.97,18.57
+SAMN36884878,1st April 2016,Ghana,,01/04/2016,ENRH,Human,,,Staff from ENRH,SRR25565281,SRX21294075,SAMN36884878,SRS18543640,PRJNA473419,C121,,,,,,,,,,,,,,,,,,,SRR25565281,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.9239,-1.7446
+SAMN36884877,1st April 2016,Ghana,,01/04/2016,ENRH,Human,,,Staff from ENRH,SRR25565282,SRX21294074,SAMN36884877,SRS18543639,PRJNA473419,C104,,,,,,,,,,,,,,,,,,,SRR25565282,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.9239,-1.7446
+SAMEA12109292,,Malawi,,,,,,,,ERR10893841,ERX10336964,SAMEA12109292,ERS9756127,PRJEB37378,024fe7d4-6d69-11ec-a55e-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10893841,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12109432,,Malawi,,,,,,,,ERR10893930,ERX10337053,SAMEA12109432,ERS9756267,PRJEB37378,04e64510-6d69-11ec-a55e-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10893930,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12109349,,Malawi,,,,,,,,ERR10894040,ERX10337163,SAMEA12109349,ERS9756184,PRJEB37378,03beabd2-6d69-11ec-a55e-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10894040,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12816856,,Malawi,,,,,,,,ERR11195380,ERX10626746,SAMEA12816856,ERS10423803,PRJEB37378,f2687736-859c-11ec-b3a4-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR11195380,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12109430,,Malawi,,,,,,,,ERR10893925,ERX10337048,SAMEA12109430,ERS9756265,PRJEB37378,04ddb198-6d69-11ec-a55e-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10893925,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12109242,,Malawi,,,,,,,,ERR10893986,ERX10337109,SAMEA12109242,ERS9756077,PRJEB37378,0167588e-6d69-11ec-a55e-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10893986,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12109285,,Malawi,,,,,,,,ERR10893823,ERX10336946,SAMEA12109285,ERS9756120,PRJEB37378,0232c668-6d69-11ec-a55e-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10893823,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA112785777,,,,,,,,,,ERR11021167,ERX10457523,SAMEA112785777,ERS14786562,PRJEB60743,AMA004929,,,,,,,,,,,,,,,,,,,ERR11021167,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12999637,,Netherlands,,,,,,,,ERR8684684,ERX8350039,SAMEA12999637,ERS10598528,PRJEB50545,KLP-JSC-MOD-104451,,,,,,,,,,,,,,,,,,,ERR8684684,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA112622402,2020,Cameroon,,2020,,,,,,ERR10863348,ERX10308049,SAMEA112622402,ERS14614417,PRJEB58695,CM-LURIA-PR10_S18,,,,,,,,,,,,,,,,,,,ERR10863348,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.6125522,13.1535811
+SAMEA12109286,,Malawi,,,,,,,,ERR10893829,ERX10336952,SAMEA12109286,ERS9756122,PRJEB37378,023ace4e-6d69-11ec-a55e-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10893829,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12109382,,Malawi,,,,,,,,ERR10893921,ERX10337044,SAMEA12109382,ERS9756216,PRJEB37378,02ef1494-6d69-11ec-a55e-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10893921,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12109439,,Malawi,,,,,,,,ERR10894071,ERX10337194,SAMEA12109439,ERS9756274,PRJEB37378,0507823e-6d69-11ec-a55e-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10894071,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12816863,,Malawi,,,,,,,,ERR11195391,ERX10626757,SAMEA12816863,ERS10423808,PRJEB37378,f27b4bcc-859c-11ec-b3a4-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR11195391,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12999620,,Netherlands,,,,,,,,ERR8684612,ERX8349967,SAMEA12999620,ERS10598511,PRJEB50545,KLP-JSC-MOD-104434,,,,,,,,,,,,,,,,,,,ERR8684612,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12816855,,Malawi,,,,,,,,ERR11195373,ERX10626739,SAMEA12816855,ERS10423801,PRJEB37378,f2643e46-859c-11ec-b3a4-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR11195373,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12109449,,Malawi,,,,,,,,ERR10893979,ERX10337102,SAMEA12109449,ERS9756284,PRJEB37378,0534c140-6d69-11ec-a55e-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR10893979,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA12816887,,Malawi,,,,,,,,ERR11195434,ERX10626800,SAMEA12816887,ERS10423833,PRJEB37378,f2b6690a-859c-11ec-b3a4-fa163eac3af7,,,,,,,,,,,,,,,,,,,ERR11195434,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAMEA113605663,2017,Norway,,2017,blood,,diseased,,,ERR11578420,ERX10982080,SAMEA113605663,ERS15600040,PRJEB48268,NK_H17_025,,,,,,,,,,,,,,,,,,,ERR11578420,,,,,,,,,,,,,,,,,,,,,,,,,,,,61.1529386,8.7876653
+SAMEA113604991,2017,Norway,,2017,blood,,diseased,,,ERR11578041,ERX10981701,SAMEA113604991,ERS15599368,PRJEB48268,NK_H1_032,,,,,,,,,,,,,,,,,,,ERR11578041,,,,,,,,,,,,,,,,,,,,,,,,,,,,61.1529386,8.7876653
+SAMEA113605205,2018,Norway,,2018,blood,,diseased,,,ERR11578946,ERX10982606,SAMEA113605205,ERS15599582,PRJEB48268,NK_H6_007,,,,,,,,,,,,,,,,,,,ERR11578946,,,,,,,,,,,,,,,,,,,,,,,,,,,,61.1529386,8.7876653
+SAMN23768620,2020,Ethiopia,Hawassa,2020,Human blood sample,Human,,,Melese Hailu Legese,SRR17179222,SRX13362618,SAMN23768620,SRS11267492,PRJNA787062,3,,,,,,,,,,,,,,,,,,,SRR17179222,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.0504,38.4955
+SAMN28744260,24th November 2019,Australia,Queensland,24/11/2019,Cardiac Drain Swab,Human,,,missing,SRR19442037,SRX15495418,SAMN28744260,SRS13210510,PRJNA797179,M911380,,,,,,,,,,,,,,,,,,,SRR19442037,,,,,,,,,,,,,,,,,,,,,,,,,,,,-22.1646782,144.5844903
+SAMN23768904,2020,Ethiopia,Addis Ababa,2020,Human blood sample,Human,,,Melese Hailu Legese,SRR17179324,SRX13362516,SAMN23768904,SRS11267390,PRJNA787062,345,,,,,,,,,,,,,,,,,,,SRR17179324,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.9806,38.7578
+SAMN28668256,14th December 2019,Australia,Queensland,14/12/2019,Rectal Swab,Human,,,missing,SRR19561313,SRX15613262,SAMN28668256,SRS13313997,PRJNA797179,M00087,,,,,,,,,,,,,,,,,,,SRR19561313,,,,,,,,,,,,,,,,,,,,,,,,,,,,-22.1646782,144.5844903
+SAMN23768755,2020,Ethiopia,Addis Ababa,2020,Human blood sample,Human,,,Melese Hailu Legese,SRR17179117,SRX13362723,SAMN23768755,SRS11267597,PRJNA787062,89,,,,,,,,,,,,,,,,,,,SRR17179117,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.9806,38.7578
+SAMN29188325,10th December 2005,Bangladesh,,10/12/2005,missing,Human,,,Child Health Research Foundation (CHRF),SRR19743721,SRX15789889,SAMN29188325,SRS13482696,PRJNA845975,CHRF_KPN_0342,,,,,,,,,,,,,,,,,,,SRR19743721,,,,,,,,,,,,,,,,,,,,,,,,,,,,23.685,90.356
+SAMN28744106,21st October 2019,Australia,Queensland,21/10/2019,Rectal Swab,Human,,,missing,SRR19442263,SRX15495644,SAMN28744106,SRS13210733,PRJNA797179,M910259,,,,,,,,,,,,,,,,,,,SRR19442263,,,,,,,,,,,,,,,,,,,,,,,,,,,,-22.1646782,144.5844903
+SAMN29188371,18th April 2008,Bangladesh,,18/04/2008,missing,Human,,,Child Health Research Foundation (CHRF),SRR19743739,SRX15789871,SAMN29188371,SRS13482678,PRJNA845975,CHRF_KPN_0394,,,,,,,,,,,,,,,,,,,SRR19743739,,,,,,,,,,,,,,,,,,,,,,,,,,,,23.685,90.356
+SAMN23768759,2020,Ethiopia,Addis Ababa,2020,Human blood sample,Human,,,Melese Hailu Legese,SRR17179108,SRX13362732,SAMN23768759,SRS11267607,PRJNA787062,103,,,,,,,,,,,,,,,,,,,SRR17179108,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.9806,38.7578
+SAMEA114126263,4th September 2022,Saudi Arabia,,04/09/2022,Clinical sample,,diseased,,,ERR11752341,ERX11151509,SAMEA114126263,ERS16106988,PRJEB36683,ena-SAMPLE-TAB-20-07-2023-12:24:27:782-7825,,,,,,,,,,,,,,,,,,,ERR11752341,,,,,,,,,,,,,,,,,,,,,,,,,,,,25.6242618,42.3528328
+SAMD00497645,13th June 2019,Japan,Aomori,13/06/2019,venous blood,Human,,,"AMRRC, NIID",DRR386149,DRX372009,SAMD00497645,DRS297411,PRJDB10842,SAMD00497645,,,,,,,,,,,,,,,,,,,DRR386149,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.824229,140.740106
+SAMEA10330732,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330732,,ERX11441893,,PRJEB42462,,,ERR12058728,,ERS7985472,,,44bb744a-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330736,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330736,,ERX11441917,,PRJEB42462,,,ERR12058752,,ERS7985476,,,44c2da6e-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330953,2018,,,,,,,,,,,,,,,,,,,,,,SAMEA10330953,,ERX11441560,,PRJEB42462,,,ERR12058395,,ERS7985692,,,462e3074-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331113,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331113,,ERX11441498,,PRJEB42462,,,ERR12058333,,ERS7985852,,,47aeeeac-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330781,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330781,,ERX11441711,,PRJEB42462,,,ERR12058546,,ERS7985521,,,451eee1c-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330733,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330733,,ERX11441895,,PRJEB42462,,,ERR12058730,,ERS7985473,,,44bd440a-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330811,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330811,,ERX11441828,,PRJEB42462,,,ERR12058663,,ERS7985551,,,4563e7e2-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330725,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330725,,ERX11441863,,PRJEB42462,,,ERR12058698,,ERS7985465,,,44a53bd0-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331103,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331103,,ERX11441462,,PRJEB42462,,,ERR12058297,,ERS7985842,,,479ba7ac-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330742,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330742,,ERX11441929,,PRJEB42462,,,ERR12058764,,ERS7985482,,,44d1e1a8-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330741,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330741,,ERX11441927,,PRJEB42462,,,ERR12058762,,ERS7985481,,,44cff258-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330731,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330731,,ERX11441891,,PRJEB42462,,,ERR12058726,,ERS7985471,,,44b96b82-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330717,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330717,,ERX11441831,,PRJEB42462,,,ERR12058666,,ERS7985457,,,448af3ec-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331014,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331014,,ERX11441414,,PRJEB42462,,,ERR12058249,,ERS7985753,,,46a572a6-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330875,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330875,,ERX11441439,,PRJEB42462,,,ERR12058274,,ERS7985615,,,46af71a2-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330734,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330734,,ERX11441899,,PRJEB42462,,,ERR12058734,,ERS7985475,,,44c0f1e0-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330958,2018,,,,,,,,,,,,,,,,,,,,,,SAMEA10330958,,ERX11441564,,PRJEB42462,,,ERR12058399,,ERS7985697,,,463214fa-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331282,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331282,,ERX11441519,,PRJEB42462,,,ERR12058354,,ERS7986022,,,4887c93e-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330803,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330803,,ERX11441797,,PRJEB42462,,,ERR12058632,,ERS7985543,,,45515a64-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331117,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331117,,ERX11441521,,PRJEB42462,,,ERR12058356,,ERS7985856,,,47b6a264-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330884,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330884,,ERX11441471,,PRJEB42462,,,ERR12058306,,ERS7985624,,,46c38138-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330752,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330752,,ERX11441981,,PRJEB42462,,,ERR12058816,,ERS7985492,,,44e50602-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331012,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331012,,ERX11441410,,PRJEB42462,,,ERR12058245,,ERS7985751,,,46a07576-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330769,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330769,,ERX11442033,,PRJEB42462,,,ERR12058868,,ERS7985509,,,45062832-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331280,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331280,,ERX11441499,,PRJEB42462,,,ERR12058334,,ERS7986019,,,48842b94-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330766,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330766,,ERX11442014,,PRJEB42462,,,ERR12058849,,ERS7985506,,,45004bf6-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330783,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330783,,ERX11441715,,PRJEB42462,,,ERR12058550,,ERS7985523,,,452a81f0-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331238,2018,,,,,,,,,,,,,,,,,,,,,,SAMEA10331238,,ERX11441681,,PRJEB42462,,,ERR12058516,,ERS7985977,,,482ca5cc-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330871,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330871,,ERX11441416,,PRJEB42462,,,ERR12058251,,ERS7985611,,,46a77b0a-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330724,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330724,,ERX11441861,,PRJEB42462,,,ERR12058696,,ERS7985464,,,449f792a-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330751,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330751,,ERX11441963,,PRJEB42462,,,ERR12058798,,ERS7985491,,,44e31fc2-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330786,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330786,,ERX11441735,,PRJEB42462,,,ERR12058570,,ERS7985526,,,453037f8-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331281,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331281,,ERX11441501,,PRJEB42462,,,ERR12058336,,ERS7986020,,,4885f154-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330881,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330881,,ERX11441451,,PRJEB42462,,,ERR12058286,,ERS7985621,,,46bdc57c-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330802,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330802,,ERX11441793,,PRJEB42462,,,ERR12058628,,ERS7985541,,,454da9c8-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331015,2016,,,,,,,,,,,,,,,,,,,,,,SAMEA10331015,,ERX11441503,,PRJEB42462,,,ERR12058338,,ERS7985754,,,46d71806-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330730,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330730,,ERX11441889,,PRJEB42462,,,ERR12058724,,ERS7985470,,,44b76a8a-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331107,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331107,,ERX11441468,,PRJEB42462,,,ERR12058303,,ERS7985845,,,47a16a70-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331274,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331274,,ERX11441489,,PRJEB42462,,,ERR12058324,,ERS7986013,,,4878f60c-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330767,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330767,,ERX11442015,,PRJEB42462,,,ERR12058850,,ERS7985507,,,450245f0-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330727,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330727,,ERX11441867,,PRJEB42462,,,ERR12058702,,ERS7985467,,,44b1a884-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331278,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331278,,ERX11441497,,PRJEB42462,,,ERR12058332,,ERS7986017,,,4880753a-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331276,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331276,,ERX11441493,,PRJEB42462,,,ERR12058328,,ERS7986015,,,487caf9a-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331096,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331096,,ERX11441432,,PRJEB42462,,,ERR12058267,,ERS7985835,,,478e571e-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330747,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330747,,ERX11441955,,PRJEB42462,,,ERR12058790,,ERS7985487,,,44db33de-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330749,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330749,,ERX11441959,,PRJEB42462,,,ERR12058794,,ERS7985489,,,44df421c-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331104,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331104,,ERX11441464,,PRJEB42462,,,ERR12058299,,ERS7985843,,,479dabc4-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330148,2005,,,,,,,,,,,,,,,,,,,,,,SAMEA10330148,,ERX11442456,,PRJEB42462,,,ERR12059291,,ERS7984889,,,404c4c36-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330785,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330785,,ERX11441733,,PRJEB42462,,,ERR12058568,,ERS7985525,,,452e4eac-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330735,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330735,,ERX11441897,,PRJEB42462,,,ERR12058732,,ERS7985474,,,44bf259a-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331007,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331007,,ERX11441388,,PRJEB42462,,,ERR12058223,,ERS7985746,,,46986f70-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330754,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330754,,ERX11441985,,PRJEB42462,,,ERR12058820,,ERS7985494,,,44e8e146-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331108,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331108,,ERX11441488,,PRJEB42462,,,ERR12058323,,ERS7985847,,,47a53e8e-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330737,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330737,,ERX11441921,,PRJEB42462,,,ERR12058756,,ERS7985477,,,44ca68c4-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330784,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330784,,ERX11441732,,PRJEB42462,,,ERR12058567,,ERS7985524,,,452c645c-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330716,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330716,,ERX11441740,,PRJEB42462,,,ERR12058575,,ERS7985454,,,444f43ba-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330837,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330837,,ERX11441924,,PRJEB42462,,,ERR12058759,,ERS7985576,,,4599b052-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331277,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331277,,ERX11441495,,PRJEB42462,,,ERR12058330,,ERS7986016,,,487e8c52-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331270,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331270,,ERX11441467,,PRJEB42462,,,ERR12058302,,ERS7986009,,,48734c20-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331279,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331279,,ERX11442631,,PRJEB42462,,,ERR12059466,,ERS7986018,,,48825422-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331099,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331099,,ERX11441456,,PRJEB42462,,,ERR12058291,,ERS7985839,,,4795f1d6-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330726,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330726,,ERX11441865,,PRJEB42462,,,ERR12058700,,ERS7985466,,,44af8e64-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331006,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331006,,ERX11441384,,PRJEB42462,,,ERR12058219,,ERS7985745,,,469476e0-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330880,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330880,,ERX11441449,,PRJEB42462,,,ERR12058284,,ERS7985620,,,46bbcace-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331116,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331116,,ERX11441520,,PRJEB42462,,,ERR12058355,,ERS7985855,,,47b4a540-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331112,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331112,,ERX11441496,,PRJEB42462,,,ERR12058331,,ERS7985851,,,47ad0af6-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330756,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330756,,ERX11441988,,PRJEB42462,,,ERR12058823,,ERS7985496,,,44ecce82-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330788,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330788,,ERX11441741,,PRJEB42462,,,ERR12058576,,ERS7985529,,,45362276-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330874,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330874,,ERX11441422,,PRJEB42462,,,ERR12058257,,ERS7985614,,,46ad5fe8-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331119,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331119,,ERX11441522,,PRJEB42462,,,ERR12058357,,ERS7985857,,,47b89c04-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330839,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330839,,ERX11441928,,PRJEB42462,,,ERR12058763,,ERS7985578,,,459d6a4e-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330807,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330807,,ERX11441805,,PRJEB42462,,,ERR12058640,,ERS7985547,,,455b55f0-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330805,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330805,,ERX11441801,,PRJEB42462,,,ERR12058636,,ERS7985545,,,45578f56-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330840,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330840,,ERX11441932,,PRJEB42462,,,ERR12058767,,ERS7985580,,,45a11946-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330202,2020,,,,,,,,,,,,,,,,,,,,,,SAMEA10330202,,ERX11442124,,PRJEB42462,,,ERR12058959,,ERS7984942,,,3f8aefbe-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331115,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331115,,ERX11441518,,PRJEB42462,,,ERR12058353,,ERS7985854,,,47b2cf90-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331105,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331105,,ERX11441466,,PRJEB42462,,,ERR12058301,,ERS7985844,,,479f8430-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331362,2019,,,,,,,,,,,,,,,,,,,,,,SAMEA10331362,,ERX11442511,,PRJEB42462,,,ERR12059346,,ERS7986101,,,49b99e9a-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331355,2019,,,,,,,,,,,,,,,,,,,,,,SAMEA10331355,,ERX11442499,,PRJEB42462,,,ERR12059334,,ERS7986095,,,49ac4f10-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331268,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331268,,ERX11441461,,PRJEB42462,,,ERR12058296,,ERS7986007,,,486d89b6-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330809,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330809,,ERX11441824,,PRJEB42462,,,ERR12058659,,ERS7985550,,,45602972-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330771,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330771,,ERX11442035,,PRJEB42462,,,ERR12058870,,ERS7985511,,,4509f138-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330755,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330755,,ERX11441986,,PRJEB42462,,,ERR12058821,,ERS7985495,,,44eac9d4-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330787,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330787,,ERX11441737,,PRJEB42462,,,ERR12058572,,ERS7985527,,,45321b2c-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330768,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330768,,ERX11442032,,PRJEB42462,,,ERR12058867,,ERS7985508,,,45043bee-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330746,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330746,,ERX11441953,,PRJEB42462,,,ERR12058788,,ERS7985486,,,44d946f0-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330869,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330869,,ERX11441825,,PRJEB42462,,,ERR12058660,,ERS7985609,,,448512ce-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330872,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330872,,ERX11441418,,PRJEB42462,,,ERR12058253,,ERS7985613,,,46a98332-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330806,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330806,,ERX11441803,,PRJEB42462,,,ERR12058638,,ERS7985546,,,45597b5e-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330800,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330800,,ERX11441792,,PRJEB42462,,,ERR12058627,,ERS7985540,,,454bcdd8-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330765,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330765,,ERX11442013,,PRJEB42462,,,ERR12058848,,ERS7985505,,,44fde6ea-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330882,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330882,,ERX11441453,,PRJEB42462,,,ERR12058288,,ERS7985622,,,46c18144-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331269,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331269,,ERX11441463,,PRJEB42462,,,ERR12058298,,ERS7986008,,,486f6c36-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10331000,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10331000,,ERX11441359,,PRJEB42462,,,ERR12058194,,ERS7985739,,,468a97ec-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+SAMEA10330748,2017,,,,,,,,,,,,,,,,,,,,,,SAMEA10330748,,ERX11441957,,PRJEB42462,,,ERR12058792,,ERS7985488,,,44dd347c-2a6a-11ec-92f6-fa163eac3af7,,,,,,,,,,,,,,,,,,,,,,,,,,38711148,-15.802,35.021
+GCA_019930305.1_ASM1993030v1,27th May 2011,Turkey,,,,,,,,,,,,,,,,,,,Turkey,,SAMN18874692,,,,PRJNA717739,,,,,SRS19181657,,,,13726,Europe,Urine,Non-MDR,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,S,R,S,GCA_019930305,Gulhane Training and Research Hospital,,38.959759,34.924965
+C27,,Ghana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+C27_hybrid,,Ghana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+E44_hybrid,,Ghana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+C1_hybrid,,Ghana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+C37,,Ghana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+C42,,Ghana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+E49_hybrid,,Ghana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+E49,,Ghana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+E63_hybrid,,Ghana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+C38_hybrid,,Ghana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+E44,,Ghana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+C42_hybrid,,Ghana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+E63,,Ghana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+C37_hybrid,,Ghana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+C38,,Ghana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+C3_hybrid,,Ghana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+C3,,Ghana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+C1,,Ghana,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+43479B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38403B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38454B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38552B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38832B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38895B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+43522B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38972B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38277B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38998B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+43264B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+IF55E,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+IF52E,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38264B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+43365B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38755B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38768B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38680B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38710B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+44211B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38995B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38816B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38326B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38614B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+43451B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+43409B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38466B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38764B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+IF26E,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38833B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+43515B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38826B1,,The Gambia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

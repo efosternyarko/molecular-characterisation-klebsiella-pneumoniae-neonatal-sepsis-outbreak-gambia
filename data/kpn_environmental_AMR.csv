@@ -1,0 +1,15 @@
+sample_id,status,source_type,cefoxitin,cefotaxime,trimethoprim_sulfamethoxazole,gentamicin,tetracycline,chloramphenicol,ciprofloxacin,ampicillin
+RT01E,Env1_Other,Other,S,S,R,S,S,S,S,R
+DB04E,Env2_Other,Other,S,S,S,S,S,S,S,R
+DB05E,Env3_Other,Other,S,S,R,S,R,S,S,R
+SBB08E,Env4_Other,Other,S,S,S,S,S,S,S,R
+BJB09E,Env5_Other,Other,R,S,S,S,S,S,S,R
+BB10E,Env6_Other,Other,S,R,R,S,R,R,S,R
+WGS13E,Env7_Other,Other,S,S,S,S,R,S,S,R
+SS23E,Env8_Other,IV_Bag,S,R,R,S,R,R,S,R
+IF26E,Env9_ST39,IV_Bag,S,R,R,R,R,R,S,R
+IF28E,Env10_Other,Other,S,S,S,S,S,S,S,R
+SS40E,Env11_Other,IV_Bag,S,R,R,S,R,R,S,R
+IF43E,Env12_Other,IV_Bag,S,R,R,R,R,R,S,R
+IF44E,Env13_Other,IV_Bag,S,R,R,R,R,R,S,R
+IF45E,Env14_Other,IV_Bag,S,R,R,R,R,R,S,R
