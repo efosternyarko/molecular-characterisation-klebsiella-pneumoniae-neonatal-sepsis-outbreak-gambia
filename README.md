@@ -101,10 +101,10 @@ All data files are described in `data/README.md`. Key inputs:
 - **Supplementary data** (`FileS1_to_FileS10.xlsx`, sheet `FileS3`) — isolate metadata including ST, collection dates, and sample type. Available with the published paper.
 - **Gambia administrative shapefile** — from GADM (https://gadm.org/download_country.html, country = Gambia, level 1). Free for academic use.
 - **Pathogenwatch global *K. pneumoniae* ST39 collection** — https://pathogen.watch/collection/81f6uz2riu07-updatedst39globalcollection6nov25
-- **Phylogenetic tree** — IQ-TREE2 maximum likelihood tree of ST39 isolates (file `st39_cluster.treefile`). Available on request or as supplementary data.
-- **Transmission cluster assignments** — output of genomic cluster analysis (`clusters_data_final.csv`). Available on request.
-- **Plasmid coverage data** — BWA-MEM alignment of ST39 assemblies against pNS39_A reference plasmid (`pNS39_A_alignment_coverage_summary.tsv`). Available on request.
-- **Chromosomal AMR locus GenBank files** — extracted from complete hybrid assemblies of 38277B1 and 38833B1. Available on request.
+- **Phylogenetic tree** — IQ-TREE2 maximum likelihood tree of ST39 isolates (`st39_cluster.treefile`). Included in `data/`.
+- **Transmission cluster assignments** — output of genomic cluster analysis (`clusters_data_final.csv`). Included in `data/`.
+- **Plasmid coverage data** — BWA-MEM alignment of ST39 assemblies against pNS39_A reference plasmid (`pNS39_A_alignment_coverage_summary.tsv`). Included in `data/`.
+- **Chromosomal AMR locus GenBank files** — extracted from complete hybrid assemblies of 38277B1 and 38833B1 (`38277B1_locus.gbk`, `38833B1_locus.gbk`). Included in `data/`.
 
 ---
 
