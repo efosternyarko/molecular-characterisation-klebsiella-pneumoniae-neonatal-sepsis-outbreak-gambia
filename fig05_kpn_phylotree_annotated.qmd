@@ -266,6 +266,13 @@ names(klocus_colors) <- c(sort(top_10_klocus), "Other")
 ## Build Annotated Tree
 
 ```{r create-tree, fig.width=22, fig.height=18}
+# Deduplicate columns — ggtree %<+% requires unique names
+dup_cols <- names(metadata)[duplicated(names(metadata))]
+if (length(dup_cols) > 0) {
+  cat("Removing duplicate columns:", paste(dup_cols, collapse = ", "), "\n")
+  metadata <- metadata[, !duplicated(names(metadata))]
+}
+
 # --- Base tree ---
 p <- ggtree(tree, layout = "rectangular") %<+% metadata
 
