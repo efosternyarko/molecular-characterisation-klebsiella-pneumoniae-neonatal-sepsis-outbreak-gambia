@@ -81,7 +81,7 @@ See `figAppendix_clinker_amr_locus.md` for the clinker command used to generate 
 ## Notes
 
 - Place all files directly in this `data/` directory (alongside this README).
-- File paths in the scripts assume data files are in `../data/` relative to each script.
+- File paths in the scripts assume data files are in `data/` relative to the script (i.e. scripts and the `data/` directory sit side by side).
 - The Gambia shapefile archive can be unzipped here; only `gadm41_GMB_1.shp` (and its companion files) are needed.
 - For access to restricted data files, contact the corresponding author:  
   **Ebenezer Foster-Nyarko** — e.foster-nyarko@lshtm.ac.uk
