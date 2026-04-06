@@ -232,6 +232,11 @@ if ("Ciprofloxacin_prediction" %in% names(metadata)) {
 ```
 
 ```{r reshape-annotation-data}
+sample_type_data <- tibble(label = tree$tip.label) %>%
+  left_join(metadata %>% select(label, sample_category), by = "label") %>%
+  mutate(variable = "Sample type",
+         value    = coalesce(sample_category, "Unknown"))
+
 klocus_data <- metadata %>%
   select(label, K_locus_category) %>% distinct() %>%
   mutate(variable = "K-locus", value = K_locus_category) %>%
@@ -261,16 +266,20 @@ names(st_colors) <- c(sort(top_10_st), "Other")
 
 klocus_colors <- c(brewer.pal(min(length(top_10_klocus), 10), "Paired"), "grey70")
 names(klocus_colors) <- c(sort(top_10_klocus), "Other")
+
+sample_type_colors <- c("Clinical" = "#4393C3", "Environmental" = "#2CA25F",
+                        "Other" = "#AEAEAE", "Unknown" = "grey90")
 ```
 
 ## Build Annotated Tree
 
 ```{r create-tree, fig.width=22, fig.height=18}
 # --- Base tree ---
-# Note: %<+% conflicts with newer dplyr when the first metadata column is
-# already named "label". Join directly to p$data instead.
-p <- ggtree(tree, layout = "rectangular")
-p$data <- left_join(p$data, metadata, by = "label")
+# %<+% internally calls dplyr::rename(metadata, label = 1); if column 1 is
+# already named "label", newer vctrs rejects it as a duplicate. Fix: pass
+# metadata with column 1 temporarily renamed so %<+% has no conflict.
+p <- ggtree(tree, layout = "rectangular") %<+%
+  rename(metadata, .lbl = label)
 
 # Colour branches and tip points by ST
 p <- p +
@@ -291,17 +300,31 @@ p <- p +
     offset = 0.001   # small nudge away from tip point; adjust if needed
   )
 
-# --- Ring 1: K-locus (innermost) ---
+# --- Ring 0: Sample type (Clinical / Environmental) ---
+p <- p +
+  new_scale_fill() +
+  geom_fruit(
+    data    = sample_type_data,
+    geom    = geom_tile,
+    mapping = aes(y = label, x = variable, fill = value),
+    offset  = 0.03,
+    pwidth  = 0.06,
+    axis.params = list(axis = "x", text = "Sample\ntype", text.angle = 0,
+                       text.size = 2.5, hjust = 0.5, nbreak = 1)
+  ) +
+  scale_fill_manual(values = sample_type_colors, name = "Sample type", na.value = "grey90")
+
+# --- Ring 1: K-locus ---
 p <- p +
   new_scale_fill() +
   geom_fruit(
     data    = klocus_data,
     geom    = geom_tile,
     mapping = aes(y = label, x = variable, fill = value),
-    offset  = 0.05,
+    offset  = 0.03,
     pwidth  = 0.08,
     axis.params = list(axis = "x", text = "K-locus", text.angle = 0,
-                       text.size = 3, hjust = 0.5, nbreak = 1)
+                       text.size = 2.5, hjust = 0.5, nbreak = 1)
   ) +
   scale_fill_manual(values = klocus_colors, name = "K-locus", na.value = "grey90")
 
@@ -314,7 +337,7 @@ p <- p +
     mapping = aes(y = label, x = Trait, fill = as.factor(Presence)),
     offset  = 0.01,
     pwidth  = 0.15,
-    axis.params = list(axis = "x", text.angle = 90, text.size = 3,
+    axis.params = list(axis = "x", text.angle = -90, text.size = 3,
                        hjust = 0, vjust = 0.5, nbreak = length(virulence_cols))
   ) +
   scale_fill_manual(
@@ -333,7 +356,7 @@ p <- p +
     mapping = aes(y = label, x = Gene, fill = as.factor(Presence)),
     offset  = 0.01,
     pwidth  = 0.25,
-    axis.params = list(axis = "x", text.angle = 90, text.size = 3,
+    axis.params = list(axis = "x", text.angle = -90, text.size = 3,
                        hjust = 0, vjust = 0.5,
                        nbreak = length(unique(genotypic_data$Gene)))
   ) +
@@ -353,7 +376,7 @@ p <- p +
     mapping = aes(y = label, x = Mutation, fill = as.factor(Presence)),
     offset  = 0.01,
     pwidth  = 0.12,
-    axis.params = list(axis = "x", text.angle = 90, text.size = 3,
+    axis.params = list(axis = "x", text.angle = -90, text.size = 3,
                        hjust = 0, vjust = 0.5,
                        nbreak = length(unique(mutation_data$Mutation)))
   ) +
