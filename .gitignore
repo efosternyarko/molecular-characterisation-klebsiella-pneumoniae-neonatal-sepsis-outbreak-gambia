@@ -7,20 +7,11 @@
 .Rproj.user/
 *.Rproj
 
-# Quarto outputs
+# Quarto rendered outputs (not figures/ directory)
 /_site/
 *_files/
-*.html
-*.pdf
-*.png
-*.svg
 
-# Data files (not shared in repo — see data/README.md)
-data/*.csv
-data/*.xlsx
-data/*.nwk
-data/*.treefile
-data/*.tsv
+# GADM shapefiles (too large, download from gadm.org)
 data/*.shp
 data/*.dbf
 data/*.prj
