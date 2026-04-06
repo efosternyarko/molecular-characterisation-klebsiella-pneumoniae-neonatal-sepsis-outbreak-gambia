@@ -100,7 +100,7 @@ All data files are described in `data/README.md`. Key inputs:
 
 - **Supplementary File S2** (`FileS1_to_FileS10.xlsx`, sheet `Supp_File2_Study_isolates`) — isolate metadata including ST, collection dates, and sample type. Available with the published paper.
 - **Gambia administrative shapefile** — from GADM (https://gadm.org/download_country.html, country = Gambia, level 1). Free for academic use.
-- **Pathogenwatch global *K. pneumoniae* ST39 collection** — exported from https://pathogen.watch. Collection ID `81f6uz2riu07`.
+- **Pathogenwatch global *K. pneumoniae* ST39 collection** — https://pathogen.watch/collection/81f6uz2riu07-updatedst39globalcollection6nov25
 - **Phylogenetic tree** — IQ-TREE2 maximum likelihood tree of ST39 isolates (file `st39_cluster.treefile`). Available on request or as supplementary data.
 - **Transmission cluster assignments** — output of genomic cluster analysis (`clusters_data_final.csv`). Available on request.
 - **Plasmid coverage data** — BWA-MEM alignment of ST39 assemblies against pNS39_A reference plasmid (`pNS39_A_alignment_coverage_summary.tsv`). Available on request.
