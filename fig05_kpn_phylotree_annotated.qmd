@@ -73,6 +73,7 @@ out_dir       <- "."
 
 ```{r load-genomic}
 metadata <- read.csv(fp_kleborate) %>%
+  select(-any_of("label")) %>%   # drop pre-existing label col if present in export
   rename(label = Genome_Name)
 
 tree <- read.tree(fp_tree)
@@ -87,23 +88,24 @@ print(head(tree$tip.label))
 
 ```{r load-sample-type}
 # Load isolate metadata from supplementary file
-supp <- read_excel(fp_supp, sheet = "FileS3") %>%
+supp_raw <- read_excel(fp_supp, sheet = "FileS3")
+has_source_type <- "source_type" %in% names(supp_raw)
+
+supp <- supp_raw %>%
   mutate(
-    sample_id = as.character(sample_id) %>% str_trim(),
-    # Classify as Environmental or Clinical
+    id = as.character(id) %>% str_trim(),
     sample_category = case_when(
       str_to_lower(Status) == "environmental" ~ "Environmental",
       Status %in% c("Neonate", "Non-neonate")  ~ "Clinical",
       TRUE ~ "Other"
     ),
-    # IV-fluid flag: check source_type column if it exists
-    is_iv_fluid = if ("source_type" %in% names(.)) {
+    is_iv_fluid = if (has_source_type) {
       str_detect(str_to_lower(source_type), "iv|bag")
     } else {
       FALSE
     }
   ) %>%
-  select(sample_id, sample_category, is_iv_fluid)
+  select(id, sample_category, is_iv_fluid)
 
 cat("Sample categories in supplementary file:\n")
 print(table(supp$sample_category, useNA = "ifany"))
@@ -115,7 +117,7 @@ cat("\nIV fluid samples:", sum(supp$is_iv_fluid, na.rm = TRUE), "\n")
 # Pathogenwatch often uses the sample name as the Genome_Name — inspect and adjust
 # the cleaning step below if your IDs use different formatting.
 supp <- supp %>%
-  mutate(label = sample_id %>%
+  mutate(label = id %>%
            str_trim() %>%
            str_replace_all("[[:space:]]+", "_"))
 
