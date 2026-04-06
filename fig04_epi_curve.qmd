@@ -25,7 +25,7 @@ corresponding species are shown in brackets (Kqp, Klebsiella quasipneumoniae
 subsp. similipneumoniae; Ec, Escherichia coli). The single non-K. pneumoniae
 environmental isolate is denoted by a star."
 
-Data required (place in ../data/):
+Data required (place in data/):
   - FileS1_to_FileS10.xlsx  : supplementary data; sheet "FileS3"
                               K. pneumoniae isolates (columns: Year, Month, ST, sample_id)
   - pathogenwatch_kqp_with_dates.csv : K. quasipneumoniae + E. coli data
@@ -49,8 +49,8 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE,
 
 ```{r file-paths}
 # Update these paths to point to your local data files
-fp_kp  <- "../data/FileS1_to_FileS10.xlsx"
-fp_kqp <- "../data/pathogenwatch_kqp_with_dates.csv"
+fp_kp  <- "data/FileS1_to_FileS10.xlsx"
+fp_kqp <- "data/pathogenwatch_kqp_with_dates.csv"
 out_dir <- "."   # output directory for saved figures
 ```
 

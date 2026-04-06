@@ -28,7 +28,7 @@ Maximum-likelihood phylogenetic tree of all K. pneumoniae isolates, annotated wi
   - Ring 3 (Genotypic AMR): acquired resistance genes (blue = present)
   - Ring 4 (AMR mutations): acquired resistance mutations (orange = present)
 
-Data required (place in ../data/):
+Data required (place in data/):
   - gm_kpn_kleborate.csv       : Pathogenwatch Kleborate export for all Gambia Kp isolates
                                   (columns include: Genome_Name, ST, K_locus, virulence
                                   and AMR gene/mutation columns)
@@ -61,9 +61,9 @@ library(readxl)
 ## File Paths
 
 ```{r file-paths}
-fp_kleborate  <- "../data/gm_kpn_kleborate.csv"
-fp_tree       <- "../data/gm_kpn_tree.nwk"
-fp_supp       <- "../data/FileS1_to_FileS10.xlsx"   # sheet "FileS3" — study isolates
+fp_kleborate  <- "data/gm_kpn_kleborate.csv"
+fp_tree       <- "data/gm_kpn_tree.nwk"
+fp_supp       <- "data/FileS1_to_FileS10.xlsx"   # sheet "FileS3" — study isolates
 out_dir       <- "."
 ```
 

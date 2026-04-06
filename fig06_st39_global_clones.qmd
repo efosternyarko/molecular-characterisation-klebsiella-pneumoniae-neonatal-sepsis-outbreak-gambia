@@ -26,7 +26,7 @@ Four-panel figure showing the global distribution and AMR of K. pneumoniae ST39 
   C: ESBL gene prevalence by clone and continent (%)
   D: Carbapenemase gene prevalence by clone and continent (%)
 
-Data required (place in ../data/):
+Data required (place in data/):
   - pathogenwatch_st39_typing.csv    : Pathogenwatch typing export (collection 81f6uz2riu07)
   - pathogenwatch_st39_metadata.csv  : Pathogenwatch metadata export (must have COUNTRY column)
   - pathogenwatch_st39_kleborate.csv : Pathogenwatch Kleborate export (Bla_ESBL_acquired,
@@ -45,9 +45,9 @@ library(patchwork)
 library(scales)
 
 # Update these paths to point to your local data files
-kp  <- read_csv("../data/pathogenwatch_st39_typing.csv")
-kpm <- read_csv("../data/pathogenwatch_st39_metadata.csv")
-kpa <- read_csv("../data/pathogenwatch_st39_kleborate.csv")
+kp  <- read_csv("data/pathogenwatch_st39_typing.csv")
+kpm <- read_csv("data/pathogenwatch_st39_metadata.csv")
+kpa <- read_csv("data/pathogenwatch_st39_kleborate.csv")
 
 names(kp)  <- str_trim(names(kp))
 names(kpm) <- str_trim(names(kpm))
