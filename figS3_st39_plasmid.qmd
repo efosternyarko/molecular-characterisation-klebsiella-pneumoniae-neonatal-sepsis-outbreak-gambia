@@ -30,7 +30,7 @@ Five-panel figure (A–E) aligned with the IQ-TREE2 ST39 phylogenetic tree:
 Panels A–D are identical to Figure 5 but with the addition of Panel D (plasmid
 coverage) and optimised for A4 printing (larger font sizes).
 
-Data required (place in ../data/):
+Data required (place in data/):
   - FileS1_to_FileS10.xlsx              : sheet "FileS3"
   - clusters_data_final.csv             : transmission cluster assignments
   - st39_cluster.treefile               : IQ-TREE2 Newick tree
@@ -61,10 +61,10 @@ theme_set(theme_minimal(base_size = 22))
 
 ```{r file-paths}
 # Update these paths to point to your local data files
-fp_data    <- "../data/FileS1_to_FileS10.xlsx"
-fp_clusters <- "../data/clusters_data_final.csv"
-fp_plasmid <- "../data/pNS39_A_alignment_coverage_summary.tsv"
-tree_base  <- "../data/st39_cluster"
+fp_data    <- "data/FileS1_to_FileS10.xlsx"
+fp_clusters <- "data/clusters_data_final.csv"
+fp_plasmid <- "data/pNS39_A_alignment_coverage_summary.tsv"
+tree_base  <- "data/st39_cluster"
 out_dir    <- "."
 
 dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
