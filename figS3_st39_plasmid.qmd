@@ -31,7 +31,7 @@ Panels A–D are identical to Figure 5 but with the addition of Panel D (plasmid
 coverage) and optimised for A4 printing (larger font sizes).
 
 Data required (place in ../data/):
-  - FileS1_to_FileS10.xlsx              : sheet "Supp_File2_Study_isolates"
+  - FileS1_to_FileS10.xlsx              : sheet "FileS3"
   - clusters_data_final.csv             : transmission cluster assignments
   - st39_cluster.treefile               : IQ-TREE2 Newick tree
   - pNS39_A_alignment_coverage_summary.tsv : per-sample pNS39_A coverage
@@ -80,7 +80,7 @@ strip_suffix <- function(x) {
   x %>% str_remove("_1$") %>% str_remove("_final$")
 }
 
-st39_data_raw <- read_excel(fp_data, sheet = "Supp_File2_Study_isolates")
+st39_data_raw <- read_excel(fp_data, sheet = "FileS3")
 
 st39_data <- st39_data_raw %>%
   filter(ST == "ST39") %>%
