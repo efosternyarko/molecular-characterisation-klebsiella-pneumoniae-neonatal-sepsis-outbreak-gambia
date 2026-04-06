@@ -34,7 +34,7 @@ Data required (place in ../data/):
                                   and AMR gene/mutation columns)
   - gm_kpn_tree.nwk            : Newick tree from Pathogenwatch (all Gambia Kp collection)
   - FileS1_to_FileS10.xlsx     : Supplementary data file published with paper;
-                                  sheet "Supp_File2_Study_isolates" must contain columns:
+                                  sheet "FileS3" must contain columns:
                                   sample_id, Status (Environmental / Neonate / Non-neonate),
                                   and optionally source_type (e.g. "IV bag", "water", etc.)
 
@@ -88,7 +88,7 @@ print(head(tree$tip.label))
 
 ```{r load-sample-type}
 # Load isolate metadata from supplementary file
-supp <- read_excel(fp_supp, sheet = "Supp_File2_Study_isolates") %>%
+supp <- read_excel(fp_supp, sheet = "FileS3") %>%
   mutate(
     sample_id = as.character(sample_id) %>% str_trim(),
     # Classify as Environmental or Clinical

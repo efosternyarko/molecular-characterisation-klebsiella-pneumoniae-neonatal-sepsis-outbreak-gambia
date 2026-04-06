@@ -33,7 +33,7 @@ Environmental CSV additionally requires: `source_type` (e.g. "IV bag", "water").
 
 | File | Description | Source |
 |------|-------------|--------|
-| `FileS1_to_FileS10.xlsx` | Supplementary data; sheet `Supp_File2_Study_isolates` contains isolate metadata (sample_id, species, ST, Year, Month, Day, Status, AMR gene columns) | Published with paper (Supplementary File S2) |
+| `FileS1_to_FileS10.xlsx` | Supplementary data; sheet `FileS3` (study isolates — sample_id, species, ST, Year, Month, Day, Status, AMR gene columns) | Published with paper |
 | `pathogenwatch_kqp_with_dates.csv` | *K. quasipneumoniae* and *E. coli* isolate data with collection dates (columns: Year, Month, species, ST, status) | Available from authors |
 | `clusters_data_final.csv` | Transmission cluster assignments for ST39 isolates (columns: `id`, `ST`, `Cluster`) | Available from authors |
 | `st39_cluster.treefile` | IQ-TREE2 maximum likelihood tree of ST39 isolates in Newick format | Available from authors or as supplementary data |
