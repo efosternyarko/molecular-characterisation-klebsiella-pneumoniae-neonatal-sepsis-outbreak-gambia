@@ -78,10 +78,10 @@ install.packages(c(
   "RColorBrewer", "ape"
 ))
 
-# Bioconductor packages
+# Bioconductor packages (ggtree only — ggtreeExtra no longer required)
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
-BiocManager::install(c("ggtree", "ggtreeExtra"))
+BiocManager::install("ggtree")
 ```
 
 Quarto: https://quarto.org/docs/get-started/
@@ -147,4 +147,4 @@ See `figAppendix_clinker_amr_locus.md` for full details.
 ## Contact
 
 Ebenezer Foster-Nyarko — MRC Unit The Gambia at LSHTM  
-e.foster-nyarko@lshtm.ac.uk
+ebenezer.foster-nyarko2@lshtm.ac.uk
