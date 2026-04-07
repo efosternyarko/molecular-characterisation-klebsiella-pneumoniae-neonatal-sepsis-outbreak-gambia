@@ -5,8 +5,7 @@ patient/environmental sampling through culture, sequencing, and analysis.
 
 ## How it was made
 
-This figure was created manually in **Adobe Illustrator** (version 28.x). It is not
-reproducible via a script.
+This figure was created manually in **Adobe Illustrator** (version 28.x). It is not reproducible via a script.
 
 ## Description
 
@@ -19,4 +18,4 @@ The diagram illustrates:
 
 ## Source file
 
-The original Illustrator file (`.ai`) and exported PDF are available from the authors on request.
+The original Illustrator file (`.ai`) and exported PDF are available with the published paper.
