@@ -89,4 +89,4 @@ Key parameters used in this study:
 
 ## Contact
 
-Ebenezer Foster-Nyarko — e.foster-nyarko@lshtm.ac.uk
+Ebenezer Foster-Nyarko — ebenezer.foster-nyarko2@lshtm.ac.uk
