@@ -39,17 +39,29 @@ df_towns = pd.DataFrame(town_data)
 geometry = [Point(xy) for xy in zip(df_towns["Longitude"], df_towns["Latitude"])]
 gdf_towns = gpd.GeoDataFrame(df_towns, geometry=geometry, crs="EPSG:4326")
 
-# --- Region colours ---
-unique_regions = gambia_map["NAME_1"].unique()
+# --- Region name mapping (shapefile → display name) ---
+region_rename = {
+    "Banjul":           "Greater Banjul",
+    "Maccarthy Island": "Central River",
+}
+gambia_map["display_name"] = gambia_map["NAME_1"].map(
+    lambda x: region_rename.get(x, x)
+)
+
+# Display order for legend
+region_order = ["Greater Banjul", "Lower River", "Central River",
+                "North Bank", "Upper River", "Western"]
+
+unique_regions = region_order  # use ordered display names
 cmap = plt.cm.get_cmap("tab20", len(unique_regions))
 region_colors = {region: cmap(i) for i, region in enumerate(unique_regions)}
 
 # --- Plot ---
-fig, ax = plt.subplots(figsize=(10, 8))
+fig, ax = plt.subplots(figsize=(12, 8))
 
 # Regions
 for region in unique_regions:
-    region_data = gambia_map[gambia_map["NAME_1"] == region]
+    region_data = gambia_map[gambia_map["display_name"] == region]
     region_data.plot(ax=ax, color=region_colors[region], edgecolor="black", linewidth=0.6)
 
 # Town points
@@ -65,22 +77,30 @@ for _, row in gdf_towns.iterrows():
                 fontsize=12, color="black",
                 bbox=dict(facecolor="white", edgecolor="none", alpha=0.7, pad=1.5))
 
-# Region legend (outside right)
+# Region legend — placed inside the figure on the right using figure coordinates
+# so it is never clipped regardless of bbox settings.
 region_patches = [mpatches.Patch(color=region_colors[r], label=r) for r in unique_regions]
-leg1 = ax.legend(handles=region_patches, title="Regions",
-                 loc="center left", bbox_to_anchor=(1, 0.5), frameon=False)
-ax.add_artist(leg1)
+leg1 = fig.legend(handles=region_patches, title="Regions",
+                  loc="center right",
+                  bbox_to_anchor=(0.98, 0.5),
+                  bbox_transform=fig.transFigure,
+                  frameon=True, framealpha=0.85, edgecolor="grey",
+                  fontsize=10, title_fontsize=11,
+                  handlelength=1.2, handleheight=1.2)
 
-# Town legend (inside)
+# Town legend — lower left, inside axes
 town_handles = [Line2D([0], [0], marker="o", linestyle="",
                        markerfacecolor=town_colors[t], markeredgecolor="black",
                        markersize=9, label=t) for t in town_colors]
-ax.legend(handles=town_handles, title="Towns", loc="upper left", frameon=True)
+ax.legend(handles=town_handles, title="Study sites", loc="upper left",
+          bbox_to_anchor=(-0.13, 1.05),
+          frameon=True, fontsize=10, title_fontsize=11)
 
 ax.set_aspect("equal")
 ax.set_axis_off()
 
-plt.tight_layout()
+# Reserve right margin for region legend, then save
+fig.subplots_adjust(right=0.78)
 plt.savefig(output_pdf_path, format="pdf", bbox_inches="tight")
 print(f"Saved: {output_pdf_path}")
 plt.show()
