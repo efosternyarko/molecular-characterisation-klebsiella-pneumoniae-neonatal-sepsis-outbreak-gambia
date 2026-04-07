@@ -23,5 +23,5 @@ supplementary data file:
 
 ## Contact
 
-For the original Illustrator source file, contact the corresponding author:  
-**Ebenezer Foster-Nyarko** — e.foster-nyarko@lshtm.ac.uk
+For the original Illustrator source file, contact the corresponding author:
+**Ebenezer Foster-Nyarko** — ebenezer.foster-nyarko2@lshtm.ac.uk
