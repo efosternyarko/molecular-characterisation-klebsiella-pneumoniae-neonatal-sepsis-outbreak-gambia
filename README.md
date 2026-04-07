@@ -146,5 +146,5 @@ See `figAppendix_clinker_amr_locus.md` for full details.
 
 ## Contact
 
-Ebenezer Foster-Nyarko — MRC Unit The Gambia at LSHTM  
+Ebenezer Foster-Nyarko — LSHTM  
 ebenezer.foster-nyarko2@lshtm.ac.uk
