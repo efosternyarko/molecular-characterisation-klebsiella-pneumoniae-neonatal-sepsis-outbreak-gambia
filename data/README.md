@@ -33,7 +33,7 @@ Environmental CSV additionally requires: `source_type` (e.g. "IV bag", "water").
 
 | File | Description | Source |
 |------|-------------|--------|
-| `FileS1_to_FileS10.xlsx` | Supplementary data; sheet `FileS3` (study isolates — sample_id, species, ST, Year, Month, Day, Status, AMR gene columns) | Published with paper |
+| `FileS1_to_FileS10.xlsx` | Supplementary data; sheet `FileS3` (study isolates — id, species, ST, Year, Month, Status, Sample_type, AMR gene columns) | Published with paper (version: FileS1_to_FileS10_7Apr26.xlsx) |
 | `pathogenwatch_kqp_with_dates.csv` | *K. quasipneumoniae* and *E. coli* isolate data with collection dates (columns: Year, Month, species, ST, status) | Included in `data/` |
 | `clusters_data_final.csv` | Transmission cluster assignments for ST39 isolates (columns: `id`, `ST`, `Cluster`) | Included in `data/` |
 | `st39_cluster.treefile` | IQ-TREE2 maximum likelihood tree of ST39 isolates in Newick format | Included in `data/` |
@@ -83,5 +83,5 @@ See `figAppendix_clinker_amr_locus.md` for the clinker command used to generate 
 - Place all files directly in this `data/` directory (alongside this README).
 - File paths in the scripts assume data files are in `data/` relative to the script (i.e. scripts and the `data/` directory sit side by side).
 - The Gambia shapefile archive can be unzipped here; only `gadm41_GMB_1.shp` (and its companion files) are needed.
-- For access to restricted data files, contact the corresponding author:  
-  **Ebenezer Foster-Nyarko** — e.foster-nyarko@lshtm.ac.uk
+- For any queries please contact the corresponding author:
+  **Ebenezer Foster-Nyarko** — ebenezer.foster-nyarko2@lshtm.ac.uk
