@@ -43,10 +43,6 @@ code/
 | Fig S3 | ST39 multi-panel: tree + AMR + metadata + plasmid + timeline | `figS3_st39_plasmid.qmd` | R (Quarto) |
 | Appendix | Comparative genomic organisation of chromosomal AMR locus (38277B1 vs 38833B1) | `figAppendix_clinker_amr_locus.md` | clinker |
 
-> **Note on Fig 5:** The submitted figure was post-processed in Adobe Illustrator.
-> The script reproduces the base R output. Asterisk labels for environmental isolates
-> are coded in the script; final legend layout was adjusted manually.
-
 ---
 
 ## Requirements
