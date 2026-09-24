@@ -1,8 +1,8 @@
-# Molecular characterisation of a *Klebsiella pneumoniae* neonatal sepsis outbreak in a rural Gambian hospital
+# *Klebsiella pneumoniae* neonatal sepsis outbreak in a rural Gambian hospital
 
 This repository contains the analysis scripts used to generate the figures in:
 
-> Foster-Nyarko E, *et al.* **Molecular characterisation of a *Klebsiella pneumoniae* neonatal sepsis outbreak in a rural Gambian hospital: a retrospective genomic epidemiology investigation.** *medRxiv* (2026). https://doi.org/10.64898/2026.03.03.26347025
+> Foster-Nyarko E, *et al.* ***Klebsiella pneumoniae* neonatal sepsis outbreak in a rural Gambian hospital: a retrospective genomic epidemiology investigation.** *medRxiv* (2026). https://doi.org/10.64898/2026.03.03.26347025
 
 ---
 
@@ -15,7 +15,8 @@ code/
 │   └── README.md                      # Data sources and access instructions
 ├── fig01A_gambia_map.py               # Figure 1A — Map of The Gambia
 ├── fig02_resistance_heatmap.py        # Figure 2 — AMR heatmap (clinical + environmental)
-├── fig03_flow_diagram.md              # Figure 3 — Study flow diagram (Illustrator)
+├── fig03_flow_diagram.py               # Figure 3 — Study flow diagram
+├── fig03_flow_diagram.md              # Figure 3 — notes and provenance
 ├── fig04_epi_curve.qmd                # Figure 4 — Epidemiological curves
 ├── fig05_kpn_phylotree_annotated.qmd  # Figure 5 — All-Kp phylogenetic tree + metadata
 ├── fig06_st39_global_clones.qmd       # Figure 6 — Global ST39 clone distribution + AMR
@@ -34,7 +35,7 @@ code/
 | Fig 1A | Map of The Gambia showing study sites | `fig01A_gambia_map.py` | Python |
 | Fig 1B | Timeline of outbreak investigation | Assembled in Illustrator | — |
 | Fig 2  | Clustered AMR heatmap (clinical + environmental isolates) | `fig02_resistance_heatmap.py` | Python |
-| Fig 3  | Study flow diagram | Assembled in Illustrator | — |
+| Fig 3  | Study flow diagram (case population → isolates → QC → species → ST39 → outcomes) | `fig03_flow_diagram.py` | Python |
 | Fig 4  | Epidemiological curves — 3 panels (Kp clinical, Kp environmental, other species) | `fig04_epi_curve.qmd` | R (Quarto) |
 | Fig 5  | *K. pneumoniae* phylogeny annotated with ST, K-locus, virulence, and AMR | `fig05_kpn_phylotree_annotated.qmd` | R (Quarto) |
 | Fig 6  | Global ST39 clone distribution and AMR by continent | `fig06_st39_global_clones.qmd` | R (Quarto) |

@@ -86,7 +86,8 @@ norm_country <- function(x) {
     "Wales" = "United Kingdom", "Northern Ireland" = "United Kingdom",
     "Russia" = "Russian Federation", "Czech Republic" = "Czechia",
     "S. Korea" = "South Korea", "Korea, Republic of" = "South Korea",
-    "Korea (South)" = "South Korea", "Viet Nam" = "Vietnam"
+    "Korea (South)" = "South Korea", "Viet Nam" = "Vietnam",
+    "Phillipines" = "Philippines", "Brussels" = "Belgium"
   )
   ifelse(s %in% names(replacements), replacements[s], s)
 }
