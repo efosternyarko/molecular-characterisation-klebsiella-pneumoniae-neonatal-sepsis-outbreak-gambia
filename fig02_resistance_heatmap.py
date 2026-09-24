@@ -180,6 +180,8 @@ row_colors = pd.DataFrame({
 
 # ---------- Clustermap ----------
 n_samples = len(mat)
+n_clinical = int((ann["SampleType"] == "Clinical").sum())
+n_environmental = int((ann["SampleType"] == "Environmental").sum())
 height = max(12, n_samples * 0.4)
 
 g = sns.clustermap(
@@ -218,13 +220,16 @@ legend1 = g.ax_row_dendrogram.legend(handles=handles_sample,
 handles_env = [plt.Line2D([0], [0], marker='s', color='w',
                            markerfacecolor=c, markersize=12, label=k)
                for k, c in envsub_colors.items()]
-g.ax_row_dendrogram.legend(handles=handles_env,
-                            title="Env source",
+legend_env = g.ax_row_dendrogram.legend(handles=handles_env,
+                            title="Env. sample source\n(N/A = clinical isolate)",
                             loc="lower left", bbox_to_anchor=(0.05, -0.10),
                             fontsize=12, title_fontsize=12, frameon=True)
 g.ax_row_dendrogram.add_artist(legend1)
+g.ax_row_dendrogram.add_artist(legend_env)
 
-# Resistance key
+# Resistance key. Isolate counts, susceptibility categories, and clustering
+# parameters (R1-M12) are now stated in the external figure legend/caption
+# instead of as an in-plot text box.
 g.ax_heatmap.text(1.00, 1.05, "Red = Resistant\nWhite = Susceptible",
                   transform=g.ax_heatmap.transAxes,
                   fontsize=12, verticalalignment='top', horizontalalignment='left',
