@@ -31,7 +31,7 @@ from pathlib import Path
 import re
 import seaborn as sns
 import matplotlib.pyplot as plt
-from matplotlib.colors import LinearSegmentedColormap
+from matplotlib.colors import ListedColormap, BoundaryNorm
 
 plt.rcParams['font.family'] = 'Helvetica'
 plt.rcParams['font.size'] = 12
@@ -68,7 +68,7 @@ def is_ampicillin(name):
     return bool(re.search(r"^ampicillin$", name, flags=re.I))
 
 
-def map_ast(series, treat_I_as=0.0):
+def map_ast(series, treat_I_as=0.5):
     s = series.astype(str).str.strip().str.lower()
     s = s.replace({"": np.nan, "na": np.nan, "n/a": np.nan, "nan": np.nan,
                    "-": np.nan, "not tested": np.nan})
@@ -169,7 +169,9 @@ envsub_colors = {
     "Not applicable": "#89D5F4"
 }
 
-cmap_heatmap = LinearSegmentedColormap.from_list("res_map", ["white", "#d73027"])
+# Three categories (2023 CLSI M100): susceptible = 0, intermediate = 0.5, resistant = 1
+cmap_heatmap = ListedColormap(["white", "#fdae61", "#d73027"])
+norm_heatmap = BoundaryNorm([-0.25, 0.25, 0.75, 1.25], cmap_heatmap.N)
 
 row_colors = pd.DataFrame({
     "Sample type": ann["SampleType"].map(cont_colors),
@@ -192,7 +194,7 @@ g = sns.clustermap(
     linewidths=0.0,
     figsize=(14, height),
     row_colors=row_colors,
-    vmin=0, vmax=1,
+    norm=norm_heatmap,
     yticklabels=True,
     cbar_pos=None
 )
@@ -213,7 +215,7 @@ handles_sample = [plt.Line2D([0], [0], marker='s', color='w',
                   for k, c in cont_colors.items()]
 legend1 = g.ax_row_dendrogram.legend(handles=handles_sample,
                                       title="Sample type",
-                                      loc="lower left", bbox_to_anchor=(0.05, -0.20),
+                                      loc="lower left", bbox_to_anchor=(0.05, -0.30),
                                       fontsize=12, title_fontsize=12, frameon=True)
 
 # Environmental source legend
@@ -222,7 +224,7 @@ handles_env = [plt.Line2D([0], [0], marker='s', color='w',
                for k, c in envsub_colors.items()]
 legend_env = g.ax_row_dendrogram.legend(handles=handles_env,
                             title="Env. sample source\n(N/A = clinical isolate)",
-                            loc="lower left", bbox_to_anchor=(0.05, -0.10),
+                            loc="lower left", bbox_to_anchor=(0.05, -0.18),
                             fontsize=12, title_fontsize=12, frameon=True)
 g.ax_row_dendrogram.add_artist(legend1)
 g.ax_row_dendrogram.add_artist(legend_env)
@@ -230,13 +232,26 @@ g.ax_row_dendrogram.add_artist(legend_env)
 # Resistance key. Isolate counts, susceptibility categories, and clustering
 # parameters (R1-M12) are now stated in the external figure legend/caption
 # instead of as an in-plot text box.
-g.ax_heatmap.text(1.00, 1.05, "Red = Resistant\nWhite = Susceptible",
+key = g.ax_heatmap.text(1.00, 1.10, "Red = Resistant\nOrange = Intermediate\nWhite = Susceptible",
                   transform=g.ax_heatmap.transAxes,
                   fontsize=12, verticalalignment='top', horizontalalignment='left',
                   bbox=dict(boxstyle='round', facecolor='white',
                             edgecolor='black', linewidth=1))
 
 plt.tight_layout()
-g.savefig(out_pdf, dpi=300, bbox_inches="tight")
-g.savefig(out_svg, dpi=300, bbox_inches="tight")
+
+# tight_layout() opens a gap above the heatmap: sit the column dendrogram just above it
+heat = g.ax_heatmap.get_position()
+col = g.ax_col_dendrogram.get_position()
+g.ax_col_dendrogram.set_position([col.x0, heat.y1 + 0.01, col.width, col.height])
+
+# Stack the two legends below the row dendrogram so they clear its lowest branches
+g.fig.canvas.draw()
+to_axes = g.ax_row_dendrogram.transAxes.inverted()
+env_h = np.ptp(to_axes.transform(legend_env.get_window_extent())[:, 1])
+legend_env.set_bbox_to_anchor((0.05, -0.03 - env_h), transform=g.ax_row_dendrogram.transAxes)
+legend1.set_bbox_to_anchor((0.05, -0.06 - env_h - np.ptp(to_axes.transform(legend1.get_window_extent())[:, 1])),
+                           transform=g.ax_row_dendrogram.transAxes)
+g.savefig(out_pdf, dpi=300, bbox_inches="tight", bbox_extra_artists=[legend1, legend_env, key])
+g.savefig(out_svg, dpi=300, bbox_inches="tight", bbox_extra_artists=[legend1, legend_env, key])
 print(f"Saved: {out_pdf}\n       {out_svg}")
