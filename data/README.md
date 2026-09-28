@@ -8,10 +8,12 @@ but are available as described below.
 
 ## Files Required
 
-### Figure 1A — `fig01A_gambia_map.py`
+### Figure 1 — `fig01_timeline_and_map.py` (and `fig01A_gambia_map.py`, map only)
 
 | File | Description | Source |
 |------|-------------|--------|
+| `fig01_epi_curve.csv` | Monthly laboratory-confirmed *K. pneumoniae* sepsis cases (0–59 months) and deaths, January 2023–March 2024 | Epidemic curve of the original outbreak report (Adefila et al. 2025); included in `data/` |
+| `fig01_clinical_kpn_isolates.csv` | WGS-confirmed clinical *K. pneumoniae* isolates, 2023–2024 (`id`, `year`, `month`, `st`, `status`) | Supplementary File 1; included in `data/` |
 | `gadm41_GMB_1.shp` (+ `.dbf`, `.prj`, `.shx`) | Administrative boundaries of The Gambia at regional level | Download from [GADM](https://gadm.org/download_country.html): select Gambia, level 1. Free for non-commercial use. |
 
 ---
@@ -24,12 +26,12 @@ but are available as described below.
 | `kpn_environmental_AMR.csv` | Per-isolate AST data for environmental *K. pneumoniae* | Derived from Supplementary File S2 (published with paper) |
 
 **Column requirements:**  
-Both CSVs: `sample_id`, `status` (used to flag ST39 isolates), antibiotic columns with R/I/S values.  
+Both CSVs: `sample_id`, `status` (used to flag ST39 isolates), antibiotic columns with R/I/S values (2023 CLSI M100 interpretations; final curated results including repeat testing where performed).  
 Environmental CSV additionally requires: `source_type` (e.g. "IV bag", "water").
 
 ---
 
-### Figures 4, 5, S3 — epi curve, ST39 tree, ST39 plasmid
+### Figures 4, 5 and Supplementary Figure 2 — epi curve, ST39 multi-panel, all-Kp tree
 
 | File | Description | Source |
 |------|-------------|--------|
@@ -40,7 +42,7 @@ Environmental CSV additionally requires: `source_type` (e.g. "IV bag", "water").
 
 ---
 
-### Figure S3 — additionally requires
+### Figure 5 (`figS3_st39_plasmid.qmd`) — additionally requires
 
 | File | Description | Source |
 |------|-------------|--------|
@@ -48,7 +50,7 @@ Environmental CSV additionally requires: `source_type` (e.g. "IV bag", "water").
 
 ---
 
-### Figure 5 — `fig05_kpn_phylotree_annotated.qmd`
+### Supplementary Figure 2 — `fig05_kpn_phylotree_annotated.qmd`
 
 | File | Description | Source |
 |------|-------------|--------|
