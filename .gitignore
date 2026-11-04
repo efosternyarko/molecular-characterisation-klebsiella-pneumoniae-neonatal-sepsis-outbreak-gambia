@@ -17,3 +17,6 @@ data/*.dbf
 data/*.prj
 data/*.shx
 data/*.zip
+
+# Restricted data (exact collection dates) - never commit
+data/st39_collection_days.csv

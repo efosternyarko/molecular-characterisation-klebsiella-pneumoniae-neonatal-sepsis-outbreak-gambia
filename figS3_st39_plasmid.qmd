@@ -33,6 +33,7 @@ coverage) and optimised for A4 printing (larger font sizes).
 Data required (place in data/):
   - FileS1_to_FileS12_28Sep26_1340.xlsx : Supplementary_File1 (+ load_supp.R)
   - clusters_data_final.csv             : transmission cluster assignments
+  - st39_collection_days.csv            : OPTIONAL, restricted (not on GitHub); enables week labels
   - st39_cluster.treefile               : IQ-TREE2 Newick tree
   - pNS39_A_alignment_coverage_summary.tsv : per-sample pNS39_A coverage
     (columns: Sample_ID, Ref_Coverage_%, Identity_%)
@@ -148,12 +149,30 @@ st39_data <- st39_data %>%
 ```
 
 ```{r process-dates}
-# FileS3 has Year and Month only (no Day column); default day to 1.
+# Exact collection dates cannot be shared publicly. The supplementary workbook
+# gives Year and Month only, so by default the timeline is labelled "Mon Year".
+# The published Fig 5 used week-within-month labels, derived from collection days
+# held in a restricted file (data/st39_collection_days.csv: sample_id, Year, Month, Day).
+# If that file is present locally (it is git-ignored) the week labels are
+# reproduced; otherwise the script falls back to month/year.
+fp_days <- "data/st39_collection_days.csv"
+use_week <- file.exists(fp_days)
+if (use_week) {
+  days <- read_csv(fp_days, show_col_types = FALSE) %>%
+    mutate(sample_id = normalize_id(sample_id)) %>%
+    distinct(sample_id, .keep_all = TRUE) %>%
+    select(sample_id, Day)
+  st39_data <- left_join(st39_data, days, by = "sample_id")
+} else {
+  st39_data$Day <- 1L
+}
+
 st39_data <- st39_data %>%
   mutate(
-    Collection_date = make_date(year = Year, month = Month, day = 1L),
+    Collection_date = make_date(year = Year, month = Month, day = Day),
     Month_name      = month.abb[Month],
-    Timeline_label  = paste0(Month_name, " ", Year)
+    Timeline_label  = if (use_week) paste0(Month_name, " Wk", ceiling(Day / 7))
+                      else paste0(Month_name, " ", Year)
   )
 ```
 
@@ -382,7 +401,7 @@ p_time <- ggplot(st39_data_in_tree,
   scale_colour_manual(values = cluster_cols, name = "Cluster") +
   scale_y_discrete(drop = FALSE) +
   scale_x_discrete(expand = expansion(add = 0.6)) +
-  labs(x = "Month & Year", y = NULL, tag = "E") +
+  labs(x = if (use_week) "Month & Week" else "Month & Year", y = NULL, tag = "E") +
   theme(axis.text.y   = element_blank(), axis.ticks.y = element_blank(),
         legend.position = "right",
         legend.justification = "top",
