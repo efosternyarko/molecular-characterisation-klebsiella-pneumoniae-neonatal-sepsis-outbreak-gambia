@@ -33,7 +33,7 @@ coverage) and optimised for A4 printing (larger font sizes).
 Data required (place in data/):
   - FileS1_to_FileS12_28Sep26_1340.xlsx : Supplementary_File1 (+ load_supp.R)
   - clusters_data_final.csv             : transmission cluster assignments
-  - st39_collection_days.csv            : OPTIONAL, restricted (not on GitHub); enables week labels
+  - st39_collection_days.csv            : OPTIONAL, in data/restricted/ (not on GitHub); enables week labels
   - st39_cluster.treefile               : IQ-TREE2 Newick tree
   - pNS39_A_alignment_coverage_summary.tsv : per-sample pNS39_A coverage
     (columns: Sample_ID, Ref_Coverage_%, Identity_%)
@@ -65,6 +65,9 @@ theme_set(theme_minimal(base_size = 22))
 source("load_supp.R")
 fp_data    <- "data/FileS1_to_FileS12_28Sep26_1340.xlsx"
 fp_clusters <- "data/clusters_data_final.csv"
+# RESTRICTED DATA: exact collection dates (Date/Day) were removed from the public copy
+# of clusters_data_final.csv. A dated copy in data/restricted/ is used if present.
+if (file.exists("data/restricted/clusters_data_final.csv")) fp_clusters <- "data/restricted/clusters_data_final.csv"
 fp_plasmid <- "data/pNS39_A_alignment_coverage_summary.tsv"
 tree_base  <- "data/st39_cluster"
 out_dir    <- Sys.getenv("FIG_OUT", ".")
@@ -149,13 +152,14 @@ st39_data <- st39_data %>%
 ```
 
 ```{r process-dates}
-# Exact collection dates cannot be shared publicly. The supplementary workbook
-# gives Year and Month only, so by default the timeline is labelled "Mon Year".
-# The published Fig 5 used week-within-month labels, derived from collection days
-# held in a restricted file (data/st39_collection_days.csv: sample_id, Year, Month, Day).
-# If that file is present locally (it is git-ignored) the week labels are
-# reproduced; otherwise the script falls back to month/year.
-fp_days <- "data/st39_collection_days.csv"
+# RESTRICTED DATA: exact collection dates (day/month/year) cannot be shared publicly,
+# so they are NOT in this repository. The workbook gives Year and Month only. The
+# published Fig 5 used week-within-month labels derived from collection days held in
+# data/restricted/st39_collection_days.csv (columns: sample_id, Year, Month, Day).
+# With that file present locally the published week labels are reproduced; without it
+# (i.e. from the public repo) the timeline falls back to "Mon Year" labels and the
+# figure will therefore differ from the published one.
+fp_days <- "data/restricted/st39_collection_days.csv"
 use_week <- file.exists(fp_days)
 if (use_week) {
   days <- read_csv(fp_days, show_col_types = FALSE) %>%

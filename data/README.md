@@ -36,7 +36,7 @@ Environmental CSV additionally requires: `source_type` (e.g. "IV bag", "water").
 | File | Description | Source |
 |------|-------------|--------|
 | `FileS1_to_FileS12_28Sep26_1340.xlsx` | Supplementary data; sheet `Supplementary_File1` (study isolates; header in row 2 — id, species, ST, Year, Month, Status, Sample_type, AMR gene columns) | Published with paper (version of 28 Sep 2026; Sample_type column added to Supplementary_File1) |
-| `pathogenwatch_kqp_with_dates.csv` | *K. quasipneumoniae* and *E. coli* isolate data with collection dates (columns: Year, Month, species, ST, status) | Included in `data/` |
+| `pathogenwatch_kqp_with_dates.csv` | *K. quasipneumoniae* and *E. coli* isolate data (columns: Year, Month, species, ST, status). Exact collection dates removed | Included in `data/` |
 | `clusters_data_final.csv` | Transmission cluster assignments for ST39 isolates (columns: `id`, `ST`, `Cluster`) | Included in `data/` |
 | `st39_cluster.treefile` | IQ-TREE2 maximum likelihood tree of ST39 isolates in Newick format | Included in `data/` |
 
@@ -81,6 +81,8 @@ See `figAppendix_clinker_amr_locus.md` for the clinker command used to generate 
 ---
 
 ## Notes
+
+- **Restricted data:** exact collection dates (day/month/year) cannot be shared publicly and have been removed from the files here (Year and Month are kept). The Fig 5 week-within-month labels therefore cannot be reproduced from this repository; see the "Restricted data" section of the main `README.md`. Locally, dated copies placed in `data/restricted/` (git-ignored) are used automatically.
 
 - Place all files directly in this `data/` directory (alongside this README).
 - File paths in the scripts assume data files are in `data/` relative to the script (i.e. scripts and the `data/` directory sit side by side).

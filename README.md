@@ -95,14 +95,22 @@ pip install clinker
 
 All data files are described in `data/README.md`. Key inputs:
 
-- **Supplementary data** (`FileS1_to_FileS12_28Sep26_1340.xlsx`, sheet `Supplementary_File1`; sheet `Supplementary_File3` lists environmental sampling by ward) — isolate metadata including ST, collection dates, and sample type. Each sheet has a title in row 1 and column headers in row 2; `load_supp.R` reads it. Available with the published paper.
+- **Supplementary data** (`FileS1_to_FileS12_28Sep26_1340.xlsx`, sheet `Supplementary_File1`; sheet `Supplementary_File3` lists environmental sampling by ward) — isolate metadata including ST, collection year and month, and sample type. Each sheet has a title in row 1 and column headers in row 2; `load_supp.R` reads it. Available with the published paper.
 - **Gambia administrative shapefile** — from GADM (https://gadm.org/download_country.html, country = Gambia, level 1). Free for academic use.
 - **Figure 1 epidemic curve** — monthly case and death totals from the original outbreak report (`fig01_epi_curve.csv`) and WGS-confirmed clinical *K. pneumoniae* isolates (`fig01_clinical_kpn_isolates.csv`, from Supplementary File 1). Included in `data/`.
 - **Pathogenwatch global *K. pneumoniae* ST39 collection** (deduplicated, 750 isolates, 22 September 2026) — https://pathogen.watch/collections/ryKcxCmfzKKegsAUkueS8P-updated-st-39-collection-deduplicated-22-september-20261703
 - **Phylogenetic tree** — IQ-TREE2 maximum likelihood tree of ST39 isolates (`st39_cluster.treefile`). Included in `data/`.
-- **Transmission cluster assignments** — output of genomic cluster analysis (`clusters_data_final.csv`). Included in `data/`.
+- **Transmission cluster assignments** — output of genomic cluster analysis (`clusters_data_final.csv`). Included in `data/` (exact collection dates removed; see below).
 - **Plasmid coverage data** — BWA-MEM alignment of ST39 assemblies against pNS39_A reference plasmid (`pNS39_A_alignment_coverage_summary.tsv`). Included in `data/`.
 - **Chromosomal AMR locus GenBank files** — extracted from complete hybrid assemblies of 38277B1 and 38833B1 (`38277B1_locus.gbk`, `38833B1_locus.gbk`). Included in `data/`.
+
+
+### Restricted data: exact collection dates
+
+Exact collection dates (day/month/year) cannot be shared publicly, so the data in this repository contain **Year and Month only**. The day (and full date) columns were removed from `clusters_data_final.csv` and `pathogenwatch_kqp_with_dates.csv`, and the day-level file used for Fig 5 is not included.
+
+- **Fig 4** needs only Year and Month and reproduces from the public data.
+- **Fig 5** (`figS3_st39_plasmid.qmd`): the published figure labels the timeline by week within month (`Mon Wk1`...), which needs collection days. These are not available here, so run from this repository the timeline is labelled `Mon Year` and the figure will **differ from the published one**. The script uses the restricted files automatically when present locally in `data/restricted/` (`st39_collection_days.csv` with columns `sample_id, Year, Month, Day`; optionally dated copies of the two CSVs above). That folder is git-ignored.
 
 ---
 

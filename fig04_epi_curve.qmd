@@ -52,6 +52,10 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE,
 source("load_supp.R")
 fp_kp  <- "data/FileS1_to_FileS12_28Sep26_1340.xlsx"
 fp_kqp <- "data/pathogenwatch_kqp_with_dates.csv"
+# RESTRICTED DATA: exact collection dates (Day/Date) cannot be shared publicly, so the
+# public copy above has them removed. This figure only needs Year and Month, so it
+# reproduces identically; if a dated copy exists in data/restricted/ it is used instead.
+if (file.exists("data/restricted/pathogenwatch_kqp_with_dates.csv")) fp_kqp <- "data/restricted/pathogenwatch_kqp_with_dates.csv"
 out_dir <- Sys.getenv("FIG_OUT", ".")   # output directory for saved figures
 ```
 
