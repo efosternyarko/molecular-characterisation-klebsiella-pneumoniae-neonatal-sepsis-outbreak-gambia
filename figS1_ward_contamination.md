@@ -15,8 +15,8 @@ The underlying contamination data (sample locations, organism identifications,
 and culture results from the environmental sampling) are provided in the
 supplementary data file:
 
-- **File:** `FileS1_to_FileS10.xlsx`
-- **Sheet:** `Supp_File2_Study_isolates` — environmental isolates column `Status == "Environmental"`,
+- **File:** `FileS1_to_FileS12_28Sep26_1340.xlsx`
+- **Sheet:** `Supplementary_File3` (environmental sampling by ward) / `Supplementary_File1` — environmental isolates column `Status == "Environmental"`,
   with sample location and culture result columns
 
 ---

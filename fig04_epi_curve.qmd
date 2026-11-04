@@ -26,7 +26,7 @@ subsp. similipneumoniae; Ec, Escherichia coli). The single non-K. pneumoniae
 environmental isolate is denoted by a star."
 
 Data required (place in data/):
-  - FileS1_to_FileS10.xlsx  : supplementary data; sheet "FileS3"
+  - FileS1_to_FileS12_28Sep26_1340.xlsx : Supplementary_File1 + Supplementary_File3 (needs load_supp.R)
                               K. pneumoniae isolates (columns: Year, Month, ST, sample_id)
   - pathogenwatch_kqp_with_dates.csv : K. quasipneumoniae + E. coli data
                               (columns: Year, Month, species, ST, status)
@@ -49,9 +49,10 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE,
 
 ```{r file-paths}
 # Update these paths to point to your local data files
-fp_kp  <- "data/FileS1_to_FileS10.xlsx"
+source("load_supp.R")
+fp_kp  <- "data/FileS1_to_FileS12_28Sep26_1340.xlsx"
 fp_kqp <- "data/pathogenwatch_kqp_with_dates.csv"
-out_dir <- "."   # output directory for saved figures
+out_dir <- Sys.getenv("FIG_OUT", ".")   # output directory for saved figures
 ```
 
 ## Data Loading
@@ -66,7 +67,7 @@ species_code_map <- tribble(
 ```
 
 ```{r load-kp-data}
-df_kp <- read_excel(fp_kp, sheet = "FileS3")
+df_kp <- load_supp_isolates(fp_kp)   # Supplementary File 1 + ward from File 3
 
 df_kp_filtered <- df_kp %>%
   filter(Year %in% c(2023, 2024)) %>%
@@ -75,8 +76,8 @@ df_kp_filtered <- df_kp %>%
     Species = "Klebsiella pneumoniae",
     ST = as.character(ST),
     sample_type = case_when(
-      str_detect(sample_id, "E$")  ~ "Environmental",
-      str_detect(sample_id, "B1$") ~ "Clinical",
+      str_detect(coalesce(Sample_type, ""), regex("environmental", ignore_case = TRUE)) ~ "Environmental",
+      str_detect(coalesce(Sample_type, ""), regex("clinical",     ignore_case = TRUE)) ~ "Clinical",
       TRUE ~ "Unknown"
     )
   ) %>%
@@ -141,6 +142,8 @@ colors <- c(
   "ST5142"     = "#ff1493",
   "ST711"      = "#7fffd4",
   "ST815"      = "#2f4f4f",
+  "ST1788"     = "#d95f02",
+  "ST1788-1LV" = "#fdb462",
   "ST131"      = "#dc143c",
   "ST636"      = "#8b4513"
 )
@@ -198,7 +201,8 @@ make_epi_panel <- function(data, totals, fill_var, color_map, title,
                        labels = all_month_labels$month_label,
                        limits = c(min(all_study_months) - 0.5,
                                   max(all_study_months) + 0.5)) +
-    scale_y_continuous(expand = expansion(mult = c(0, 0.15))) +
+    scale_y_continuous(limits = c(0, 10), breaks = c(0, 2.5, 5, 7.5, 10),
+                       expand = expansion(mult = c(0, 0.15))) +
     labs(x = x_label, y = "Number of isolates", title = title) +
     theme_classic() +
     theme(
@@ -243,6 +247,22 @@ pC <- make_epi_panel(
     group_by(study_month) %>% summarise(total = sum(total), .groups = "drop"),
   "ST_display", all_colors_display, "C. Other species",
   show_x = TRUE, x_label = "Month")
+
+# Star the single ST2355-1LV (Kqv) isolate (Dec 2023): solid black 5-point star,
+# drawn as a polygon so it renders identically in PDF and SVG
+star_pos <- plot_data %>% filter(ST == "ST2355-1LV") %>%
+  distinct(study_month) %>% mutate(y = 0.5)
+# x and y radii are set so the star looks regular on this panel's axes (1 x-unit
+# is ~2.1x wider on the page than 1 y-unit at fig.width = 16, fig.height = 14)
+star_poly <- function(cx, cy, rx = 0.12, ry = 0.26, inner = 0.4) {
+  ang <- seq(90, 90 + 360 - 36, by = 36) * pi / 180
+  r   <- rep(c(1, inner), 5)
+  tibble(x = cx + rx * r * cos(ang), y = cy + ry * r * sin(ang))
+}
+star_df <- bind_rows(lapply(seq_len(nrow(star_pos)), function(i)
+  star_poly(star_pos$study_month[i], star_pos$y[i]) %>% mutate(grp = i)))
+pC <- pC + geom_polygon(data = star_df, aes(x = x, y = y, group = grp),
+                        inherit.aes = FALSE, fill = "black", colour = NA)
 
 combined_plot <- pA / pB / pC +
   plot_layout(guides = "collect") +

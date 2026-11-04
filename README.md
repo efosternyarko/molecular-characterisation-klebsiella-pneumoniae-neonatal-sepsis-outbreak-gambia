@@ -40,7 +40,7 @@ Figure numbers follow the revised manuscript. Script filenames keep the numberin
 | Fig 5  | ST39 multi-panel: tree + AMR + metadata + plasmid + timeline | `figS3_st39_plasmid.qmd` | R (Quarto) |
 | Fig 6  | Global ST39 clone distribution and AMR by continent | `fig06_st39_global_clones.qmd` | R (Quarto) |
 | Fig S1 | Sources of bacterial contamination in labour and neonatal wards | `figS1_ward_contamination.md` | Assembled in Illustrator |
-| Fig S2 | *K. pneumoniae* phylogeny annotated with ST, K-locus, virulence, and AMR | `fig05_kpn_phylotree_annotated.qmd` | R (Quarto) |
+| Fig S2 | *K. pneumoniae* phylogeny annotated with ST, K-locus, virulence, and AMR | `fig05_kpn_phylotree_annotated.qmd` | R (Quarto); base plot, further annotated/edited in Illustrator for the paper |
 | Fig S3 | Transmission cluster plots (*Kp* and *Kqp*) | `figS2_transmission_clusters.md` | R (see note) |
 | Appendix | Comparative genomic organisation of chromosomal AMR locus (38277B1 vs 38833B1) | `figAppendix_clinker_amr_locus.md` | clinker |
 
@@ -95,7 +95,7 @@ pip install clinker
 
 All data files are described in `data/README.md`. Key inputs:
 
-- **Supplementary data** (`FileS1_to_FileS10.xlsx`, sheet `FileS3`) — isolate metadata including ST, collection dates, and sample type. Available with the published paper.
+- **Supplementary data** (`FileS1_to_FileS12_28Sep26_1340.xlsx`, sheet `Supplementary_File1`; sheet `Supplementary_File3` lists environmental sampling by ward) — isolate metadata including ST, collection dates, and sample type. Each sheet has a title in row 1 and column headers in row 2; `load_supp.R` reads it. Available with the published paper.
 - **Gambia administrative shapefile** — from GADM (https://gadm.org/download_country.html, country = Gambia, level 1). Free for academic use.
 - **Figure 1 epidemic curve** — monthly case and death totals from the original outbreak report (`fig01_epi_curve.csv`) and WGS-confirmed clinical *K. pneumoniae* isolates (`fig01_clinical_kpn_isolates.csv`, from Supplementary File 1). Included in `data/`.
 - **Pathogenwatch global *K. pneumoniae* ST39 collection** (deduplicated, 750 isolates, 22 September 2026) — https://pathogen.watch/collections/ryKcxCmfzKKegsAUkueS8P-updated-st-39-collection-deduplicated-22-september-20261703

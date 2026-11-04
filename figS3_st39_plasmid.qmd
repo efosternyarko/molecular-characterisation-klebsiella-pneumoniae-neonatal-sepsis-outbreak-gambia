@@ -31,7 +31,7 @@ Panels A–D are identical to Figure 5 but with the addition of Panel D (plasmid
 coverage) and optimised for A4 printing (larger font sizes).
 
 Data required (place in data/):
-  - FileS1_to_FileS10.xlsx              : sheet "FileS3"
+  - FileS1_to_FileS12_28Sep26_1340.xlsx : Supplementary_File1 (+ load_supp.R)
   - clusters_data_final.csv             : transmission cluster assignments
   - st39_cluster.treefile               : IQ-TREE2 Newick tree
   - pNS39_A_alignment_coverage_summary.tsv : per-sample pNS39_A coverage
@@ -61,11 +61,12 @@ theme_set(theme_minimal(base_size = 22))
 
 ```{r file-paths}
 # Update these paths to point to your local data files
-fp_data    <- "data/FileS1_to_FileS10.xlsx"
+source("load_supp.R")
+fp_data    <- "data/FileS1_to_FileS12_28Sep26_1340.xlsx"
 fp_clusters <- "data/clusters_data_final.csv"
 fp_plasmid <- "data/pNS39_A_alignment_coverage_summary.tsv"
 tree_base  <- "data/st39_cluster"
-out_dir    <- "."
+out_dir    <- Sys.getenv("FIG_OUT", ".")
 
 dir.create(out_dir, showWarnings = FALSE, recursive = TRUE)
 ```
@@ -80,10 +81,11 @@ strip_suffix <- function(x) {
   x %>% str_remove("_1$") %>% str_remove("_final$")
 }
 
-st39_data_raw <- read_excel(fp_data, sheet = "FileS3")
+st39_data_raw <- load_supp_isolates(fp_data)
 
 st39_data <- st39_data_raw %>%
   filter(ST == "ST39") %>%
+  rename(sample_id = id) %>%
   mutate(sample_id = normalize_id(sample_id)) %>%
   distinct(sample_id, .keep_all = TRUE) %>%
   mutate(
@@ -146,12 +148,12 @@ st39_data <- st39_data %>%
 ```
 
 ```{r process-dates}
+# FileS3 has Year and Month only (no Day column); default day to 1.
 st39_data <- st39_data %>%
   mutate(
-    Collection_date = make_date(year = Year, month = Month, day = Day),
-    Week_in_month   = ceiling(Day / 7),
+    Collection_date = make_date(year = Year, month = Month, day = 1L),
     Month_name      = month.abb[Month],
-    Timeline_label  = paste0(Month_name, " Wk", Week_in_month)
+    Timeline_label  = paste0(Month_name, " ", Year)
   )
 ```
 
@@ -380,7 +382,7 @@ p_time <- ggplot(st39_data_in_tree,
   scale_colour_manual(values = cluster_cols, name = "Cluster") +
   scale_y_discrete(drop = FALSE) +
   scale_x_discrete(expand = expansion(add = 0.6)) +
-  labs(x = "Month & Week", y = NULL, tag = "E") +
+  labs(x = "Month & Year", y = NULL, tag = "E") +
   theme(axis.text.y   = element_blank(), axis.ticks.y = element_blank(),
         legend.position = "right",
         legend.justification = "top",
