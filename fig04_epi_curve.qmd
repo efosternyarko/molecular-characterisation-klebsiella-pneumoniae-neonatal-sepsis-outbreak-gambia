@@ -61,7 +61,7 @@ out_dir <- Sys.getenv("FIG_OUT", ".")   # output directory for saved figures
 species_code_map <- tribble(
   ~species_name, ~species_code,
   "Klebsiella pneumoniae", "Kp",
-  "Klebsiella quasipneumoniae subsp. similipneumoniae", "Kqv",
+  "Klebsiella quasipneumoniae subsp. similipneumoniae", "Kqp",
   "Escherichia coli", "Ec"
 )
 ```
@@ -248,7 +248,7 @@ pC <- make_epi_panel(
   "ST_display", all_colors_display, "C. Other species",
   show_x = TRUE, x_label = "Month")
 
-# Star the single ST2355-1LV (Kqv) isolate (Dec 2023): solid black 5-point star,
+# Star the single ST2355-1LV (Kqp) isolate (Dec 2023): solid black 5-point star,
 # drawn as a polygon so it renders identically in PDF and SVG
 star_pos <- plot_data %>% filter(ST == "ST2355-1LV") %>%
   distinct(study_month) %>% mutate(y = 0.5)
