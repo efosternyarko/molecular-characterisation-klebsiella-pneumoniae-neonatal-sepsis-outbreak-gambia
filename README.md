@@ -16,8 +16,6 @@ code/
 ├── fig01_timeline_and_map.py          # Figure 1 — Outbreak timeline (A) + map of study sites (B)
 ├── fig01A_gambia_map.py               # Figure 1B — Map of The Gambia (stand-alone)
 ├── fig02_resistance_heatmap.py        # Figure 2 — AMR heatmap (clinical + environmental)
-├── fig03_flow_diagram.py               # Figure 3 — Study flow diagram
-├── fig03_flow_diagram.md              # Figure 3 — notes and provenance
 ├── fig04_epi_curve.qmd                # Figure 4 — Epidemiological curves
 ├── fig05_kpn_phylotree_annotated.qmd  # Supplementary Figure 2 — All-Kp phylogenetic tree + metadata
 ├── fig06_st39_global_clones.qmd       # Figure 6 — Global ST39 clone distribution + AMR
@@ -37,7 +35,7 @@ Figure numbers follow the revised manuscript. Script filenames keep the numberin
 |--------|-------------|--------|----------|
 | Fig 1  | Outbreak timeline (monthly cases by WGS result, deaths, investigation and sampling events) and map of study sites | `fig01_timeline_and_map.py` | Python |
 | Fig 2  | Clustered AMR heatmap (clinical + environmental isolates; resistant / intermediate / susceptible, 2023 CLSI M100) | `fig02_resistance_heatmap.py` | Python |
-| Fig 3  | Study flow diagram (case population → isolates → QC → species → ST39 → outcomes) | `fig03_flow_diagram.py` | Python |
+| Fig 3  | Study flow diagram (case population → isolates → QC → species → ST39 → outcomes) | `figures/Fig3_flow_diagram.pdf` | Assembled in PowerPoint (no code) |
 | Fig 4  | Epidemiological curves — 3 panels (Kp clinical, Kp environmental, other species) | `fig04_epi_curve.qmd` | R (Quarto) |
 | Fig 5  | ST39 multi-panel: tree + AMR + metadata + plasmid + timeline | `figS3_st39_plasmid.qmd` | R (Quarto) |
 | Fig 6  | Global ST39 clone distribution and AMR by continent | `fig06_st39_global_clones.qmd` | R (Quarto) |

@@ -17,22 +17,9 @@ Figure S2 shows transmission cluster summaries for *K. pneumoniae* (Kp) and
 
 ### 1. SNP distance matrix
 
-A pairwise SNP distance matrix computed from the core genome alignment.
+A pairwise SNP distance matrix computed via Pathogenwatch.
 
-**How to generate:**
 
-```bash
-# 1. Align reads to reference genome with Snippy (run per isolate)
-snippy --outdir <sample_dir> --ref <reference.gbk> --R1 <reads_R1.fastq.gz> --R2 <reads_R2.fastq.gz>
-
-# 2. Generate core genome alignment
-snippy-core --ref <reference.gbk> <sample_dir_1> <sample_dir_2> ...
-
-# 3. Compute pairwise SNP distances
-snp-dists core.full.aln > snp_distance_matrix.tsv
-```
-
-Software versions used in this study: Snippy v4.6, snp-dists v0.8.2.
 
 ### 2. Metadata file
 
@@ -93,4 +80,4 @@ plots in the Shiny interface. The full methods are described in the paper
 (Methods section: *Genomic cluster analysis*).
 
 The SNP distance matrices and metadata files used as input are available from
-the authors on request (e.foster-nyarko@lshtm.ac.uk).
+the authors on request (Ebenezer.Foster-Nyarko2@lshtm.ac.uk).
